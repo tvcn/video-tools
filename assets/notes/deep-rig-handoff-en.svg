@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Rig handoff: from movable to deliverable">
+<rect width="1280" height="720" fill="#f2eee6"/>
+<rect x="48" y="40" width="1184" height="640" fill="none" stroke="#d9d1c3" stroke-width="2"/>
+<text x="96" y="88" font-family="Arial, sans-serif" font-size="20" letter-spacing="3" fill="#9a3b2e">DEEP NOTE / TVCN</text>
+<text x="96" y="132" font-family="Georgia, serif" font-size="42" fill="#1e2a24">Rig handoff: from movable </text><text x="96" y="184" font-family="Georgia, serif" font-size="42" fill="#1e2a24">to deliverable</text>
+<text x="620" y="132" font-family="Arial, sans-serif" font-size="18" fill="#6f6a60">CONDITION → ACTION → ACCEPTANCE</text>
+<rect x="96" y="260" width="420" height="86" rx="16" fill="#fffdf8" stroke="#1e2a24" stroke-width="2"/><text x="120" y="312" font-family="Arial, sans-serif" font-size="28" fill="#1e2a24">01  rigging</text><path d="M306 346 L306 380" stroke="#9a3b2e" stroke-width="3"/><rect x="96" y="380" width="420" height="86" rx="16" fill="#fffdf8" stroke="#1e2a24" stroke-width="2"/><text x="120" y="432" font-family="Arial, sans-serif" font-size="28" fill="#1e2a24">02  armature</text><path d="M306 466 L306 500" stroke="#9a3b2e" stroke-width="3"/><rect x="96" y="500" width="420" height="86" rx="16" fill="#fffdf8" stroke="#1e2a24" stroke-width="2"/><text x="120" y="552" font-family="Arial, sans-serif" font-size="28" fill="#1e2a24">03  asset-handoff</text>
+<text x="620" y="446" font-family="Arial, sans-serif" font-size="18" fill="#6f6a60">ONE VARIABLE AT A TIME</text>
+<text x="620" y="480" font-family="Arial, sans-serif" font-size="18" fill="#6f6a60">WRITE THE FAILURE DOWN</text>
+<text x="620" y="514" font-family="Arial, sans-serif" font-size="18" fill="#6f6a60">REPEAT WITH THE NEXT PERSON</text>
+<text x="96" y="646" font-family="Arial, sans-serif" font-size="16" fill="#6f6a60">TVCN · FIELD NOTE · 2026</text>
+</svg>

@@ -49,12 +49,12 @@
   </div>
 </header>
 <main id="main" class="static-main" tabindex="-1">
-<div class="wrap">
-    <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>二维运镜：pan 与 multiplane</span></div>
-    <header class="article-hero"><p class="eyebrow">动画 / 二维</p><h1>二维运镜：pan 与 multiplane</h1><p class="article-deck">二维运镜不是把整张图平移；用多层不同速度，才有空间。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span><a href="../../about/#desk-animation">TVCN 动画组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">2D 摄影机是“舞台”，不是 3D 场景</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">2D 摄影机不是“放大”，是分层视差</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">3 条验收</a></li></ol></nav>
-    
-    
-    <article class="article-body"><section class="editorial-depth"><h2 id="section-1">2D 摄影机是“舞台”，不是 3D 场景</h2><p>二维动画的摄影机移动，先想多层景片怎么排：前景、中景、背景各在一层，移动时速度不同，才有空间。所有层一起平移，观众只看到一张画在滑。</p><p>推近时先决定是移动摄影机还是放大图层；放大图层会软，移动摄影机才能保持清晰。</p><h2 id="section-2">边界</h2><p>2D 摄影机不能替代透视。层与层的比例不对，再复杂的移动也像纸片；先画对空间。</p><h2 id="section-3">2D 摄影机不是“放大”，是分层视差</h2>
+<div class="wrap" data-content-v2="1">
+<div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>二维运镜：pan 与 multiplane</span></div>
+<header class="article-hero"><p class="eyebrow">动画 / 二维</p><h1>二维运镜：pan 与 multiplane</h1><p class="article-deck">二维运镜不是把整张图平移；用多层不同速度，才有空间。</p><div class="article-meta"><span>4 分钟阅读 · 现场手册</span><span>TVCN 动画组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">2D 摄影机是“舞台”，不是 3D 场景</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">2D 摄影机不是“放大”，是分层视差</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">判断</a></li><li><a href="#section-8">失败</a></li><li><a href="#section-9">延伸</a></li><li><a href="#section-10">3 条验收</a></li></ol></nav>
+
+<article class="article-body"><p>二维动画的摄影机移动，先想多层景片怎么排：前景、中景、背景各在一层，移动时速度不同，才有空间。所有层一起平移，观众只看到一张画在滑。</p>
+<section><h2 id="section-1">2D 摄影机是“舞台”，不是 3D 场景</h2><p>推近时先决定是移动摄影机还是放大图层；放大图层会软，移动摄影机才能保持清晰。</p><h2 id="section-2">边界</h2><p>2D 摄影机不能替代透视。层与层的比例不对，再复杂的移动也像纸片；先画对空间。</p><h2 id="section-3">2D 摄影机不是“放大”，是分层视差</h2>
 <p>二维镜头运动的核心不是把画面整体推近，而是让前景、中景、背景以不同速度移动。速度差决定空间感；没有分层，再大的运动也像一张图在缩放。</p>
 <div class="table-scroll"><table class="data-table"><thead><tr><th>层</th><th>速度</th><th>常见错误</th></tr></thead><tbody>
 <tr><td>前景</td><td>最快，可出画</td><td>和背景一起缩放，失去遮挡</td></tr>
@@ -63,22 +63,22 @@
 </tbody></table></div>
 <h3>项目级检查</h3>
 <ol><li>先做一张 2 倍于成片尺寸的背景，给摄影机留移动余量；不要用成片尺寸硬推。</li><li>摄影机路径只设 2–3 个关键帧，用缓入缓出；线性关键帧会让画面像传送带。</li><li>运动模糊按帧率与速度单独调，前景和背景不要共用一套参数。</li><li>输出前逐层开关，确认没有空白边缘、接缝和重复纹理。</li></ol>
-<p>验收时把成片缩到 50% 再看一遍：如果空间感还在，说明分层成立；如果只剩“整体变大”，回到层速度重做。</p></section><section><h2 id="section-4">现场</h2><p>把背景分远山、中景、近树三层，pan 时速度按 1 比 2 比 4；人物单独一层，保持不动。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>把背景分远山、中景、近树三层。</li><li>pan 时速度按 1 比 2 比 4。</li><li>人物单独一层，保持不动或只做小幅跟随。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别把整张图一起平移；所有层同速，空间就扁了。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
-    <img src="../../assets/notes/2d-camera.svg" alt="二维运镜：pan 与 multiplane 概念图" loading="lazy" decoding="async" width="1280" height="720">
-    <figcaption><span>图解封面，非实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><figure class="diagram" data-image-nature="editorial-illustration">
-    <div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / 2D</div><h3 class="diagram-title">三步流程</h3></div><span class="mono">TVCN</span></div>
-    <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/2d-camera-steps.svg" alt="二维运镜：pan 与 multiplane 三步图解" loading="lazy" decoding="async" width="1280" height="720"></div>
-    
-    <figcaption> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><div class="check-box check-box-after"><h2 id="section-7">3 条验收</h2><ul><li>远、中、近三层速度不同，比例接近 1:2:4。</li><li>人物层和背景层分开，没有跟着背景一起滑。</li><li>pan 一遍能看出前景快、远景慢的空间感。</li></ul></div></article>
-    
-    
-    
-    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">Blender Manual</a> · <a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener">After Effects User Guide</a> · <a href="https://docs.toonboom.com/" target="_blank" rel="noopener">Toon Boom Documentation</a></p></aside>
-    <div class="related"><a href="../../article/2d-compositing/">二维合成：背景、前景、光 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/modeling/">建模：面数与轮廓 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/loop-cycle/">循环动作：首尾怎么接 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
-    <nav class="article-nav"><a href="../../article/2d-compositing/"><span class="mono">上一篇</span>二维合成：背景、前景、光</a><a href="../../article/blockout/"><span class="mono">下一篇</span>Blockout：先定比例和机位</a></nav>
-  </div>
+<p>验收时把成片缩到 50% 再看一遍：如果空间感还在，说明分层成立；如果只剩“整体变大”，回到层速度重做。</p></section><section><h2 id="section-4">现场</h2><p>把背景分远山、中景、近树三层，pan 时速度按 1 比 2 比 4；人物单独一层，保持不动。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>把背景分远山、中景、近树三层。</li><li>pan 时速度按 1 比 2 比 4。</li><li>人物单独一层，保持不动或只做小幅跟随。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别把整张图一起平移；所有层同速，空间就扁了。</p></section><section><h2 id="section-7">判断</h2><p>现场只认三个信号：</p><ul><li>前景、中景、背景的速度差能在一次 pan 里看出来</li><li>动作在 0.5 秒内能读出重量或预备</li><li>关掉任意一层，空间感仍然成立</li></ul></section><section><h2 id="section-8">失败</h2><p>下面三种做法会让页面上的细节白做：</p><ul><li>层数堆上去了，但每层速度一样，空间还是扁的</li><li>动作有预备却没有跟随，重量只做了一半</li><li>资产没锁就进渲染，返工从合成端一路补</li></ul></section><section><h2 id="section-9">延伸</h2><p><strong>10 分钟练习：</strong>用 24 fps 画 3 个关键帧，只改“pan 时速度按 1 比 2 比 4”，导出 2 秒；如果重量仍读不出来，先加预备帧，不要加模糊。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../assets/notes/2d-camera.svg" alt="二维运镜：pan 与 multiplane 编辑封面" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>这是为这一页画的编辑封面，不是实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / ANIMATION</div><h3 class="diagram-title">结构图</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/2d-camera-steps.svg" alt="二维运镜：pan 与 multiplane的结构示意图。" loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>看“把背景分远山、中景、近树三层”和“pan 时速度按 1 比 2 比 4”两处，判断前景、中景、背景的速度差能不能在一次移动里看出来。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure>
+
+<div class="check-box check-box-after"><h2 id="section-10">3 条验收</h2><ul><li>远、中、近三层速度不同，比例接近 1:2:4。</li><li>人物层和背景层分开，没有跟着背景一起滑。</li><li>pan 一遍能看出前景快、远景慢的空间感。</li></ul></div>
+<aside class="article-credit">
+<div class="article-credit-head"><p class="eyebrow">作者与测试说明</p><span class="mono">2026-11-25</span></div>
+<div class="article-credit-grid">
+<div><b>作者</b><p><a href="../../about/#desk-animation">TVCN 动画组</a></p></div>
+<div><b>复核环境</b><p>Windows 11 + Chrome；按公开资料与现场手册复核；不声称逐帧实测。</p></div>
+<div><b>已知失败</b><p>公开案例信息不全；设备、平台与片长限制会变化；不同项目需重新验证。</p></div>
+<div><b>限制</b><p>经验型内容，不替代具体项目测试；设备与平台版本会变。</p></div>
+</div></aside>
+<aside class="article-sources sourced" data-source-kind="sourced">
+<div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">公开来源与经验复核</span></div>
+<p class="source-types">本条把经验判断和公开资料分开；具体链接见来源表。</p><ul><li>[S12] Britannica：动画</li><li>[S23] SMPTE 标准入口</li></ul><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">Blender Manual</a> · <a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener">After Effects User Guide</a> · <a href="https://docs.toonboom.com/" target="_blank" rel="noopener">Toon Boom Documentation</a></p></aside>
+<div class="related"><a href="../../article/2d-compositing/">二维合成：背景、前景、光 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/modeling/">建模：面数与轮廓 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/loop-cycle/">循环动作：首尾怎么接 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+</div>
 </main>
 <footer class="static-footer">
   <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
