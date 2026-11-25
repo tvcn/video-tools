@@ -51,10 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>二维运镜：pan 与 multiplane</span></div>
-    <header class="article-hero"><p class="eyebrow">动画 / 二维</p><h1>二维运镜：pan 与 multiplane</h1><p class="article-deck">二维运镜不是把整张图平移；用多层不同速度，才有空间。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span><a href="../../about/#desk-animation">TVCN 动画组</a></span><span>编辑 2026-11</span></div></header><figure class="article-media inline-media" data-image-nature="editorial-illustration">
-    <img src="../../assets/notes/2d-camera.svg" alt="二维运镜：pan 与 multiplane 概念图" loading="lazy" decoding="async" width="1280" height="720">
-    <figcaption><span>图解封面，非实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">2D 摄影机是“舞台”，不是 3D 场景</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">2D 摄影机不是“放大”，是分层视差</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">3 条验收</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">动画 / 二维</p><h1>二维运镜：pan 与 multiplane</h1><p class="article-deck">二维运镜不是把整张图平移；用多层不同速度，才有空间。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span><a href="../../about/#desk-animation">TVCN 动画组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">2D 摄影机是“舞台”，不是 3D 场景</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">2D 摄影机不是“放大”，是分层视差</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">3 条验收</a></li></ol></nav>
     
     
     <article class="article-body"><section class="editorial-depth"><h2 id="section-1">2D 摄影机是“舞台”，不是 3D 场景</h2><p>二维动画的摄影机移动，先想多层景片怎么排：前景、中景、背景各在一层，移动时速度不同，才有空间。所有层一起平移，观众只看到一张画在滑。</p><p>推近时先决定是移动摄影机还是放大图层；放大图层会软，移动摄影机才能保持清晰。</p><h2 id="section-2">边界</h2><p>2D 摄影机不能替代透视。层与层的比例不对，再复杂的移动也像纸片；先画对空间。</p><h2 id="section-3">2D 摄影机不是“放大”，是分层视差</h2>
@@ -66,12 +63,15 @@
 </tbody></table></div>
 <h3>项目级检查</h3>
 <ol><li>先做一张 2 倍于成片尺寸的背景，给摄影机留移动余量；不要用成片尺寸硬推。</li><li>摄影机路径只设 2–3 个关键帧，用缓入缓出；线性关键帧会让画面像传送带。</li><li>运动模糊按帧率与速度单独调，前景和背景不要共用一套参数。</li><li>输出前逐层开关，确认没有空白边缘、接缝和重复纹理。</li></ol>
-<p>验收时把成片缩到 50% 再看一遍：如果空间感还在，说明分层成立；如果只剩“整体变大”，回到层速度重做。</p></section><figure class="diagram" data-image-nature="editorial-illustration">
+<p>验收时把成片缩到 50% 再看一遍：如果空间感还在，说明分层成立；如果只剩“整体变大”，回到层速度重做。</p></section><section><h2 id="section-4">现场</h2><p>把背景分远山、中景、近树三层，pan 时速度按 1 比 2 比 4；人物单独一层，保持不动。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>把背景分远山、中景、近树三层。</li><li>pan 时速度按 1 比 2 比 4。</li><li>人物单独一层，保持不动或只做小幅跟随。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别把整张图一起平移；所有层同速，空间就扁了。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <img src="../../assets/notes/2d-camera.svg" alt="二维运镜：pan 与 multiplane 概念图" loading="lazy" decoding="async" width="1280" height="720">
+    <figcaption><span>图解封面，非实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
+  </figure><figure class="diagram" data-image-nature="editorial-illustration">
     <div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / 2D</div><h3 class="diagram-title">三步流程</h3></div><span class="mono">TVCN</span></div>
     <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/2d-camera-steps.svg" alt="二维运镜：pan 与 multiplane 三步图解" loading="lazy" decoding="async" width="1280" height="720"></div>
     
     <figcaption> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><section><h2 id="section-4">现场</h2><p>把背景分远山、中景、近树三层，pan 时速度按 1 比 2 比 4；人物单独一层，保持不动。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>把背景分远山、中景、近树三层。</li><li>pan 时速度按 1 比 2 比 4。</li><li>人物单独一层，保持不动或只做小幅跟随。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别把整张图一起平移；所有层同速，空间就扁了。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><div class="check-box check-box-after"><h2 id="section-7">3 条验收</h2><ul><li>远、中、近三层速度不同，比例接近 1:2:4。</li><li>人物层和背景层分开，没有跟着背景一起滑。</li><li>pan 一遍能看出前景快、远景慢的空间感。</li></ul></div></article>
+  </figure><div class="check-box check-box-after"><h2 id="section-7">3 条验收</h2><ul><li>远、中、近三层速度不同，比例接近 1:2:4。</li><li>人物层和背景层分开，没有跟着背景一起滑。</li><li>pan 一遍能看出前景快、远景慢的空间感。</li></ul></div></article>
     
     
     

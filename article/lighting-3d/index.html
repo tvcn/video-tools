@@ -51,10 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>三维灯光：三点与 HDRI</span></div>
-    <header class="article-hero"><p class="eyebrow">动画 / 三维</p><h1>三维灯光：三点与 HDRI</h1><p class="article-deck">三维灯光先用主光、补光、轮廓光定结构，再用 HDRI 补环境；顺序反了，空间会平。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span><a href="../../about/#desk-animation">TVCN 动画组</a></span><span>编辑 2026-11</span></div></header><figure class="article-media inline-media" data-image-nature="editorial-illustration">
-    <img src="../../assets/notes/lighting-3d.svg" alt="三维灯光：三点与 HDRI 概念图" loading="lazy" decoding="async" width="1280" height="720">
-    <figcaption><span>图解封面，非实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">3D 灯光先定“主光方向”，再谈材质</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">三维灯光：先定主光，再谈氛围</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">3 条验收</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">动画 / 三维</p><h1>三维灯光：三点与 HDRI</h1><p class="article-deck">三维灯光先用主光、补光、轮廓光定结构，再用 HDRI 补环境；顺序反了，空间会平。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span><a href="../../about/#desk-animation">TVCN 动画组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">3D 灯光先定“主光方向”，再谈材质</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">三维灯光：先定主光，再谈氛围</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">3 条验收</a></li></ol></nav>
     
     
     <article class="article-body"><section class="editorial-depth"><h2 id="section-1">3D 灯光先定“主光方向”，再谈材质</h2><p>三维灯光不是把场景照亮。先定一个主光方向，让影子说明空间；再用环境光和补光控制反差。材质再真，光位错了也会像贴图。</p><p>每加一盏灯，问它替代了现实里的什么光源；答不出，就删。灯光层要能单独关闭，方便对比。</p><h2 id="section-2">边界</h2><p>HDRI 不是万能。室内、夜景和强方向光需要手动补灯；只靠环境贴图，画面会平、影子会散。</p><h2 id="section-3">三维灯光：先定主光，再谈氛围</h2>
@@ -67,12 +64,15 @@
 </tbody></table></div>
 <h3>项目级检查</h3>
 <ol><li>先关掉所有氛围层，只留主光看剪影；剪影不成立，氛围救不了。</li><li>用同一套灯光 rig 覆盖所有镜头，单镜头特殊灯要记录原因。</li><li>反射和折射单独渲一层，后期可调；全部烘进 beauty 会锁死。</li><li>输出前看10% 灰和肤色，不看“亮不亮”；曝光以中间调为准。</li></ol>
-<p>如果渲染时间不够，先减氛围层，不要减主光采样；主光噪声会毁掉整个镜头。</p></section><figure class="diagram" data-image-nature="editorial-illustration">
+<p>如果渲染时间不够，先减氛围层，不要减主光采样；主光噪声会毁掉整个镜头。</p></section><section><h2 id="section-4">现场</h2><p>先关 HDRI，只用主光看形体；再加补光、轮廓光；最后开 HDRI 到 20% 到 30% 补环境。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>先关 HDRI，只用主光看形体。</li><li>再加补光和轮廓光。</li><li>最后开 HDRI 到 20% 到 30% 补环境。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别一上来就开 HDRI；环境光一盖，形体就看不清了。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <img src="../../assets/notes/lighting-3d.svg" alt="三维灯光：三点与 HDRI 概念图" loading="lazy" decoding="async" width="1280" height="720">
+    <figcaption><span>图解封面，非实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
+  </figure><figure class="diagram" data-image-nature="editorial-illustration">
     <div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / 3D</div><h3 class="diagram-title">三步流程</h3></div><span class="mono">TVCN</span></div>
     <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/lighting-3d-steps.svg" alt="三维灯光：三点与 HDRI 三步图解" loading="lazy" decoding="async" width="1280" height="720"></div>
     
     <figcaption> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><section><h2 id="section-4">现场</h2><p>先关 HDRI，只用主光看形体；再加补光、轮廓光；最后开 HDRI 到 20% 到 30% 补环境。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>先关 HDRI，只用主光看形体。</li><li>再加补光和轮廓光。</li><li>最后开 HDRI 到 20% 到 30% 补环境。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别一上来就开 HDRI；环境光一盖，形体就看不清了。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><div class="check-box check-box-after"><h2 id="section-7">3 条验收</h2><ul><li>关 HDRI 时，主光已经能把形体打出来。</li><li>补光和轮廓光各司其职，没有把主光打平。</li><li>HDRI 只占 20% 到 30%，没有抢走主光。</li></ul></div></article>
+  </figure><div class="check-box check-box-after"><h2 id="section-7">3 条验收</h2><ul><li>关 HDRI 时，主光已经能把形体打出来。</li><li>补光和轮廓光各司其职，没有把主光打平。</li><li>HDRI 只占 20% 到 30%，没有抢走主光。</li></ul></div></article>
     
     
     
