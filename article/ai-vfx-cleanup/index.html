@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>AI 清理与场景延伸：去路人、去威亚、物体移除 · TVCN</title>
+<meta name="description" content="清理镜头的第一原则是“背景可重建”。去路人、去威亚、去穿帮，都要先有干净板/跟踪/遮挡；AI 不是魔术橡皮擦。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/ai-vfx-cleanup/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/ai-vfx-cleanup/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/ai-vfx-cleanup/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/ai-vfx-cleanup/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 清理与场景延伸：去路人、去威亚、物体移除 · TVCN">
+<meta property="og:description" content="清理镜头的第一原则是“背景可重建”。去路人、去威亚、去穿帮，都要先有干净板/跟踪/遮挡；AI 不是魔术橡皮擦。">
+<meta property="og:url" content="https://ai.tvcn.org/article/ai-vfx-cleanup/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="AI 清理与场景延伸：去路人、去威亚、物体移除">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI 清理与场景延伸：去路人、去威亚、物体移除 · TVCN">
+<meta name="twitter:description" content="清理镜头的第一原则是“背景可重建”。去路人、去威亚、去穿帮，都要先有干净板/跟踪/遮挡；AI 不是魔术橡皮擦。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="AI 清理与场景延伸：去路人、去威亚、物体移除">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"AI 清理与场景延伸：去路人、去威亚、物体移除","description":"清理镜头的第一原则是“背景可重建”。去路人、去威亚、去穿帮，都要先有干净板/跟踪/遮挡；AI 不是魔术橡皮擦。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/ai-vfx-cleanup/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"AI 清理与场景延伸：去路人、去威亚、物体移除","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/ai-vfx-cleanup/","datePublished":"2026-11-20","dateModified":"2026-11-24"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"AI 清理与场景延伸：去路人、去威亚、物体移除","item":"https://ai.tvcn.org/article/ai-vfx-cleanup/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/ai-vfx-cleanup/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+<div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>AI 清理与场景延伸：去路人、去威亚、物体移除</span></div>
+<header class="article-hero"><p class="eyebrow">AI 影像 / 专业后期</p><h1>AI 清理与场景延伸：去路人、去威亚、物体移除</h1><p class="article-deck">清理镜头的第一原则是“背景可重建”。去路人、去威亚、去穿帮，都要先有干净板/跟踪/遮挡；AI 不是魔术橡皮擦。</p><div class="article-meta"><span>3 分钟阅读 · 技法</span><span>TVCN AI Desk</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">适用与不适用 / Fit and no-fit</a></li><li><a href="#section-2">怎么做 / Do this</a></li><li><a href="#section-3">参数与判断 / Parameters</a></li><li><a href="#section-4">别踩 / Avoid</a></li><li><a href="#section-5">继续往下 / Go deeper</a></li><li><a href="#section-6">验收 / Checks</a></li></ol></nav>
+
+<article class="article-body"><section><h2 id="section-1">适用与不适用 <small class='muted'>/ Fit and no-fit</small></h2><ul><li><span>去路人/去威亚/去穿帮/去杂物。</span><br><span class='muted'>Remove pedestrians, wires, mistakes or clutter.</span></li><li><span>需要把画面边缘延伸到更大画幅。</span><br><span class='muted'>Extending frame edges to a larger format.</span></li><li><span>不适用：主体大范围遮挡、无干净背景。</span><br><span class='muted'>Not for: large subject occlusion with no clean background.</span></li></ul></section><section><h2 id="section-2">怎么做 <small class='muted'>/ Do this</small></h2><ol><li><span>先拍/找干净板：同一机位、同一光。</span><br><span class='muted'>Shoot/find a clean plate: same camera, same light.</span></li><li><span>跟踪镜头运动，画 roto/遮罩。</span><br><span class='muted'>Track camera motion; draw roto/masks.</span></li><li><span>先修 10 帧，检查边缘/纹理/光。</span><br><span class='muted'>Fix ten frames; check edges/texture/light.</span></li><li><span>再跑整段，分段检查闪烁。</span><br><span class='muted'>Run the full shot; check flicker in sections.</span></li><li><span>合成回原层，检查颗粒/色彩/运动模糊。</span><br><span class='muted'>Comp back; check grain/color/motion blur.</span></li></ol></section><section><h2 id="section-3">参数与判断 <small class='muted'>/ Parameters</small></h2><table class='spec-table'><thead><tr><th>项目 / Item</th><th>本页口径 / This page</th></tr></thead><tbody><tr><td><b>干净板</b><br><span class='muted'>Clean plate</span></td><td>同机位/同光/同焦<br><span class='muted'>Same camera/light/lens</span></td></tr><tr><td><b>跟踪</b><br><span class='muted'>Track</span></td><td>2D/3D 相机轨迹<br><span class='muted'>2D/3D camera track</span></td></tr><tr><td><b>遮罩</b><br><span class='muted'>Roto</span></td><td>主体/道具/边缘<br><span class='muted'>Subject/prop/edges</span></td></tr><tr><td><b>检查</b><br><span class='muted'>Checks</span></td><td>边缘/纹理/闪烁/颗粒<br><span class='muted'>Edges/texture/flicker/grain</span></td></tr></tbody></table></section><section><h2 id="section-4">别踩 <small class='muted'>/ Avoid</small></h2><ul><li><span>没有干净板硬擦；背景糊成一片。</span><br><span class='muted'>Erasing without a clean plate; background smears.</span></li><li><span>只修一帧；播放时闪烁。</span><br><span class='muted'>Fixing one frame; flicker on playback.</span></li><li><span>不匹配颗粒/运动模糊；合成假。</span><br><span class='muted'>Not matching grain/motion blur; comp looks fake.</span></li></ul></section><section><h2 id="section-5">继续往下 <small class='muted'>/ Go deeper</small></h2><p>AI 清理最容易被低估的是“背景”。一个路人走过，背景被挡了 20 帧；模型要凭空补出这 20 帧的地面/墙/纹理。没有干净板，它只能猜，猜出来的纹理一播放就抖。</p><p>场景延伸（set extension）比清理更吃透视。先把机位轨迹、焦段、消失点定好，再生成边缘；否则延伸出去的墙和原墙对不上，观众一眼看出“画变宽了”。</p></section><section><h2 id="section-6">验收 <small class='muted'>/ Checks</small></h2><ul><li><span>干净板与镜头同机位/同光。</span><br><span class='muted'>Clean plate shares camera/light.</span></li><li><span>roto/跟踪覆盖整个运动。</span><br><span class='muted'>Roto/track covers the full move.</span></li><li><span>连续 20 帧无闪烁/糊边。</span><br><span class='muted'>No flicker/smear across 20 frames.</span></li><li><span>颗粒/色彩/运动模糊匹配原层。</span><br><span class='muted'>Grain/color/motion blur match source.</span></li></ul></section><div class="related"><a href="../../article/ai-video-to-video/">视频到视频 →</a><a href="../../article/ai-post-integration/">后期接入 →</a><a href="../../article/ai-qc/">后期质检 →</a><a href="../../article/ai-delivery-specs/">交付规格 →</a></div></article>
+</div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/ai-vfx-cleanup" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Archive package: project—media—LUT—rights—index">
+<rect width="1280" height="720" fill="#f4f1eb"/>
+<rect x="0" y="0" width="1280" height="8" fill="#8d6a3f"/>
+<text x="54" y="58" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="2">ARCHIVE</text>
+<text x="1226" y="58" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TECHNICAL PLATE / ARCHIVE</text>
+<rect x="180" y="220" width="230" height="100" rx="14" fill="#fffdf8" stroke="#8d6a3f" stroke-opacity=".4"/>
+<text x="196" y="248" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="10">01</text>
+<foreignObject x="196" y="260" width="198" height="50"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:14px;line-height:1.45;color:#171513;font-weight:600">Project file</div></foreignObject><rect x="500" y="220" width="230" height="100" rx="14" fill="#fffdf8" stroke="#8d6a3f" stroke-opacity=".4"/>
+<text x="516" y="248" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="10">02</text>
+<foreignObject x="516" y="260" width="198" height="50"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:14px;line-height:1.45;color:#171513;font-weight:600">Source/proxies</div></foreignObject><rect x="820" y="220" width="230" height="100" rx="14" fill="#fffdf8" stroke="#8d6a3f" stroke-opacity=".4"/>
+<text x="836" y="248" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="10">03</text>
+<foreignObject x="836" y="260" width="198" height="50"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:14px;line-height:1.45;color:#171513;font-weight:600">LUTs &amp; fonts</div></foreignObject><rect x="180" y="430" width="230" height="100" rx="14" fill="#fffdf8" stroke="#8d6a3f" stroke-opacity=".4"/>
+<text x="196" y="458" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="10">04</text>
+<foreignObject x="196" y="470" width="198" height="50"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:14px;line-height:1.45;color:#171513;font-weight:600">Rights &amp; likeness</div></foreignObject><rect x="500" y="430" width="230" height="100" rx="14" fill="#fffdf8" stroke="#8d6a3f" stroke-opacity=".4"/>
+<text x="516" y="458" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="10">05</text>
+<foreignObject x="516" y="470" width="198" height="50"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:14px;line-height:1.45;color:#171513;font-weight:600">Index &amp; metadata</div></foreignObject><rect x="820" y="430" width="230" height="100" rx="14" fill="#fffdf8" stroke="#8d6a3f" stroke-opacity=".4"/>
+<text x="836" y="458" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="10">06</text>
+<foreignObject x="836" y="470" width="198" height="50"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:14px;line-height:1.45;color:#171513;font-weight:600">Restore test</div></foreignObject><path d="M410 270 H500" stroke="#8d6a3f" stroke-width="2"/><path d="M730 270 H820" stroke="#8d6a3f" stroke-width="2"/><path d="M500 320 V430" stroke="#8d6a3f" stroke-width="2"/><path d="M295 530 H500" stroke="#8d6a3f" stroke-width="2"/><foreignObject x="54" y="610" width="1120" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:13px;line-height:1.5;color:#6f675d">Diagram: an archive is five retrievable parts, not one zip. Without rights, footage cannot be reused.</div></foreignObject>
+<line x1="54" y1="654" x2="1226" y2="654" stroke="#171513" stroke-opacity=".14"/>
+<text x="54" y="686" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TVCN / TECHNICAL DIAGRAM</text>
+<text x="1226" y="686" text-anchor="end" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">Diagram, not a set record</text>
+</svg>

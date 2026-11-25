@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>角色一致性：一张参考图，一段固定描述 · TVCN</title>
+<meta name="description" content="生成一百张脸不难，难的是第一百张还像同一个人。把脸、服装、场景写成可复用的锚点，再开始批量生成。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/consistency/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/consistency/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/consistency/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/consistency/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="角色一致性：一张参考图，一段固定描述 · TVCN">
+<meta property="og:description" content="生成一百张脸不难，难的是第一百张还像同一个人。把脸、服装、场景写成可复用的锚点，再开始批量生成。">
+<meta property="og:url" content="https://ai.tvcn.org/article/consistency/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="角色一致性：一张参考图，一段固定描述">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="角色一致性：一张参考图，一段固定描述 · TVCN">
+<meta name="twitter:description" content="生成一百张脸不难，难的是第一百张还像同一个人。把脸、服装、场景写成可复用的锚点，再开始批量生成。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="角色一致性：一张参考图，一段固定描述">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"角色一致性：一张参考图，一段固定描述","description":"生成一百张脸不难，难的是第一百张还像同一个人。把脸、服装、场景写成可复用的锚点，再开始批量生成。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/consistency/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"角色一致性：一张参考图，一段固定描述","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/consistency/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"角色一致性：一张参考图，一段固定描述","item":"https://ai.tvcn.org/article/consistency/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/consistency/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>角色一致性：一张参考图，一段固定描述</span></div>
+    <header class="article-hero"><p class="eyebrow">AI / 一致性</p><h1>角色一致性：一张参考图，一段固定描述</h1><p class="article-deck">生成一百张脸不难，难的是第一百张还像同一个人。把脸、服装、场景写成可复用的锚点，再开始批量生成。</p><div class="article-meta"><span>2 分钟速读 + 6 分钟深读 · 进阶</span><span><a href="../../about/#desk-ai">TVCN AI 组</a></span><span>编辑 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">五个固定特征</a></li><li><a href="#section-2">参考图只留一张</a></li><li><a href="#section-3">记录参数</a></li><li><a href="#section-4">继续往下：给已经在拍的人</a></li><li><a href="#section-5">先做角色表</a></li><li><a href="#section-6">先定空间再定人</a></li><li><a href="#section-7">镜头顺序会影响一致性</a></li><li><a href="#section-8">五分钟练习：三张同人</a></li><li><a href="#section-9">什么时候算一致</a></li><li><a href="#section-10">一致性，十项检查</a></li><li><a href="#section-11">3 条验收</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section><h2 id="section-1">五个固定特征</h2><p>给角色写五个不再更改的特征：年龄、发型、服装、体型、一个记忆点（疤、眼镜、旧手表）。不要写“帅”“温柔”，那不可复现。</p><p>每个特征都要能被看见。记忆点是观众下次认出他的线索，也是模型保持同一张脸的抓手。</p></section><section><h2 id="section-2">参考图只留一张</h2><p>参考图太多，模型会互相打架。选一张正面或三分之四侧脸，光线均匀，背景干净，作为唯一的脸部参考。</p><p>服装和场景另建参考，不要塞进同一张图。脸、衣服、空间分开锁，修改时才不会一起崩。</p></section><section><h2 id="section-3">记录参数</h2><p>每次生成记录：模型版本、种子、提示词、参考图编号、分辨率。把它们写进一个表，下一镜原样复用。</p><p>如果一张图对了，先复现它，再改动作。不要在同一轮里同时改脸、服装和镜头，否则你不知道哪个变量起了作用。</p></section></article><div class="check-box check-box-after"><h2 id="section-11">3 条验收</h2><ul><li>角色卡有 5 个不再更改的可见特征。</li><li>同一角色三张图能看出是同一个人。</li><li>生成记录能复现同一条。</li></ul></div>
+    <section class="deep-dive">
+      <header class="deep-dive-head">
+        <p class="eyebrow">DEEP DIVE / 07 MIN</p>
+        <h2 id="section-4">继续往下：给已经在拍的人</h2>
+        <p>一致性不是每张都像，是观众能把三张放在一起，仍然相信是同一个人、同一个房间。</p>
+        <span class="deep-dive-note">比现场手册多走一步</span>
+      </header>
+      <article class="article-body"><section><h2 id="section-5">先做角色表</h2><p>一张正面、一张侧面、一张半身，写清发型、眉形、鼻型、脸型、肤色、年龄、固定衣服；每次生成都带这三张，不要只带一张。</p><p>角色表里加“不能变”的三项：痣、耳环、发缝；三项固定，观众才有锚点。</p></section><section><h2 id="section-6">先定空间再定人</h2><p>同一场景先出三张空镜：全景、中景、反打；确认墙、窗、桌、灯的相对位置，再让人物进去。空间一变，人物再稳也像换剧组。</p><p>给场景写一张“空间表”：门在哪、窗在哪、光从哪边来、桌面有什么；每次生成按表检查。</p></section><section><h2 id="section-7">镜头顺序会影响一致性</h2><p>先拍全景定关系，再拍中景定动作，最后拍近景定情绪；不要先做近景，再让全景去猜空间。近景最容易崩，放在最后做。</p><p>同一场景的镜头放在同一天生成，参数和参考图不变；隔几天再生成，模型和你的记忆都变了。</p></section><section><h2 id="section-8">五分钟练习：三张同人</h2><p>用同一角色表生成三张：正面半身、侧面、手部动作；只改机位，不改衣服和光。把三张并排，找第一眼不一样的地方。</p><p>找到的那一处，就是下次要写进“不能变”的锚点；不要靠后期修，先改参考和提示词。</p></section><section><h2 id="section-9">什么时候算一致</h2><p>三张并排，陌生人能认出是同一个人；人物放进全景，和近景的衣服、发型、光向一致；换一个镜头顺序，仍然成立。三项都过，才算一致。</p><p>只能在一张里好看，不叫一致；一致是跨镜头仍然可信。</p></section><section><h2 id="section-10">一致性，十项检查</h2><ul><li>正面侧面半身三张角色表</li><li>发型眉形鼻型脸型写清</li><li>三项不能变的锚点</li><li>先出三张空镜定空间</li><li>空间表写门窗光位</li><li>全景中景近景顺序</li><li>近景最后做</li><li>同场景同一天生成</li><li>参数参考图不变</li><li>陌生人能认出同一人</li></ul><p>一致性不是把三张修得一样，是让三张在空间和时间里都说得通。</p></section></article>
+    </section>
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://c2pa.org/" target="_blank" rel="noopener">C2PA</a> · <a href="https://openai.com/sora/" target="_blank" rel="noopener">OpenAI Sora</a> · <a href="https://deepmind.google/models/veo/" target="_blank" rel="noopener">Google Veo</a></p></aside>
+    <div class="related"><a href="../../article/image-to-video/">图生视频：首帧、尾帧、运动 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/ai-character-sheet/">AI 角色卡：三视图与固定描述 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/ai-shot-list/">AI 镜头表：一条提示只拍一个镜头 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../article/ai-qc/"><span class="mono">上一篇</span>AI 后期质检：把生成错误挡在交付前</a><a href="../../article/image-to-video/"><span class="mono">下一篇</span>图生视频：首帧、尾帧、运动</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/consistency" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

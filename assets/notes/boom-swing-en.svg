@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Boom Swing: Follow the Chest">
+<rect width="1280" height="720" fill="#11100f"/>
+<rect x="0" y="0" width="1280" height="720" fill="url(#g)"/>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(61,109,138,0.13)"/><stop offset=".55" stop-color="#11100f" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient></defs>
+<g opacity=".22" stroke="#f3efe7" stroke-width=".6">
+<line x1="0" y1="96" x2="1280" y2="96"/><line x1="0" y1="624" x2="1280" y2="624"/><line x1="72" y1="0" x2="72" y2="720"/><line x1="1208" y1="0" x2="1208" y2="720"/>
+</g>
+<path d="M72 62 L72 44 L90 44" fill="none" stroke="#3d6d8a" stroke-width="1.4"/>
+<path d="M1208 658 L1208 676 L1190 676" fill="none" stroke="#3d6d8a" stroke-width="1.4"/>
+<text x="72" y="82" fill="#3d6d8a" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" letter-spacing="2">TVCN / 07 / TUTORIAL</text>
+<text x="1208" y="82" text-anchor="end" fill="#f3efe7" fill-opacity=".45" font-family="ui-monospace,Consolas,monospace" font-size="14">221 / 348</text>
+<circle cx="1010" cy="320" r="145" fill="none" stroke="#f3efe7" stroke-opacity=".3"/>
+<line x1="1128.0" y1="320.0" x2="1155.0" y2="320.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1124.0" y1="350.5" x2="1137.5" y2="354.2" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1112.2" y1="379.0" x2="1124.3" y2="386.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1093.4" y1="403.4" x2="1103.3" y2="413.3" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1069.0" y1="422.2" x2="1076.0" y2="434.3" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1040.5" y1="434.0" x2="1044.2" y2="447.5" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1010.0" y1="438.0" x2="1010.0" y2="465.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="979.5" y1="434.0" x2="975.8" y2="447.5" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="951.0" y1="422.2" x2="944.0" y2="434.3" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="926.6" y1="403.4" x2="916.7" y2="413.3" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="907.8" y1="379.0" x2="895.7" y2="386.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="896.0" y1="350.5" x2="882.5" y2="354.2" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="892.0" y1="320.0" x2="865.0" y2="320.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="896.0" y1="289.5" x2="882.5" y2="285.8" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="907.8" y1="261.0" x2="895.7" y2="254.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="926.6" y1="236.6" x2="916.7" y2="226.7" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="951.0" y1="217.8" x2="944.0" y2="205.7" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="979.5" y1="206.0" x2="975.8" y2="192.5" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1010.0" y1="202.0" x2="1010.0" y2="175.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1040.5" y1="206.0" x2="1044.2" y2="192.5" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1069.0" y1="217.8" x2="1076.0" y2="205.7" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1093.4" y1="236.6" x2="1103.3" y2="226.7" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1112.2" y1="261.0" x2="1124.3" y2="254.0" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1124.0" y1="289.5" x2="1137.5" y2="285.8" stroke="#3d6d8a" stroke-opacity=".7"/>
+<line x1="1010" y1="320" x2="1046.2" y2="226.8" stroke="#3d6d8a" stroke-width="2"/>
+<text x="72" y="290" fill="#f3efe7" font-family="ui-sans-serif,system-ui,sans-serif" font-size="50" font-weight="700" letter-spacing="-2"><tspan x="72" dy="0">Boom Swing: Follow the</tspan><tspan x="72" dy="56.00000000000001">Chest</tspan></text>
+<text x="72" y="424.0" fill="#f3efe7" fill-opacity=".62" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="19" letter-spacing="-.3"><tspan x="72" dy="0">吊杆移动：跟着台词走</tspan></text>
+<rect x="72" y="594" width="116" height="2" fill="#3d6d8a"/>
+<text x="72" y="626" fill="#f3efe7" fill-opacity=".42" font-family="ui-monospace,Consolas,monospace" font-size="12">BOOM-SWING</text>
+<text x="1208" y="626" text-anchor="end" fill="#f3efe7" fill-opacity=".42" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">FIELD NOTE / 现场手册</text>
+</svg>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>Aspect Ratio Calculator: Crop and Safe Area · TVCN</title>
+<meta name="description" content="Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.">
+
+<meta name="author" content="TVCN Tools Desk">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://tvcn.org/en/article/aspect-calculator/">
+<link rel="alternate" hreflang="zh-CN" href="https://tvcn.org/article/aspect-calculator/">
+<link rel="alternate" hreflang="en" href="https://tvcn.org/en/article/aspect-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tvcn.org/article/aspect-calculator/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aspect Ratio Calculator: Crop and Safe Area · TVCN">
+<meta property="og:description" content="Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.">
+<meta property="og:url" content="https://tvcn.org/en/article/aspect-calculator/">
+<meta property="og:image" content="https://tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="Aspect Ratio Calculator: Crop and Safe Area">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aspect Ratio Calculator: Crop and Safe Area · TVCN">
+<meta name="twitter:description" content="Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.">
+<meta name="twitter:image" content="https://tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="Aspect Ratio Calculator: Crop and Safe Area">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"Aspect Ratio Calculator: Crop and Safe Area","description":"Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.","image":["https://tvcn.org/assets/og-cover.png"],"inLanguage":"en","url":"https://tvcn.org/en/article/aspect-calculator/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"Aspect Ratio Calculator: Crop and Safe Area","author":{"@type":"Organization","name":"TVCN Tools Desk","url":"https://tvcn.org/en/about/#desk-tools"},"mainEntityOfPage":"https://tvcn.org/en/article/aspect-calculator/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/en/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://tools.tvcn.org/en/"},{"@type":"ListItem","position":3,"name":"Aspect Ratio Calculator: Crop and Safe Area","item":"https://tvcn.org/en/article/aspect-calculator/"}]}]}</script>
+<link rel="stylesheet" href="../../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../../en/">TVCN<span>Video Production Knowledge</span></a>
+    <nav class="static-nav site-nav" aria-label="Site navigation">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">History</a>
+      <a class="icon-btn search-btn" href="../../../en/search/" aria-label="Search the library">Search</a>
+      <a class="icon-btn lang-btn" href="../../../article/aspect-calculator/" hreflang="zh-CN">中文</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">Theme</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://tools.tvcn.org/">Tools</a><span>/</span><span>Aspect Ratio Calculator: Crop and Safe Area</span></div>
+    <header class="article-hero"><p class="eyebrow">Tools / Calculator</p><h1>Aspect Ratio Calculator: Crop and Safe Area</h1><p class="article-deck">Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.</p><div class="article-meta"><span>3 min read · Field note</span><span><a href="../../../en/about/#desk-tools">TVCN Tools Desk</a></span><span>Edited 2026-11</span></div></header><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <img src="../../../assets/notes/aspect-calculator-en.svg" alt="Concept image for Aspect Ratio Calculator: Crop and Safe Area" loading="lazy" decoding="async" width="1280" height="720">
+    <figcaption><span>Illustration, not a photo.</span><span class="mono">TVCN diagram</span> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption>
+  </figure><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Formula and safe area</a></li><li><a href="#section-2">Three common conversions</a></li><li><a href="#section-3">Limits</a></li><li><a href="#section-4">On set</a></li><li><a href="#section-5">Do this</a></li><li><a href="#section-6">Avoid</a></li><li><a href="#section-7">Aspect-ratio crop calculator</a></li><li><a href="#section-8">3 checks</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section class="editorial-depth"><h2 id="section-1">Formula and safe area</h2><p>Aspect ratio = <strong>width ÷ height</strong>. Cropping 16:9 to 9:16 keeps width = original height × 9 ÷ 16; a 3840×2160 frame becomes 1215×2160, losing about 1312 pixels on each side.</p><h2 id="section-2">Three common conversions</h2><ul><li>16:9 → 1:1: keep 2160×2160, lose 840 pixels each side.</li><li>16:9 → 4:5: keep 1728×2160, lose 1056 each side.</li><li>When shooting 9:16, keep the subject inside the central 1080-wide safe area.</li></ul><h2 id="section-3">Limits</h2><p>A crop is not a recomposition; action and subtitles must stay inside the safe area. Platforms crop again, so check the platform preview before delivery.</p></section><figure class="diagram" data-image-nature="editorial-illustration">
+    <div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / Calculator</div><h3 class="diagram-title">Three-step flow</h3></div><span class="mono">TVCN</span></div>
+    <div class="diagram-body"><img class="diagram-svg" src="../../../assets/notes/aspect-calculator-steps-en.svg" alt="Aspect Ratio Calculator: Crop and Safe Area three-step diagram" loading="lazy" decoding="async" width="1280" height="720"></div>
+    
+    <figcaption> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption>
+  </figure><section><h2 id="section-4">On set</h2><p>4K 16:9 cropped to 9:16 leaves about 1215×2160. Confirm the pixels are enough and redraw safe areas per platform.</p></section><section><h2 id="section-5">Do this</h2><p>An aspect-ratio calculator first computes effective pixels after crop, then the safe area; vertical is not just cropping the sides.</p><ol><li>4K 16:9 cropped to 9:16 leaves about 1215×2160.</li><li>Confirm the pixel count is enough.</li><li>Redraw the safe area for the platform.</li></ol></section><section><h2 id="section-6">Avoid</h2><p>Do not crop landscape into vertical blindly; effective pixels halve and close-ups soften.</p></section><section class="calc-widget" data-calculator="aspect-calculator">
+<h2 id="section-7">Aspect-ratio crop calculator</h2>
+<p class="calc-lede">Finds the largest crop at the target ratio and reports kept pixels and crop percentage.</p>
+<div class="calc-grid"><label class="calc-field"><span>Source width (px)</span><input type="number" inputmode="decimal" data-calc="width" data-default="3840" value="3840" step="1" min="1"></label><label class="calc-field"><span>Source height (px)</span><input type="number" inputmode="decimal" data-calc="height" data-default="2160" value="2160" step="1" min="1"></label><label class="calc-field"><span>Target ratio</span><select data-calc="ratio" data-default="9:16"><option value="1:1">1:1 square</option><option value="4:5">4:5 vertical</option><option value="9:16" selected>9:16 full screen</option><option value="16:9">16:9 horizontal</option><option value="2.35:1">2.35:1 widescreen</option></select></label></div>
+<div class="calc-output" aria-live="polite"><strong data-out="result">Crop —</strong><span data-out="detail">Protect the subject first, then trim edges; do not center-crop blindly.</span></div>
+<div class="calc-actions"><button type="button" data-reset>Reset defaults</button></div>
+<p class="calc-formula">Compare source and target ratios: if wider, crop width; if taller, crop height. Keep the other axis.</p>
+<noscript><p class="calc-noscript">With JavaScript off: 3840×2160 to 9:16 keeps 1215×2160.</p></noscript>
+</section><script src="../../assets/calculators.js" defer></script><p class="media-disclosure"><strong>Image note.</strong> Covers, diagrams and step images on this page are editorial illustrations or structure diagrams, not photographs of a test performed here; they are not evidence of measured gear performance. Where an image is AI-assisted, the caption says so. Read the test conditions in the text before treating an image as proof.</p></article><div class="check-box check-box-after"><h2 id="section-8">3 checks</h2><ul><li>Cropped effective pixels are numeric, about 1215×2160.</li><li>Pixels meet delivery needs without upscaling.</li><li>The safe area is redrawn for vertical platforms, not reused from landscape.</li></ul></div></article>
+    
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">Sources</p><span class="mono">Experience</span></div><p class="source-types">Experience source: TVCN field notes and public-spec checks; no lab measurement or external data citation on this page.</p></aside>
+    <div class="related"><a href="../../../en/article/subtitle-cps/">Subtitle CPS: Can They Read It? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../../en/article/budget-calculator/">Budget Calculator: Four Buckets <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../../en/article/bitrate-calculator/">Bitrate Calculator: How Big Is the File? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../../en/article/subtitle-cps/"><span class="mono">PREVIOUS</span>Subtitle CPS: Can They Read It?</a><a href="../../../en/article/buy-camera-budget/"><span class="mono">NEXT</span>Buying a Camera: Budget Before Body</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="Footer site navigation"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+  <div class="static-footer-inner">
+    <span>Text and diagrams CC BY-SA 4.0 · Code MIT</span>
+    <span><a href="../../../en/about/">About and standards</a> · <a href="../../../en/glossary/">Glossary</a> · <a href="../../../en/about/#corrections">Trust and corrections</a> · <a href="../../../app/?lang=en&r=article/aspect-calculator" rel="nofollow">Interactive</a> · <a href="../../../en/search/">Search</a> · <a href="../../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="Bottom site navigation"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

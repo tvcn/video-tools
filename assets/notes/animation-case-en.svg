@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Animation Case: From Board to Final">
+<rect width="1280" height="720" fill="#11100f"/>
+<rect x="0" y="0" width="1280" height="720" fill="url(#g)"/>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(176,107,62,0.13)"/><stop offset=".55" stop-color="#11100f" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient></defs>
+<g opacity=".22" stroke="#f3efe7" stroke-width=".6">
+<line x1="0" y1="96" x2="1280" y2="96"/><line x1="0" y1="624" x2="1280" y2="624"/><line x1="72" y1="0" x2="72" y2="720"/><line x1="1208" y1="0" x2="1208" y2="720"/>
+</g>
+<path d="M72 62 L72 44 L90 44" fill="none" stroke="#b06b3e" stroke-width="1.4"/>
+<path d="M1208 658 L1208 676 L1190 676" fill="none" stroke="#b06b3e" stroke-width="1.4"/>
+<text x="72" y="82" fill="#b06b3e" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" letter-spacing="2">TVCN / 05 / CASE</text>
+<text x="1208" y="82" text-anchor="end" fill="#f3efe7" fill-opacity=".45" font-family="ui-monospace,Consolas,monospace" font-size="14">145 / 348</text>
+<circle cx="850" cy="390.0" r="6" fill="#b06b3e" fill-opacity="0.25"/>
+<circle cx="888" cy="332.59748514523653" r="8" fill="#b06b3e" fill-opacity="0.33"/>
+<circle cx="926" cy="283.93398282201787" r="10" fill="#b06b3e" fill-opacity="0.41000000000000003"/>
+<circle cx="964" cy="251.418070123307" r="6" fill="#b06b3e" fill-opacity="0.49"/>
+<circle cx="1002" cy="240.0" r="8" fill="#b06b3e" fill-opacity="0.5700000000000001"/>
+<circle cx="1040" cy="251.418070123307" r="10" fill="#b06b3e" fill-opacity="0.65"/>
+<circle cx="1078" cy="283.93398282201787" r="6" fill="#b06b3e" fill-opacity="0.73"/>
+<circle cx="1116" cy="332.59748514523653" r="8" fill="#b06b3e" fill-opacity="0.81"/>
+<circle cx="1154" cy="390.0" r="10" fill="#b06b3e" fill-opacity="0.89"/>
+<polyline points="850.0,390.0 888.0,332.6 926.0,283.9 964.0,251.4 1002.0,240.0 1040.0,251.4 1078.0,283.9 1116.0,332.6 1154.0,390.0" fill="none" stroke="#f3efe7" stroke-opacity=".28" stroke-width="1"/>
+<text x="72" y="290" fill="#f3efe7" font-family="ui-sans-serif,system-ui,sans-serif" font-size="44" font-weight="700" letter-spacing="-2"><tspan x="72" dy="0">Animation Case: From Board</tspan><tspan x="72" dy="49.28">to Final</tspan></text>
+<text x="72" y="410.56" fill="#f3efe7" fill-opacity=".62" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="19" letter-spacing="-.3"><tspan x="72" dy="0">短片复盘：从分镜到成片</tspan></text>
+<rect x="72" y="594" width="116" height="2" fill="#b06b3e"/>
+<text x="72" y="626" fill="#f3efe7" fill-opacity=".42" font-family="ui-monospace,Consolas,monospace" font-size="12">ANIMATION-CASE</text>
+<text x="1208" y="626" text-anchor="end" fill="#f3efe7" fill-opacity=".42" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">FIELD NOTE / 现场手册</text>
+</svg>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>停运与降级模型：旧项目怎么迁移 · TVCN</title>
+<meta name="description" content="Sora 网页/App 已于 2026-04-26 停运、API 于 2026-09-24 停运；Gen-3 Alpha 与 Turbo 也已退役。旧项目先导出、再换模型、最后重测。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/model-sunset/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/model-sunset/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/model-sunset/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/model-sunset/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="停运与降级模型：旧项目怎么迁移 · TVCN">
+<meta property="og:description" content="Sora 网页/App 已于 2026-04-26 停运、API 于 2026-09-24 停运；Gen-3 Alpha 与 Turbo 也已退役。旧项目先导出、再换模型、最后重测。">
+<meta property="og:url" content="https://ai.tvcn.org/article/model-sunset/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="停运与降级模型：旧项目怎么迁移">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="停运与降级模型：旧项目怎么迁移 · TVCN">
+<meta name="twitter:description" content="Sora 网页/App 已于 2026-04-26 停运、API 于 2026-09-24 停运；Gen-3 Alpha 与 Turbo 也已退役。旧项目先导出、再换模型、最后重测。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="停运与降级模型：旧项目怎么迁移">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"停运与降级模型：旧项目怎么迁移","description":"Sora 网页/App 已于 2026-04-26 停运、API 于 2026-09-24 停运；Gen-3 Alpha 与 Turbo 也已退役。旧项目先导出、再换模型、最后重测。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/model-sunset/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"停运与降级模型：旧项目怎么迁移","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/model-sunset/","datePublished":"2026-11-20","dateModified":"2026-11-24"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"停运与降级模型：旧项目怎么迁移","item":"https://ai.tvcn.org/article/model-sunset/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/model-sunset/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+<div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>停运与降级模型：旧项目怎么迁移</span></div>
+<header class="article-hero"><p class="eyebrow">AI 影像 / 模型与成本</p><h1>停运与降级模型：旧项目怎么迁移</h1><p class="article-deck">Sora 网页/App 已于 2026-04-26 停运、API 于 2026-09-24 停运；Gen-3 Alpha 与 Turbo 也已退役。旧项目先导出、再换模型、最后重测。</p><div class="article-meta"><span>3 分钟阅读 · 停运表</span><span>TVCN AI Desk</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">适用与不适用 / Fit and no-fit</a></li><li><a href="#section-2">怎么做 / Do this</a></li><li><a href="#section-3">参数与判断 / Parameters</a></li><li><a href="#section-4">别踩 / Avoid</a></li><li><a href="#section-5">继续往下 / Go deeper</a></li><li><a href="#section-6">验收 / Checks</a></li></ol></nav>
+
+<article class="article-body"><section><h2 id="section-1">适用与不适用 <small class='muted'>/ Fit and no-fit</small></h2><ul><li><span>手里有旧模型生成的项目、需要重新交付/续集的团队。</span><br><span class='muted'>Teams with projects made on retired models needing redelivery or sequels.</span></li><li><span>采购新模型前要做迁移风险评估的制片。</span><br><span class='muted'>Producers assessing migration risk before a new purchase.</span></li><li><span>不适用：全新项目、无旧素材依赖。</span><br><span class='muted'>Not for: brand-new projects with no legacy dependency.</span></li></ul></section><section><h2 id="section-2">怎么做 <small class='muted'>/ Do this</small></h2><ol><li><span>先导出全部旧成片、提示词、参考图、工程文件。</span><br><span class='muted'>Export all old masters, prompts, references and project files.</span></li><li><span>列一张依赖表：哪些镜头必须重生成、哪些可保留。</span><br><span class='muted'>List dependencies: shots to regenerate vs shots to keep.</span></li><li><span>为每个旧镜头找 1 个主替代 + 1 个备替代。</span><br><span class='muted'>Find one primary and one backup for each legacy shot.</span></li><li><span>用同题测试重跑 3 次，比较人物/运动/音频。</span><br><span class='muted'>Rerun the same prompt three times and compare face/motion/audio.</span></li><li><span>更新合同、标注和交付说明，避免旧模型名残留。</span><br><span class='muted'>Update contracts, labels and delivery notes; remove old model names.</span></li></ol></section><section><h2 id="section-3">参数与判断 <small class='muted'>/ Parameters</small></h2><table class='spec-table'><thead><tr><th>项目 / Item</th><th>本页口径 / This page</th></tr></thead><tbody><tr><td><b>Sora 网页/App</b><br><span class='muted'>Sora web/app</span></td><td>2026-04-26 停止<br><span class='muted'>Ended 2026-04-26</span></td></tr><tr><td><b>Sora API</b><br><span class='muted'>Sora API</span></td><td>2026-09-24 停止<br><span class='muted'>Ended 2026-09-24</span></td></tr><tr><td><b>Runway Gen-3 Alpha</b><br><span class='muted'>Runway Gen-3 Alpha</span></td><td>2026-07-08 退役<br><span class='muted'>Retired 2026-07-08</span></td></tr><tr><td><b>Runway Gen-3 Alpha Turbo</b><br><span class='muted'>Runway Gen-3 Alpha Turbo</span></td><td>2026-07-30 退役<br><span class='muted'>Retired 2026-07-30</span></td></tr></tbody></table></section><section><h2 id="section-4">别踩 <small class='muted'>/ Avoid</small></h2><ul><li><span>以为“停运=还能用”；API 停运后调用直接失败。</span><br><span class='muted'>Assuming “retired = still works”; API calls fail after shutdown.</span></li><li><span>只导出成片，不导出提示词/参考图；无法复现。</span><br><span class='muted'>Exporting masters only, not prompts/references; cannot reproduce.</span></li><li><span>新模型同名参数直接照搬；版本差异会让运动崩。</span><br><span class='muted'>Copying parameters across models; motion breaks.</span></li></ul></section><section><h2 id="section-5">继续往下 <small class='muted'>/ Go deeper</small></h2><p>停运不是“新闻”，是项目风险。Sora 的网页/App 在 4 月 26 日结束，API 在 9 月 24 日结束；如果你在 10 月还在排 Sora 镜头，问题不是模型好不好，而是交付能不能发生。采购表里要有一列“生命周期状态”。</p><p>迁移的正确顺序是导出、拆分依赖、替代测试、再重生成；不是“找个新模型把旧提示词粘过去”。旧项目的价值在提示词、参考图和工程结构，不在那条成片。先把资产拿回来，再谈新模型。</p></section><section><h2 id="section-6">验收 <small class='muted'>/ Checks</small></h2><ul><li><span>旧项目全部成片、提示词、参考图、工程文件已导出。</span><br><span class='muted'>All masters, prompts, references and project files exported.</span></li><li><span>每个旧镜头有主/备替代模型。</span><br><span class='muted'>Every legacy shot has primary and backup models.</span></li><li><span>替代模型同题跑 3 次，失败类型有记录。</span><br><span class='muted'>Replacement tested three times with failure types logged.</span></li><li><span>合同/标注/交付说明不再引用停运模型。</span><br><span class='muted'>Contracts, labels and delivery notes no longer cite retired models.</span></li></ul></section><div class="related"><a href="../../article/model-radar/">模型雷达 →</a><a href="../../article/model-changelog/">变更日志 →</a><a href="../../article/ai-procurement-rights/">采购与商用 →</a><a href="../../article/ai-delivery-specs/">交付规格 →</a></div><aside class="article-sources"><p class="source-types">参考来源，价格与可用性以官方页为准。</p><ul><li><a href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation" target="_blank" rel="noopener">OpenAI Sora 停运说明</a></li><li><a href="https://comparebestai.com/articles/runway-ai-video-generation-review" target="_blank" rel="noopener">Runway 模型退役</a></li></ul></aside></article>
+</div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/model-sunset" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

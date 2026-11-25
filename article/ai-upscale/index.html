@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>AI 放大：别把噪点放大 · TVCN</title>
+<meta name="description" content="AI 放大先看噪点和边缘；把噪点放大成细节，是最常见的假清晰。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/ai-upscale/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/ai-upscale/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/ai-upscale/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/ai-upscale/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 放大：别把噪点放大 · TVCN">
+<meta property="og:description" content="AI 放大先看噪点和边缘；把噪点放大成细节，是最常见的假清晰。">
+<meta property="og:url" content="https://ai.tvcn.org/article/ai-upscale/">
+<meta property="og:image" content="https://tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="AI 放大：别把噪点放大">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI 放大：别把噪点放大 · TVCN">
+<meta name="twitter:description" content="AI 放大先看噪点和边缘；把噪点放大成细节，是最常见的假清晰。">
+<meta name="twitter:image" content="https://tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="AI 放大：别把噪点放大">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"AI 放大：别把噪点放大","description":"AI 放大先看噪点和边缘；把噪点放大成细节，是最常见的假清晰。","image":["https://tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/ai-upscale/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"AI 放大：别把噪点放大","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/ai-upscale/","datePublished":"2026-11-20","dateModified":"2026-11-23"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"AI 放大：别把噪点放大","item":"https://ai.tvcn.org/article/ai-upscale/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/ai-upscale/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>AI 放大：别把噪点放大</span></div>
+    <header class="article-hero"><p class="eyebrow">AI 影像 / AI 后期</p><h1>AI 放大：别把噪点放大</h1><p class="article-deck">AI 放大先看噪点和边缘；把噪点放大成细节，是最常见的假清晰。</p><div class="article-meta"><span>3 分钟阅读 · AI 画质</span><span><a href="../../about/#desk-ai">TVCN AI 组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">现场</a></li><li><a href="#section-2">怎么做</a></li><li><a href="#section-3">别踩</a></li><li><a href="#section-4">适用边界</a></li><li><a href="#section-5">放大顺序</a></li><li><a href="#section-6">假清晰</a></li><li><a href="#section-7">放大验收记录</a></li><li><a href="#section-8">放大记录</a></li><li><a href="#section-9">交付分辨率先定</a></li><li><a href="#section-10">3 条验收</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section><h2 id="section-1">现场</h2><p>先用 50% 放大看噪点，再用 200% 看边缘；如果噪点变成细节，降低锐化或换模型。</p></section><section><h2 id="section-2">怎么做</h2><p>AI 放大先看噪点和边缘；把噪点放大成细节，是最常见的假清晰。</p><ol><li>先用 50% 放大看噪点。</li><li>再用 200% 看边缘，确认没有把噪点当纹理。</li><li>如果噪点变成细节，降低锐化或换模型。</li></ol></section><section><h2 id="section-3">别踩</h2><p>别把锐化拉满当清晰；噪点一放大，画面更脏。</p></section><section><h2 id="section-4">适用边界</h2><p>AI 放大适合干净、轻微软、噪点少的素材；不适合严重欠曝、高压缩块、文字/logo、快速运动模糊。它不能恢复没拍到的细节，只能猜。猜出来的纹理不是证据。</p><p>先判断：如果原片在 100% 下已经糊成块，放大只会把块变成漂亮的块；如果是镜头软，放大可能有用。</p></section><section><h2 id="section-5">放大顺序</h2><ol><li>先轻降噪，再放大；不要先把噪点放大成纹理。</li><li>用 2 倍测试，和原片并排看 100%/200%；不要只看放大后的单帧。</li><li>放大后再做轻度锐化；锐化放在放大后，不要双份。</li><li>文字、脸、手单独检查；必要时用遮罩跳过。</li></ol></section><section><h2 id="section-6">假清晰</h2><ol><li>噪点变纹理：放大模型把噪点当细节；先降噪或换模型。</li><li>边缘光晕：锐化过度；降低锐化，检查高对比边缘。</li><li>文字变形：AI 猜字；文字镜头不要放大，重拍或矢量重做。</li><li>人脸塑料感：模型过度平滑；降低强度，保留皮肤纹理。</li></ol></section><section><h2 id="section-7">放大验收记录</h2><ul><li>100% 下没有新噪点/块；200% 下边缘没有光晕、锯齿。</li><li>和原片并排看，清晰度来自边缘，不是来自噪点。</li><li>文字、logo、手指没有变形；人脸保留皮肤纹理。</li><li>记录模型、倍率、降噪/锐化参数、源分辨率；交付版和原片都保留。</li></ul></section><section><h2 id="section-8">放大记录</h2><p>记源分辨率、模型、倍率、降噪与锐化参数、测试帧号、和原片并排的结果。交付版与源文件分开保存，别用放大版覆盖原始素材。</p></section><section><h2 id="section-9">交付分辨率先定</h2><p>先确认平台最终尺寸，再决定放大倍率；4K 交付不要从 1080p 放大到 8K 再缩回去。中间文件保留，方便回退。</p></section></article><div class="check-box check-box-after"><h2 id="section-10">3 条验收</h2><ul><li>50% 下噪点没有变成颗粒纹理。</li><li>200% 下边缘干净，没有光晕或锯齿。</li><li>和原始并排看，清晰度提升来自边缘，不是来自噪点。</li></ul></div>
+    
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p></aside>
+    <div class="related"><a href="../../article/ai-edit-assist/">AI 剪辑辅助：粗剪不等于成片 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/ai-rotoscope/">AI 抠像：边缘与头发 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/ai-denoise/">AI 降噪：先保对白 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../article/ai-denoise/"><span class="mono">上一篇</span>AI 降噪：先保对白</a><a href="../../article/ai-edit-assist/"><span class="mono">下一篇</span>AI 剪辑辅助：粗剪不等于成片</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/ai-upscale" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

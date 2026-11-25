@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>MiniMax H3: open weights, speed and cost · TVCN</title>
+<meta name="description" content="H3 is one of the few open-weight 15s video models, with native 32kHz stereo and 768p local / 2K hosted. Its license has regional limits; read it before commerci">
+
+<meta name="author" content="TVCN AI Desk">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/en/article/model-minimax-h3/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/model-minimax-h3/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/model-minimax-h3/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/model-minimax-h3/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MiniMax H3: open weights, speed and cost · TVCN">
+<meta property="og:description" content="H3 is one of the few open-weight 15s video models, with native 32kHz stereo and 768p local / 2K hosted. Its license has regional limits; read it before commerci">
+<meta property="og:url" content="https://ai.tvcn.org/en/article/model-minimax-h3/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="MiniMax H3: open weights, speed and cost">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MiniMax H3: open weights, speed and cost · TVCN">
+<meta name="twitter:description" content="H3 is one of the few open-weight 15s video models, with native 32kHz stereo and 768p local / 2K hosted. Its license has regional limits; read it before commerci">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="MiniMax H3: open weights, speed and cost">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"MiniMax H3: open weights, speed and cost","description":"H3 is one of the few open-weight 15s video models, with native 32kHz stereo and 768p local / 2K hosted. Its license has regional limits; read it before commerci","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"en","url":"https://ai.tvcn.org/en/article/model-minimax-h3/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"MiniMax H3: open weights, speed and cost","author":{"@type":"Organization","name":"TVCN AI Desk","url":"https://tvcn.org/en/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/en/article/model-minimax-h3/","datePublished":"2026-11-20","dateModified":"2026-11-24"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/en/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/en/"},{"@type":"ListItem","position":3,"name":"MiniMax H3: open weights, speed and cost","item":"https://ai.tvcn.org/en/article/model-minimax-h3/"}]}]}</script>
+<link rel="stylesheet" href="../../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../../en/">TVCN<span>Video Production Knowledge</span></a>
+    <nav class="static-nav site-nav" aria-label="Site navigation">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">History</a>
+      <a class="icon-btn search-btn" href="../../../en/search/" aria-label="Search the library">Search</a>
+      <a class="icon-btn lang-btn" href="../../../article/model-minimax-h3/" hreflang="zh-CN">中文</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">Theme</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+<div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://ai.tvcn.org/">AI Video</a><span>/</span><span>MiniMax H3: open weights, speed and cost</span></div>
+<header class="article-hero"><p class="eyebrow">AI Video / Model dossier</p><h1>MiniMax H3: open weights, speed and cost</h1><p class="article-deck">H3 is one of the few open-weight 15s video models, with native 32kHz stereo and 768p local / 2K hosted. Its license has regional limits; read it before commercial use.</p><div class="article-meta"><span>4 min read · Model dossier</span><span>TVCN AI Desk</span><span>Edited 2026-11</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Fit and no-fit / 适用与不适用</a></li><li><a href="#section-2">Do this / 怎么做</a></li><li><a href="#section-3">Parameters / 参数与判断</a></li><li><a href="#section-4">Avoid / 别踩</a></li><li><a href="#section-5">Go deeper / 继续往下</a></li><li><a href="#section-6">Checks / 验收</a></li></ol></nav>
+
+<article class="article-body"><section><h2 id="section-1">Fit and no-fit <small class='muted'>/ 适用与不适用</small></h2><ul><li><span>Teams needing local inference, fine-tuning/LoRA and data staying on-prem.</span></li><li><span>4–15s projects with native stereo and a budget below closed APIs.</span></li><li><span>Not for: US/EU/UK/South Korea entities, mandatory 4K, zero-ops teams.</span></li></ul></section><section><h2 id="section-2">Do this <small class='muted'>/ 怎么做</small></h2><ol><li><span>Read the H3 Community License for region and revenue terms.</span></li><li><span>Run 768p locally, then use H3-Regenerate-2K for hosted 2K.</span></li><li><span>Deliver 32kHz stereo; test dialogue language first.</span></li><li><span>Lock references and scoring before fine-tuning; do not use LoRA to hide script issues.</span></li><li><span>Cost by GPU hours + power + ops, not API list price.</span></li></ol></section><section><h2 id="section-3">Parameters <small class='muted'>/ 参数与判断</small></h2><table class='spec-table'><thead><tr><th>项目 / Item</th><th>本页口径 / This page</th></tr></thead><tbody><tr><td><b>时长</b><br><span class='muted'>Duration</span></td><td>4–15 秒<br><span class='muted'>4–15s</span></td></tr><tr><td><b>分辨率</b><br><span class='muted'>Resolution</span></td><td>本地 768p；托管 2K<br><span class='muted'>768p local; 2K hosted</span></td></tr><tr><td><b>音频</b><br><span class='muted'>Audio</span></td><td>32kHz 原生立体声<br><span class='muted'>32kHz native stereo</span></td></tr><tr><td><b>参考</b><br><span class='muted'>References</span></td><td>最多 9 图 + 3 视频 + 3 音频<br><span class='muted'>Up to 9 images + 3 videos + 3 audio</span></td></tr><tr><td><b>许可</b><br><span class='muted'>License</span></td><td>H3 Community License；排除 US/EU/UK/South Korea<br><span class='muted'>H3 Community License; excludes US/EU/UK/South Korea</span></td></tr><tr><td><b>价格</b><br><span class='muted'>Price</span></td><td>API 约 $0.08/秒 768p、$0.13/秒 2K<br><span class='muted'>API about $0.08/s 768p, $0.13/s 2K</span></td></tr></tbody></table></section><section><h2 id="section-4">Avoid <small class='muted'>/ 别踩</small></h2><ul><li><span>Reading “open” but not the region clause; excluded regions cannot use commercially.</span></li><li><span>Estimating VRAM from a 33B dense model; quantized still needs large or multi-GPU.</span></li><li><span>Treating local 768p as 2K delivery; 2K is a hosted regenerate.</span></li></ul></section><section><h2 id="section-5">Go deeper <small class='muted'>/ 继续往下</small></h2><p>H3&#x27;s pitch is moving closed-model capability on-prem, but local is not free: 33B dense, video+audio VAEs and long-sequence decode demand VRAM and parallelism. Validate on hosted API before buying GPUs.</p><p>Its license is not Apache: regional exclusions, revenue thresholds and attribution affect commercial use. Put license review first; if your team is in an excluded region, switch to Wan 2.2, LTX or a closed API before signing.</p></section><section><h2 id="section-6">Checks <small class='muted'>/ 验收</small></h2><ul><li><span>License region, revenue cap and attribution checked.</span></li><li><span>Both local and hosted costs calculated.</span></li><li><span>Dialogue language is in the 11 stable languages.</span></li><li><span>2K uses Regenerate-2K, not a 768p upscale.</span></li></ul></section><div class="related"><a href="../../../en/article/model-radar/">Model radar →</a><a href="../../../en/article/ai-self-host/">Self-hosting →</a><a href="../../../en/article/ai-procurement-rights/">Procurement →</a><a href="../../../en/article/model-wan-3/">Wan 3.0 →</a></div><aside class="article-sources"><p class="source-types">References; verify price and availability on the official page.</p><ul><li><a href="https://www.minimax.io/news/minimax-h3-open-source" target="_blank" rel="noopener">MiniMax H3 open source</a></li><li><a href="https://design.minimax.io/h3" target="_blank" rel="noopener">H3 license and deployment</a></li></ul></aside></article>
+</div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="Footer site navigation"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+  <div class="static-footer-inner">
+    <span>Text and diagrams CC BY-SA 4.0 · Code MIT</span>
+    <span><a href="../../../en/about/">About and standards</a> · <a href="../../../en/glossary/">Glossary</a> · <a href="../../../en/about/#corrections">Trust and corrections</a> · <a href="../../../app/?lang=en&r=article/model-minimax-h3" rel="nofollow">Interactive</a> · <a href="../../../en/search/">Search</a> · <a href="../../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="Bottom site navigation"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

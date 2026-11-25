@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>Animatic：配音、定时、改镜头 · TVCN</title>
+<meta name="description" content="Animatic 先放配音、定每条时长、再改分镜；没有声音，时间感是假的。">
+
+<meta name="author" content="TVCN 动画组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://tvcn.org/article/animatic-pipeline/">
+<link rel="alternate" hreflang="zh-CN" href="https://tvcn.org/article/animatic-pipeline/">
+<link rel="alternate" hreflang="en" href="https://tvcn.org/en/article/animatic-pipeline/">
+<link rel="alternate" hreflang="x-default" href="https://tvcn.org/article/animatic-pipeline/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Animatic：配音、定时、改镜头 · TVCN">
+<meta property="og:description" content="Animatic 先放配音、定每条时长、再改分镜；没有声音，时间感是假的。">
+<meta property="og:url" content="https://tvcn.org/article/animatic-pipeline/">
+<meta property="og:image" content="https://tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="Animatic：配音、定时、改镜头">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Animatic：配音、定时、改镜头 · TVCN">
+<meta name="twitter:description" content="Animatic 先放配音、定每条时长、再改分镜；没有声音，时间感是假的。">
+<meta name="twitter:image" content="https://tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="Animatic：配音、定时、改镜头">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"Animatic：配音、定时、改镜头","description":"Animatic 先放配音、定每条时长、再改分镜；没有声音，时间感是假的。","image":["https://tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://tvcn.org/article/animatic-pipeline/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"Animatic：配音、定时、改镜头","author":{"@type":"Organization","name":"TVCN 动画组","url":"https://tvcn.org/about/#desk-animation"},"mainEntityOfPage":"https://tvcn.org/article/animatic-pipeline/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"动画","item":"https://animation.tvcn.org/"},{"@type":"ListItem","position":3,"name":"Animatic：配音、定时、改镜头","item":"https://tvcn.org/article/animatic-pipeline/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/animatic-pipeline/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>Animatic：配音、定时、改镜头</span></div>
+    <header class="article-hero"><p class="eyebrow">动画 / 管线</p><h1>Animatic：配音、定时、改镜头</h1><p class="article-deck">Animatic 先放配音、定每条时长、再改分镜；没有声音，时间感是假的。</p><div class="article-meta"><span>2 分钟速读 + 6 分钟深读 · 现场手册</span><span><a href="../../about/#desk-animation">TVCN 动画组</a></span><span>编辑 2026-11</span><span class="deep-badge">DEEP / 6 MIN</span></div></header><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <img src="../../assets/notes/animatic-pipeline.svg" alt="Animatic：配音、定时、改镜头 概念图" loading="lazy" decoding="async" width="1280" height="720">
+    <figcaption><span>图解封面，非实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
+  </figure><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先定时间，再定细节</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">Animatic 先锁三样，再进动画</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-7">继续往下：给已经在拍的人</a></li><li><a href="#section-8">先定时间，再画细节</a></li><li><a href="#section-9">临时声音要能听懂</a></li><li><a href="#section-10">锁定再进动画</a></li><li><a href="#section-11">五分钟练习：三十秒动态分镜</a></li><li><a href="#section-12">什么时候算可以进动画</a></li><li><a href="#section-13">再看一遍总时长</a></li><li><a href="#section-14">动态分镜，十项检查</a></li><li><a href="#section-15">3 条验收</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section class="editorial-depth"><h2 id="section-1">先定时间，再定细节</h2><p>Animatic 用临时配音、简单画面和准确时长，检查镜头能不能接、节奏是否成立。每个镜头标秒数，配音先录，不要等动画完成再配。</p><p>把 animatic 当成可失败版本：如果这一版看不懂故事，后面加原画和特效也不会补救。</p><h2 id="section-2">边界</h2><p>Animatic 不是成品预览。不要在这里追求画面质量，但镜头长度和动作方向必须已经定下来。</p><h2 id="section-3">Animatic 先锁三样，再进动画</h2>
+<p>Animatic 的作用不是“好看”，是把时长、配音和镜头顺序锁死。三样没锁，动画一开工就会反复改。</p>
+<ol><li>配音：先录 scratch，按真实语速，不要用读稿节奏；台词长度决定镜头长度。</li><li>定时：按 24fps 或项目帧率排，给每个镜头标出入点/出点；不要用“大概 3 秒”。</li><li>音乐：只放 temp，标出需要留白的位置；temp 不能直接交付。</li></ol>
+<p>验收：把 animatic 给剪辑以外的人看，问“哪里想快进”。想快进的地方先剪短，再进 layout。</p></section><figure class="diagram" data-image-nature="editorial-illustration">
+    <div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / Pipeline</div><h3 class="diagram-title">三步流程</h3></div><span class="mono">TVCN</span></div>
+    <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/animatic-pipeline-steps.svg" alt="Animatic：配音、定时、改镜头 三步图解" loading="lazy" decoding="async" width="1280" height="720"></div>
+    
+    <figcaption> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
+  </figure><section><h2 id="section-4">现场</h2><p>先录配音，按真实语速定时；每镜写秒数，总时长控制在目标 110%；再补画。</p></section><section><h2 id="section-5">怎么做</h2><ol><li>先录配音，按真实语速定时。</li><li>每镜写秒数，总时长控制在目标 110%。</li><li>再补画，先锁时间。</li></ol></section><section><h2 id="section-6">别踩</h2><p>别先画完再配音；语速一改，所有镜头都要重排。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><div class="check-box check-box-after"><h2 id="section-15">3 条验收</h2><ul><li>配音按真实语速录好，每镜秒数来自它。</li><li>总时长不超过目标 110%，时间先锁死。</li><li>闭眼只听能听懂，睁眼静音能看懂。</li></ul></div></article>
+    <section class="deep-dive">
+      <header class="deep-dive-head">
+        <p class="eyebrow">DEEP DIVE / 06 MIN</p>
+        <h2 id="section-7">继续往下：给已经在拍的人</h2>
+        <p>动态分镜不是把故事板播一遍，是用临时声音和时间先验证片子成不成立。</p>
+        <span class="deep-dive-note">比现场手册多走一步</span>
+      </header>
+      <article class="article-body"><section><h2 id="section-8">先定时间，再画细节</h2><p>把每张故事板按预计秒数放进时间线，配临时对白和音效；先看总时长和节奏，不要先画漂亮的脸。</p><p>一个镜头超过四秒没有新信息，就剪短或拆开；动态分镜阶段改时间，比动画阶段改便宜十倍。</p></section><section><h2 id="section-9">临时声音要能听懂</h2><p>自己录一版对白，哪怕声音不好；观众要听懂信息，不是听配音质量。音效只放关键的：门、脚步、电话。</p><p>音乐先放一条临时轨，标出副歌和停顿；不要等到动画完成才找音乐，节奏会全部对不上。</p></section><section><h2 id="section-10">锁定再进动画</h2><p>动态分镜通过的标准：静音能看懂，关画面能听懂；两个都成立，才进布局和动画。</p><p>锁定后改一句台词，也要重算时间；不要一边做动画一边改故事。改故事的成本，永远比改动画低。</p></section><section><h2 id="section-11">五分钟练习：三十秒动态分镜</h2><p>用六张故事板、手机录的对白、两条音效，做一个三十秒动态分镜；每张标秒数，总时长不许超过三十秒。</p><p>静音看一遍，再闭眼听一遍；哪一遍不懂，就改哪一遍，不要加旁白解释。</p></section><section><h2 id="section-12">什么时候算可以进动画</h2><p>静音能看懂、闭眼能听懂、总时长在预算内、每一秒都有新信息、临时音乐能标出节奏点；五样都过，才进布局和动画。</p><p>如果有一秒需要旁白解释，剪掉或重画，不要留着到动画阶段再补。动态分镜的任务，就是把“看不懂”留在最便宜的阶段。</p></section><section><h2 id="section-13">再看一遍总时长</h2><p>把整条动态分镜连放三遍，第三遍还觉得哪一段想快进，那一段就是必须剪的；观众不会因为你看得久就原谅拖。先剪时间，再谈画风。</p></section><section><h2 id="section-14">动态分镜，十项检查</h2><ul><li>每张故事板标秒数</li><li>临时对白自己录</li><li>音效只放关键</li><li>临时音乐标副歌</li><li>先看总时长</li><li>四秒无新信息就剪</li><li>静音能看懂</li><li>闭眼能听懂</li><li>锁定后才进动画</li><li>改台词也重算时间</li></ul><p>动态分镜的唯一目的，是在还便宜的时候发现片子不成立。</p></section></article>
+    </section>
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">Blender Manual</a> · <a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener">After Effects User Guide</a> · <a href="https://docs.toonboom.com/" target="_blank" rel="noopener">Toon Boom Documentation</a></p></aside>
+    <div class="related"><a href="../../article/mg-rhythm/">动效节奏：音乐点与帧 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/asset-handoff/">资产交接：命名、版本、缓存 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/blockout/">Blockout：先定比例和机位 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../article/mg-rhythm/"><span class="mono">上一篇</span>动效节奏：音乐点与帧</a><a href="../../article/asset-handoff/"><span class="mono">下一篇</span>资产交接：命名、版本、缓存</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/animatic-pipeline" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

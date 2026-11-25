@@ -1,0 +1,2 @@
+date,test_id,machine_firmware,lens,software,room_temp_c,method,variable,raw_reading,pass_fail,failure_condition,file_path
+YYYY-MM-DD,RS-01,body v1.0,24mm,Resolve 19,22,pan 2s,straight line bends px,<reading>,pass/fail,<condition>,notes/RS-01.md

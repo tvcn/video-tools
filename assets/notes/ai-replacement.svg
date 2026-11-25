@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="AI 补拍：别换掉演员的脸">
+<rect width="1280" height="720" fill="#11100f"/>
+<rect x="0" y="0" width="1280" height="720" fill="url(#g)"/>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(91,95,158,0.13)"/><stop offset=".55" stop-color="#11100f" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient></defs>
+<g opacity=".22" stroke="#f3efe7" stroke-width=".6">
+<line x1="0" y1="96" x2="1280" y2="96"/><line x1="0" y1="624" x2="1280" y2="624"/><line x1="72" y1="0" x2="72" y2="720"/><line x1="1208" y1="0" x2="1208" y2="720"/>
+</g>
+<path d="M72 62 L72 44 L90 44" fill="none" stroke="#5b5f9e" stroke-width="1.4"/>
+<path d="M1208 658 L1208 676 L1190 676" fill="none" stroke="#5b5f9e" stroke-width="1.4"/>
+<text x="72" y="82" fill="#5b5f9e" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" letter-spacing="2">TVCN / 04 / HYBRID WORKFLOW</text>
+<text x="1208" y="82" text-anchor="end" fill="#f3efe7" fill-opacity=".45" font-family="ui-monospace,Consolas,monospace" font-size="14">121 / 348</text>
+<line x1="900" y1="210" x2="1030" y2="180" stroke="#5b5f9e" stroke-opacity=".5" stroke-width="1"/>
+<line x1="1030" y1="180" x2="1130" y2="270" stroke="#5b5f9e" stroke-opacity=".5" stroke-width="1"/>
+<line x1="1130" y1="270" x2="1080" y2="390" stroke="#5b5f9e" stroke-opacity=".5" stroke-width="1"/>
+<line x1="1080" y1="390" x2="950" y2="430" stroke="#5b5f9e" stroke-opacity=".5" stroke-width="1"/>
+<line x1="950" y1="430" x2="860" y2="330" stroke="#5b5f9e" stroke-opacity=".5" stroke-width="1"/>
+<line x1="860" y1="330" x2="1000" y2="300" stroke="#5b5f9e" stroke-opacity=".5" stroke-width="1"/>
+<circle cx="900" cy="210" r="8" fill="#f3efe7" fill-opacity="0.55"/>
+<circle cx="1030" cy="180" r="8" fill="#f3efe7" fill-opacity="0.55"/>
+<circle cx="1130" cy="270" r="8" fill="#f3efe7" fill-opacity="0.55"/>
+<circle cx="1080" cy="390" r="8" fill="#f3efe7" fill-opacity="0.55"/>
+<circle cx="950" cy="430" r="8" fill="#f3efe7" fill-opacity="0.55"/>
+<circle cx="860" cy="330" r="8" fill="#f3efe7" fill-opacity="0.55"/>
+<circle cx="1000" cy="300" r="16" fill="#5b5f9e" fill-opacity="1"/>
+<text x="72" y="330" fill="#f3efe7" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="56" font-weight="700" letter-spacing="-2"><tspan x="72" dy="0">AI 补拍：别换掉演员的脸</tspan></text>
+<text x="72" y="411.6" fill="#f3efe7" fill-opacity=".62" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24" letter-spacing="-.3"><tspan x="72" dy="0">AI Replacement: Do Not</tspan><tspan x="72" dy="22">Swap the Face</tspan></text>
+<rect x="72" y="594" width="116" height="2" fill="#5b5f9e"/>
+<text x="72" y="626" fill="#f3efe7" fill-opacity=".42" font-family="ui-monospace,Consolas,monospace" font-size="12">AI-REPLACEMENT</text>
+<text x="1208" y="626" text-anchor="end" fill="#f3efe7" fill-opacity=".42" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">现场手册 / FIELD NOTE</text>
+</svg>

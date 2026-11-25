@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="3D pipeline: blockout to comp">
+<rect width="1280" height="720" fill="#f4f1eb"/>
+<rect x="0" y="0" width="1280" height="8" fill="#b06b3e"/>
+<text x="54" y="58" fill="#b06b3e" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="2">3D</text>
+<text x="1226" y="58" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TECHNICAL PLATE / 3D</text>
+<rect x="54.0" y="258" width="204.8" height="148" rx="18" fill="#b06b3e" fill-opacity=".08" stroke="#b06b3e" stroke-opacity=".35"/>
+<text x="72.0" y="294" fill="#b06b3e" font-family="ui-monospace,Consolas,monospace" font-size="11">01</text>
+<foreignObject x="72.0" y="312" width="168.8" height="80">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:16px;line-height:1.5;color:#171513;font-weight:600">Layout</div>
+</foreignObject><path d="M262.8 332 h14" stroke="#b06b3e" stroke-width="2"/><path d="M274.8 327 l6 5 -6 5" fill="#b06b3e"/><rect x="282.8" y="258" width="204.8" height="148" rx="18" fill="#b06b3e" fill-opacity=".08" stroke="#b06b3e" stroke-opacity=".35"/>
+<text x="300.8" y="294" fill="#b06b3e" font-family="ui-monospace,Consolas,monospace" font-size="11">02</text>
+<foreignObject x="300.8" y="312" width="168.8" height="80">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:16px;line-height:1.5;color:#171513;font-weight:600">Blockout</div>
+</foreignObject><path d="M491.6 332 h14" stroke="#b06b3e" stroke-width="2"/><path d="M503.6 327 l6 5 -6 5" fill="#b06b3e"/><rect x="511.6" y="258" width="204.8" height="148" rx="18" fill="#b06b3e" fill-opacity=".08" stroke="#b06b3e" stroke-opacity=".35"/>
+<text x="529.6" y="294" fill="#b06b3e" font-family="ui-monospace,Consolas,monospace" font-size="11">03</text>
+<foreignObject x="529.6" y="312" width="168.8" height="80">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:16px;line-height:1.5;color:#171513;font-weight:600">Assets/materials</div>
+</foreignObject><path d="M720.4000000000001 332 h14" stroke="#b06b3e" stroke-width="2"/><path d="M732.4000000000001 327 l6 5 -6 5" fill="#b06b3e"/><rect x="740.4000000000001" y="258" width="204.8" height="148" rx="18" fill="#b06b3e" fill-opacity=".08" stroke="#b06b3e" stroke-opacity=".35"/>
+<text x="758.4000000000001" y="294" fill="#b06b3e" font-family="ui-monospace,Consolas,monospace" font-size="11">04</text>
+<foreignObject x="758.4000000000001" y="312" width="168.8" height="80">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:16px;line-height:1.5;color:#171513;font-weight:600">Animation</div>
+</foreignObject><path d="M949.2 332 h14" stroke="#b06b3e" stroke-width="2"/><path d="M961.2 327 l6 5 -6 5" fill="#b06b3e"/><rect x="969.2" y="258" width="204.8" height="148" rx="18" fill="#b06b3e" fill-opacity=".08" stroke="#b06b3e" stroke-opacity=".35"/>
+<text x="987.2" y="294" fill="#b06b3e" font-family="ui-monospace,Consolas,monospace" font-size="11">05</text>
+<foreignObject x="987.2" y="312" width="168.8" height="80">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:16px;line-height:1.5;color:#171513;font-weight:600">Light/render</div>
+</foreignObject><foreignObject x="54" y="610" width="1120" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:13px;line-height:1.5;color:#6f675d">Diagram: a bad blockout gets more expensive at every step.</div></foreignObject>
+<line x1="54" y1="654" x2="1226" y2="654" stroke="#171513" stroke-opacity=".14"/>
+<text x="54" y="686" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TVCN / TECHNICAL DIAGRAM</text>
+<text x="1226" y="686" text-anchor="end" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">Diagram, not a set record</text>
+</svg>

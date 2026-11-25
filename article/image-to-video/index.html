@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>图生视频：首帧、尾帧、运动 · TVCN</title>
+<meta name="description" content="先把一张图做对，再让它动。首帧和尾帧定住，中间的运动会自己收敛；提示词写再长也替代不了这两张图。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/image-to-video/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/image-to-video/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/image-to-video/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/image-to-video/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图生视频：首帧、尾帧、运动 · TVCN">
+<meta property="og:description" content="先把一张图做对，再让它动。首帧和尾帧定住，中间的运动会自己收敛；提示词写再长也替代不了这两张图。">
+<meta property="og:url" content="https://ai.tvcn.org/article/image-to-video/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="图生视频：首帧、尾帧、运动">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="图生视频：首帧、尾帧、运动 · TVCN">
+<meta name="twitter:description" content="先把一张图做对，再让它动。首帧和尾帧定住，中间的运动会自己收敛；提示词写再长也替代不了这两张图。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="图生视频：首帧、尾帧、运动">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"图生视频：首帧、尾帧、运动","description":"先把一张图做对，再让它动。首帧和尾帧定住，中间的运动会自己收敛；提示词写再长也替代不了这两张图。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/image-to-video/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"图生视频：首帧、尾帧、运动","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/image-to-video/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"图生视频：首帧、尾帧、运动","item":"https://ai.tvcn.org/article/image-to-video/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/image-to-video/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>图生视频：首帧、尾帧、运动</span></div>
+    <header class="article-hero"><p class="eyebrow">AI / 图生视频</p><h1>图生视频：首帧、尾帧、运动</h1><p class="article-deck">先把一张图做对，再让它动。首帧和尾帧定住，中间的运动会自己收敛；提示词写再长也替代不了这两张图。</p><div class="article-meta"><span>2 分钟速读 + 6 分钟深读 · 进阶</span><span><a href="../../about/#desk-ai">TVCN AI 组</a></span><span>编辑 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先图后视频</a></li><li><a href="#section-2">首尾帧</a></li><li><a href="#section-3">运动小一点</a></li><li><a href="#section-4">继续往下：给已经在拍的人</a></li><li><a href="#section-5">先选一张能动的图</a></li><li><a href="#section-6">运动写小一点</a></li><li><a href="#section-7">用首尾帧和参考图</a></li><li><a href="#section-8">五分钟练习：三秒一个动作</a></li><li><a href="#section-9">什么时候算能剪</a></li><li><a href="#section-10">再看一遍手</a></li><li><a href="#section-11">图生视频，十项检查</a></li><li><a href="#section-12">3 条验收</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section><h2 id="section-1">先图后视频</h2><p>先用图像模型把构图、光线、人物定下来。图不对，视频只会把错误放大。首帧要留出运动空间：人物前方有路，手边有道具。</p><p>不要用一张构图很满的图去生成运动。模型没有地方让人物走，只能让人脸变形。</p></section><section><h2 id="section-2">首尾帧</h2><p>能控首尾帧就控：首帧是起点，尾帧是终点。两帧之间只放一个动作，比如“转身”“放下杯子”“抬头”。</p><p>没有尾帧控制时，把提示词写成动作而不是情绪：“她把手从口袋拿出来”，不要写“她感到紧张”。</p></section><section><h2 id="section-3">运动小一点</h2><p>一个镜头只做一个动作，3–5 秒。运动越大，模型越容易崩手、崩脸、崩背景。先拍小动作，再用剪辑制造更大的节奏。</p><p>如果一条生成里人物走了三步、镜头还推拉，基本不可用。把动作拆成两条，剪起来更稳。</p></section></article><div class="check-box check-box-after"><h2 id="section-12">3 条验收</h2><ul><li>首帧有明确的运动空间。</li><li>一条生成只包含一个主要动作。</li><li>记录首尾帧与提示词，能复现。</li></ul></div>
+    <section class="deep-dive">
+      <header class="deep-dive-head">
+        <p class="eyebrow">DEEP DIVE / 07 MIN</p>
+        <h2 id="section-4">继续往下：给已经在拍的人</h2>
+        <p>图生视频不是让画面动起来，是让同一个主体在时间里保持是同一个人。</p>
+        <span class="deep-dive-note">比现场手册多走一步</span>
+      </header>
+      <article class="article-body"><section><h2 id="section-5">先选一张能动的图</h2><p>主体清楚、四肢可辨、背景不穿越、光线方向明确；一张正面大头照很难动，一张半身、手上有动作的图更好动。</p><p>分辨率不要太高，细节太多模型会抖；先裁成目标比例，避免生成时再拉伸。</p></section><section><h2 id="section-6">运动写小一点</h2><p>第一版只写一个动作：眨眼、转头、手抬起、头发被风吹；不要同时写走路、说话、镜头环绕。动作越多，脸越容易变。</p><p>镜头运动单独写：固定、轻推、横移；不要和人物动作混在一句。先保人物，再保镜头。</p></section><section><h2 id="section-7">用首尾帧和参考图</h2><p>能给尾帧就给尾帧，让模型知道最后停在哪；能给同一人物的多角度参考，就给三张，别只给一张。</p><p>生成后先看脸、手、衣服边缘；脸变了就降运动量，手变了就换姿势，不要用后期修脸掩盖结构问题。</p></section><section><h2 id="section-8">五分钟练习：三秒一个动作</h2><p>用一张半身图，生成三秒视频，只写“眨眼并轻微转头”，镜头固定；生成三次，选脸最稳的一条。</p><p>再把动作换成“抬手”，比较哪类动作更容易崩；把结论写进下一张图的姿势要求。</p></section><section><h2 id="section-9">什么时候算能剪</h2><p>三秒内脸不变、手不穿插、衣服边缘不跳、背景不液化、运动方向和提示词一致；五项都过，才算能剪。</p><p>有一项明显坏，不要靠变速和裁剪硬救；回到图和动作，重新生成一条更小的运动。</p></section><section><h2 id="section-10">再看一遍手</h2><p>逐帧看手：手指有没有多、有没有穿过衣服、有没有突然变短；手是图生视频最容易崩的地方。手一坏，宁可把动作改成双手出画，也不要交给后期修。</p></section><section><h2 id="section-11">图生视频，十项检查</h2><ul><li>主体清楚四肢可辨</li><li>背景不穿越身体</li><li>光线方向明确</li><li>先裁目标比例</li><li>第一版只写一个动作</li><li>镜头运动单独写</li><li>有尾帧就给尾帧</li><li>同一人物三张参考</li><li>先查脸手衣服边缘</li><li>脸变就降运动量</li></ul><p>图生视频的第一原则，是宁可动作小，也不要脸变。</p></section></article>
+    </section>
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://c2pa.org/" target="_blank" rel="noopener">C2PA</a> · <a href="https://openai.com/sora/" target="_blank" rel="noopener">OpenAI Sora</a> · <a href="https://deepmind.google/models/veo/" target="_blank" rel="noopener">Google Veo</a></p></aside>
+    <div class="related"><a href="../../article/consistency/">角色一致性：一张参考图，一段固定描述 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/prompt-structure/">提示词结构：主体、动作、环境、镜头 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/ai-shot-list/">AI 镜头表：一条提示只拍一个镜头 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../article/consistency/"><span class="mono">上一篇</span>角色一致性：一张参考图，一段固定描述</a><a href="../../article/digital-human/"><span class="mono">下一篇</span>数字人：先解决授权，再解决像</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/image-to-video" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Wedding film: protect the ceremony">
+<rect width="1280" height="720" fill="#f4f1eb"/>
+<rect x="0" y="0" width="1280" height="8" fill="#6f7d4a"/>
+<text x="54" y="58" fill="#6f7d4a" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="2">WEDDING</text>
+<text x="1226" y="58" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TECHNICAL PLATE / WEDDING</text>
+<line x1="54" y1="358" x2="1174" y2="358" stroke="#6f7d4a" stroke-width="2"/><circle cx="54.0" cy="358" r="7" fill="#6f7d4a"/>
+<text x="54.0" y="328" text-anchor="middle" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="12">Prepare</text><circle cx="427.3333333333333" cy="358" r="7" fill="#6f7d4a"/>
+<text x="427.3333333333333" y="388" text-anchor="middle" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="12">Ceremony</text><circle cx="800.6666666666666" cy="358" r="7" fill="#6f7d4a"/>
+<text x="800.6666666666666" y="328" text-anchor="middle" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="12">One quiet moment</text><circle cx="1174.0" cy="358" r="7" fill="#6f7d4a"/>
+<text x="1174.0" y="388" text-anchor="middle" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="12">After</text><foreignObject x="54" y="470" width="1120" height="100"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:15px;line-height:1.7;color:#6f675d"></div></foreignObject><foreignObject x="54" y="610" width="1120" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:13px;line-height:1.5;color:#6f675d">Diagram: the ceremony cannot be re-shot; protect it first.</div></foreignObject>
+<line x1="54" y1="654" x2="1226" y2="654" stroke="#171513" stroke-opacity=".14"/>
+<text x="54" y="686" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TVCN / TECHNICAL DIAGRAM</text>
+<text x="1226" y="686" text-anchor="end" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">Diagram, not a set record</text>
+</svg>

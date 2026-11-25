@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#171513"/>
+  <text x="256" y="300" fill="#f3efe7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="196" font-weight="700" letter-spacing="-15" text-anchor="middle">TV</text>
+  <circle cx="386" cy="374" r="22" fill="#c14f2c"/>
+</svg>

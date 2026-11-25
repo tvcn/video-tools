@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="AI voice: punctuation and stress">
+<rect width="1280" height="720" fill="#f4f1eb"/>
+<rect x="0" y="0" width="1280" height="8" fill="#5b5f9e"/>
+<text x="54" y="58" fill="#5b5f9e" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="2">AI VOICE</text>
+<text x="1226" y="58" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TECHNICAL PLATE / AI VOICE</text>
+<rect x="54.0" y="212" width="212.8" height="286" rx="14" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/>
+<text x="74.0" y="250" fill="#5b5f9e" font-family="ui-monospace,Consolas,monospace" font-size="12" font-weight="700">01</text>
+<foreignObject x="74.0" y="274" width="172.8" height="150">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:17px;line-height:1.55;color:#171513;font-weight:600">Phrase groups</div>
+</foreignObject><path d="M268.8 355 l10 0" stroke="#5b5f9e" stroke-width="2"/><path d="M274.8 350 l6 5 -6 5" fill="#5b5f9e"/><rect x="280.8" y="212" width="212.8" height="286" rx="14" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/>
+<text x="300.8" y="250" fill="#5b5f9e" font-family="ui-monospace,Consolas,monospace" font-size="12" font-weight="700">02</text>
+<foreignObject x="300.8" y="274" width="172.8" height="150">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:17px;line-height:1.55;color:#171513;font-weight:600">Stress</div>
+</foreignObject><path d="M495.6 355 l10 0" stroke="#5b5f9e" stroke-width="2"/><path d="M501.6 350 l6 5 -6 5" fill="#5b5f9e"/><rect x="507.6" y="212" width="212.8" height="286" rx="14" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/>
+<text x="527.6" y="250" fill="#5b5f9e" font-family="ui-monospace,Consolas,monospace" font-size="12" font-weight="700">03</text>
+<foreignObject x="527.6" y="274" width="172.8" height="150">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:17px;line-height:1.55;color:#171513;font-weight:600">Pause length</div>
+</foreignObject><path d="M722.4000000000001 355 l10 0" stroke="#5b5f9e" stroke-width="2"/><path d="M728.4000000000001 350 l6 5 -6 5" fill="#5b5f9e"/><rect x="734.4000000000001" y="212" width="212.8" height="286" rx="14" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/>
+<text x="754.4000000000001" y="250" fill="#5b5f9e" font-family="ui-monospace,Consolas,monospace" font-size="12" font-weight="700">04</text>
+<foreignObject x="754.4000000000001" y="274" width="172.8" height="150">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:17px;line-height:1.55;color:#171513;font-weight:600">Numbers</div>
+</foreignObject><path d="M949.2 355 l10 0" stroke="#5b5f9e" stroke-width="2"/><path d="M955.2 350 l6 5 -6 5" fill="#5b5f9e"/><rect x="961.2" y="212" width="212.8" height="286" rx="14" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/>
+<text x="981.2" y="250" fill="#5b5f9e" font-family="ui-monospace,Consolas,monospace" font-size="12" font-weight="700">05</text>
+<foreignObject x="981.2" y="274" width="172.8" height="150">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:17px;line-height:1.55;color:#171513;font-weight:600">Emotion</div>
+</foreignObject><foreignObject x="54" y="610" width="1120" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:13px;line-height:1.5;color:#6f675d">Diagram: fix punctuation before changing models.</div></foreignObject>
+<line x1="54" y1="654" x2="1226" y2="654" stroke="#171513" stroke-opacity=".14"/>
+<text x="54" y="686" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TVCN / TECHNICAL DIAGRAM</text>
+<text x="1226" y="686" text-anchor="end" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">Diagram, not a set record</text>
+</svg>

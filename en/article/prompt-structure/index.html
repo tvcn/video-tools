@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>Prompt Structure: Subject, Action, Space, Camera · TVCN</title>
+<meta name="description" content="Build prompts in four parts: who, doing what, where, camera. Stable order gives stable output.">
+
+<meta name="author" content="TVCN AI Desk">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/en/article/prompt-structure/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/prompt-structure/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/prompt-structure/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/prompt-structure/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Prompt Structure: Subject, Action, Space, Camera · TVCN">
+<meta property="og:description" content="Build prompts in four parts: who, doing what, where, camera. Stable order gives stable output.">
+<meta property="og:url" content="https://ai.tvcn.org/en/article/prompt-structure/">
+<meta property="og:image" content="https://tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="Prompt Structure: Subject, Action, Space, Camera">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prompt Structure: Subject, Action, Space, Camera · TVCN">
+<meta name="twitter:description" content="Build prompts in four parts: who, doing what, where, camera. Stable order gives stable output.">
+<meta name="twitter:image" content="https://tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="Prompt Structure: Subject, Action, Space, Camera">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"Prompt Structure: Subject, Action, Space, Camera","description":"Build prompts in four parts: who, doing what, where, camera. Stable order gives stable output.","image":["https://tvcn.org/assets/og-cover.png"],"inLanguage":"en","url":"https://ai.tvcn.org/en/article/prompt-structure/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"Prompt Structure: Subject, Action, Space, Camera","author":{"@type":"Organization","name":"TVCN AI Desk","url":"https://tvcn.org/en/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/en/article/prompt-structure/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/en/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/en/"},{"@type":"ListItem","position":3,"name":"Prompt Structure: Subject, Action, Space, Camera","item":"https://ai.tvcn.org/en/article/prompt-structure/"}]}]}</script>
+<link rel="stylesheet" href="../../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../../en/">TVCN<span>Video Production Knowledge</span></a>
+    <nav class="static-nav site-nav" aria-label="Site navigation">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">History</a>
+      <a class="icon-btn search-btn" href="../../../en/search/" aria-label="Search the library">Search</a>
+      <a class="icon-btn lang-btn" href="../../../article/prompt-structure/" hreflang="zh-CN">中文</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">Theme</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://ai.tvcn.org/">AI Video</a><span>/</span><span>Prompt Structure: Subject, Action, Space, Camera</span></div>
+    <header class="article-hero"><p class="eyebrow">AI Video / Generation</p><h1>Prompt Structure: Subject, Action, Space, Camera</h1><p class="article-deck">Build prompts in four parts: who, doing what, where, camera. Stable order gives stable output.</p><div class="article-meta"><span>2 min quick read + 6 min deep read · Field note</span><span><a href="../../../en/about/#desk-ai">TVCN AI Desk</a></span><span>Edited 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Subject + action + environment + camera + light</a></li><li><a href="#section-2">Limits</a></li><li><a href="#section-3">On set</a></li><li><a href="#section-4">Do this</a></li><li><a href="#section-5">Avoid</a></li><li><a href="#section-6">Go deeper: for people already shooting</a></li><li><a href="#section-7">Write the five things</a></li><li><a href="#section-8">Change one thing at a time</a></li><li><a href="#section-9">Write with camera language</a></li><li><a href="#section-10">Five-minute drill: five-slot prompt</a></li><li><a href="#section-11">When a prompt is usable</a></li><li><a href="#section-12">Check the subject again</a></li><li><a href="#section-13">Ten prompt checks</a></li><li><a href="#section-14">3 checks</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section class="editorial-depth"><h2 id="section-1">Subject + action + environment + camera + light</h2><p>One prompt describes one shot: who does what, where, how the camera sits, where the light comes from. Replace “cinematic” and “premium” with visible conditions: 50mm, low angle, window light from the right, rain in the background.</p><p>Write the shot card first, then translate the card into a prompt. Do not start from adjectives, or every generation builds a different world.</p><h2 id="section-2">Limits</h2><p>Longer prompts do not mean more control. More words the model does not understand increase randomness; keep one main action and one main light per prompt.</p></section><section><h2 id="section-3">On set</h2><p>Keep four lines: who the subject is, what they do, where they are, and how the camera sits. Change one word per test.</p></section><section><h2 id="section-4">Do this</h2><p>Write prompts in four parts: who, doing what, where, and how the camera sits. Stable order gives stable results.</p><ol><li>Fix four lines: subject, action, environment, camera.</li><li>Change one word per line per test.</li><li>Keep the order; do not put environment before action.</li></ol></section><section><h2 id="section-5">Avoid</h2><p>Do not blend four parts into prose; the model cannot tell which word controls action or camera.</p></section></article><div class="check-box check-box-after"><h2 id="section-14">3 checks</h2><ul><li>The prompt splits into subject, action, environment, and camera in fixed order.</li><li>Each test changes one word in one line only.</li><li>Changing the order visibly hurts the result, proving the structure matters.</li></ul></div></article>
+    <section class="deep-dive">
+      <header class="deep-dive-head">
+        <p class="eyebrow">DEEP DIVE / 07 MIN</p>
+        <h2 id="section-6">Go deeper: for people already shooting</h2>
+        <p>A prompt is not a spell. It splits the image into subject, action, camera, light, and style, and changes one thing at a time.</p>
+        <span class="deep-dive-note">One step past the field note</span>
+      </header>
+      <article class="article-body"><section><h2 id="section-7">Write the five things</h2><p>Who the subject is, what they do, where the camera is, where light comes from, what texture the image has. Missing one and the model guesses; fixing a guess is luck.</p><p>Write concrete nouns and actions before adjectives. Do not start with “cinematic, premium, moody.” Those words have no direction; the model gives you an average.</p></section><section><h2 id="section-8">Change one thing at a time</h2><p>Version one fixes subject and action; version two changes only the camera; version three only the light. Change three things and a bad result tells you nothing.</p><p>Save every prompt and output with a version number. After three rounds, you know which word the model responds to.</p></section><section><h2 id="section-9">Write with camera language</h2><p>“Low angle, 35mm, subject on the right, compressed background” does more than “beautiful.” “Side backlight, hard shadow, warm temperature” does more than “mood.”</p><p>For motion, write start and end: close-up on hands pulling to a medium shot, or subject walks left to right. Do not write only “camera movement.”</p></section><section><h2 id="section-10">Five-minute drill: five-slot prompt</h2><p>Write a five-slot table: subject, action, camera, light, style. One line each, under fifteen words. Generate one image, then change only the camera slot and generate a second.</p><p>Compare side by side. Is the difference what you asked for? If not, change that slot; do not rewrite the paragraph.</p></section><section><h2 id="section-11">When a prompt is usable</h2><p>A prompt is usable when three runs hold subject, action, and composition direction; changing one slot changes the output as expected; another person using the same table gets a similar result. Three pass.</p><p>One good image is a lucky draw. Three stable images are a method.</p></section><section><h2 id="section-12">Check the subject again</h2><p>Cover the five-slot table and look only at the image: is the subject recognizable at first glance, and can the action be said in one line? If either is vague, fix subject and action before adding style words. A prompt should be understandable first, likable second.</p></section><section><h2 id="section-13">Ten prompt checks</h2><ul><li>Subject named</li><li>Action named</li><li>Camera named</li><li>Light direction named</li><li>Texture named</li><li>Nouns and actions before adjectives</li><li>One slot changed per round</li><li>Prompt and output saved per version</li><li>Motion has start and end</li><li>Three stable runs before usable</li></ul><p>A prompt is judged not by one lucky draw, but by whether changing one slot changes the result as expected.</p></section></article>
+    </section>
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">Sources</p><span class="mono">Experience</span></div><p class="source-types">Experience source: TVCN field notes and public-spec checks; no lab measurement or external data citation on this page.</p></aside>
+    <div class="related"><a href="../../../en/article/ai-shot-list/">AI Shot List: One Prompt, One Shot <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../../en/article/camera-prompt/">Camera Prompt: Framing, Angle, Lens <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../../en/article/ai-disclosure/">AI Disclosure: Visible, Specific, Honest <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../../en/article/camera-prompt/"><span class="mono">PREVIOUS</span>Camera Prompt: Framing, Angle, Lens</a><a href="../../../en/article/ai-shot-list/"><span class="mono">NEXT</span>AI Shot List: One Prompt, One Shot</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="Footer site navigation"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+  <div class="static-footer-inner">
+    <span>Text and diagrams CC BY-SA 4.0 · Code MIT</span>
+    <span><a href="../../../en/about/">About and standards</a> · <a href="../../../en/glossary/">Glossary</a> · <a href="../../../en/about/#corrections">Trust and corrections</a> · <a href="../../../app/?lang=en&r=article/prompt-structure" rel="nofollow">Interactive</a> · <a href="../../../en/search/">Search</a> · <a href="../../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="Bottom site navigation"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

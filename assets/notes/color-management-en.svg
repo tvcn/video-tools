@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Color Management: Put the LUT in the Right Place">
+<rect width="1280" height="720" fill="#f4f1eb"/>
+<rect x="0" y="0" width="1280" height="8" fill="#8d6a3f"/>
+<text x="54" y="58" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="2">COLOR MANAGEMENT</text>
+<text x="1226" y="58" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">POST / COLOR</text>
+<text x="54" y="142" fill="#171513" font-family="ui-sans-serif,Segoe UI,system-ui,sans-serif" font-size="38" font-weight="700">Color Management: Put the LUT</text>
+<text x="54" y="196" fill="#171513" font-family="ui-sans-serif,Segoe UI,system-ui,sans-serif" font-size="38" font-weight="700">in the Right Place</text>
+<foreignObject x="54" y="298" width="760" height="190">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:ui-sans-serif,Segoe UI,system-ui,sans-serif;font-size:17px;line-height:1.75;color:#6f675d">Color management is not applying a cinematic LUT. It answers what the source space is, what the monitor is, and what delivery needs, then puts the transform on the right node.</div>
+</foreignObject>
+<rect x="900" y="170" width="326" height="340" rx="14" fill="#8d6a3f" fill-opacity=".08" stroke="#8d6a3f" stroke-opacity=".25"/>
+<text x="930" y="212" fill="#8d6a3f" font-family="ui-monospace,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="2">A LUT is a transform, not a look.</text>
+<line x1="930" y1="232" x2="1196" y2="232" stroke="#8d6a3f" stroke-opacity=".3"/>
+<rect x="54" y="566" width="170" height="44" rx="8" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/><text x="68" y="593" fill="#6f675d" font-family="ui-sans-serif,Segoe UI,system-ui,sans-serif" font-size="13">Input transform</text> <rect x="244" y="566" width="170" height="44" rx="8" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/><text x="258" y="593" fill="#6f675d" font-family="ui-sans-serif,Segoe UI,system-ui,sans-serif" font-size="13">Display transform</text> <rect x="434" y="566" width="170" height="44" rx="8" fill="#fffdf8" stroke="#171513" stroke-opacity=".14"/><text x="448" y="593" fill="#6f675d" font-family="ui-sans-serif,Segoe UI,system-ui,sans-serif" font-size="13">Delivery</text>
+
+<line x1="54" y1="654" x2="1226" y2="654" stroke="#171513" stroke-opacity=".14"/>
+<text x="54" y="686" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TVCN / WORKFLOW PLATE</text>
+<text x="1226" y="686" text-anchor="end" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">Ask the space before the look.</text>
+</svg>

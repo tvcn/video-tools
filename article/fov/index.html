@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>镜头视角计算器：焦距、画幅与水平视角 · TVCN</title>
+<meta name="description" content="输入传感器宽度和焦距，算出水平视角；用来判断这支镜头在室内、户外和人物近景里够不够用。">
+
+<meta name="author" content="TVCN 工具组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://tvcn.org/article/fov/">
+<link rel="alternate" hreflang="zh-CN" href="https://tvcn.org/article/fov/">
+<link rel="alternate" hreflang="en" href="https://tvcn.org/en/article/fov/">
+<link rel="alternate" hreflang="x-default" href="https://tvcn.org/article/fov/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="镜头视角计算器：焦距、画幅与水平视角 · TVCN">
+<meta property="og:description" content="输入传感器宽度和焦距，算出水平视角；用来判断这支镜头在室内、户外和人物近景里够不够用。">
+<meta property="og:url" content="https://tvcn.org/article/fov/">
+<meta property="og:image" content="https://tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="镜头视角计算器：焦距、画幅与水平视角">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="镜头视角计算器：焦距、画幅与水平视角 · TVCN">
+<meta name="twitter:description" content="输入传感器宽度和焦距，算出水平视角；用来判断这支镜头在室内、户外和人物近景里够不够用。">
+<meta name="twitter:image" content="https://tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="镜头视角计算器：焦距、画幅与水平视角">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"镜头视角计算器：焦距、画幅与水平视角","description":"输入传感器宽度和焦距，算出水平视角；用来判断这支镜头在室内、户外和人物近景里够不够用。","image":["https://tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://tvcn.org/article/fov/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"镜头视角计算器：焦距、画幅与水平视角","author":{"@type":"Organization","name":"TVCN 工具组","url":"https://tvcn.org/about/#desk-tools"},"mainEntityOfPage":"https://tvcn.org/article/fov/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"工具","item":"https://tools.tvcn.org/"},{"@type":"ListItem","position":3,"name":"镜头视角计算器：焦距、画幅与水平视角","item":"https://tvcn.org/article/fov/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/fov/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+      <div class="breadcrumbs"><a href="../../">TVCN</a><span>/</span><a href="../../articles/">全部文章</a></div>
+      <header class="article-hero"><p class="eyebrow">CALC / FOV</p><h1>镜头视角计算器：焦距、画幅与水平视角</h1><p class="article-deck">输入传感器宽度和焦距，算出水平视角；用来判断这支镜头在室内、户外和人物近景里够不够用。</p><div class="article-meta"><span><a href="../../about/#desk-tools">TVCN 工具组</a></span><span>2026-11-20</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">这个计算器解决什么</a></li><li><a href="#section-2">公式</a></li><li><a href="#section-3">常见画幅宽度</a></li><li><a href="#section-4">怎么用</a></li><li><a href="#section-5">3 条验收</a></li><li><a href="#section-6">边界</a></li><li><a href="#section-7">公式</a></li><li><a href="#section-8">换算例子</a></li><li><a href="#section-9">边界</a></li><li><a href="#section-7">实拍校验：用门框量视角</a></li></ol></nav>
+      <section class="article-body"><h2 id="section-1">这个计算器解决什么</h2>
+<p>“这支 24mm 在室内够不够广？”“85mm 拍人物会不会太窄？”不要靠感觉，先算水平视角。</p>
+<h2 id="section-2">公式</h2>
+<p>θ = 2 × arctan((w) / (2f))</p>
+<p>其中 w 是传感器宽度，f 是焦距，θ 是水平视角。</p>
+<h2 id="section-3">常见画幅宽度</h2>
+<ul>
+<li>全画幅：36mm</li>
+<li>APS-C：23.5mm</li>
+<li>M4/3：17.3mm</li>
+</ul>
+<h2 id="section-4">怎么用</h2>
+<ol>
+<li>选传感器宽度。</li>
+<li>输入焦距。</li>
+<li>看水平视角。</li>
+<li>如果视角小于场景需要的宽度，换广一点；如果人物太变形，换长一点。</li>
+</ol>
+<h2 id="section-5">3 条验收</h2>
+<ul>
+<li>能说清“广角”和“长焦”改变的是什么，不只是放大。</li>
+<li>知道同一焦距在不同画幅上的视角不同。</li>
+<li>能用视角反推机位距离。</li>
+</ul>
+<h2 id="section-6">边界</h2>
+<p>这是水平视角，不含畸变、呼吸效应和镜头实际标称误差；电影镜头以实测为准。</p><section class="editorial-depth"><h2 id="section-7">公式</h2><p>水平视角 = <strong>2 × atan(传感器宽 ÷ (2 × 焦距))</strong>，结果用角度表示。全画幅传感器宽 36mm：24mm 镜头约 73.7°，35mm 约 54.4°，50mm 约 39.6°，85mm 约 23.9°。</p><h2 id="section-8">换算例子</h2><p>APS-C（宽 23.5mm）装 35mm 镜头：2 × atan(23.5 ÷ 70) ≈ 37.1°，视角接近全画幅 52mm。这就是“等效焦距”的来源，但透视仍由实际焦距决定。</p><h2 id="section-9">边界</h2><p>视角不是构图；畸变、裁切模式和稳定器裁切都会改变可见范围。算完仍要上机看监视器。</p><section><h2 id="section-7">实拍校验：用门框量视角</h2><p>站到房间后墙，用 24mm、35mm、50mm 各拍一张同一构图，以画面里门框的宽度做参照。24mm 仍装不下，不要退到墙外，改竖幅或换更广的镜头；50mm 的人物脸部透视自然，就别为了容纳环境硬换 24mm。把传感器宽度、焦距和门框占画面比例记在同一张表里，下一场直接复用。</p></section></section></section>
+      <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">Sources</p><span class="mono">Experience</span></div><p class="source-types">经验来源：TVCN 现场手册、项目复盘与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a></p></aside>
+      <div class="related"><a href="../../article/first-film/">7 天第一条片 →</a><a href="../../article/buy-lens-first/">先买镜头：焦段、光圈与呼吸 →</a><a href="../../article/buy-camera-budget/">相机与镜头预算 →</a></div>
+    </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/fov" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>2D Camera: Pan and Multiplane · TVCN</title>
+<meta name="description" content="A 2D camera is not one big pan; multiple layers at different speeds create space.">
+
+<meta name="author" content="TVCN Animation Desk">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://tvcn.org/en/article/2d-camera/">
+<link rel="alternate" hreflang="zh-CN" href="https://tvcn.org/article/2d-camera/">
+<link rel="alternate" hreflang="en" href="https://tvcn.org/en/article/2d-camera/">
+<link rel="alternate" hreflang="x-default" href="https://tvcn.org/article/2d-camera/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2D Camera: Pan and Multiplane · TVCN">
+<meta property="og:description" content="A 2D camera is not one big pan; multiple layers at different speeds create space.">
+<meta property="og:url" content="https://tvcn.org/en/article/2d-camera/">
+<meta property="og:image" content="https://tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="2D Camera: Pan and Multiplane">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2D Camera: Pan and Multiplane · TVCN">
+<meta name="twitter:description" content="A 2D camera is not one big pan; multiple layers at different speeds create space.">
+<meta name="twitter:image" content="https://tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="2D Camera: Pan and Multiplane">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"2D Camera: Pan and Multiplane","description":"A 2D camera is not one big pan; multiple layers at different speeds create space.","image":["https://tvcn.org/assets/og-cover.png"],"inLanguage":"en","url":"https://tvcn.org/en/article/2d-camera/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"2D Camera: Pan and Multiplane","author":{"@type":"Organization","name":"TVCN Animation Desk","url":"https://tvcn.org/en/about/#desk-animation"},"mainEntityOfPage":"https://tvcn.org/en/article/2d-camera/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/en/"},{"@type":"ListItem","position":2,"name":"Animation","item":"https://animation.tvcn.org/en/"},{"@type":"ListItem","position":3,"name":"2D Camera: Pan and Multiplane","item":"https://tvcn.org/en/article/2d-camera/"}]}]}</script>
+<link rel="stylesheet" href="../../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../../en/">TVCN<span>Video Production Knowledge</span></a>
+    <nav class="static-nav site-nav" aria-label="Site navigation">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">History</a>
+      <a class="icon-btn search-btn" href="../../../en/search/" aria-label="Search the library">Search</a>
+      <a class="icon-btn lang-btn" href="../../../article/2d-camera/" hreflang="zh-CN">中文</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">Theme</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://animation.tvcn.org/">Animation</a><span>/</span><span>2D Camera: Pan and Multiplane</span></div>
+    <header class="article-hero"><p class="eyebrow">Animation / 2D</p><h1>2D Camera: Pan and Multiplane</h1><p class="article-deck">A 2D camera is not one big pan; multiple layers at different speeds create space.</p><div class="article-meta"><span>3 min read · Field note</span><span><a href="../../../en/about/#desk-animation">TVCN Animation Desk</a></span><span>Edited 2026-11</span></div></header><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <img src="../../../assets/notes/2d-camera-en.svg" alt="Concept image for 2D Camera: Pan and Multiplane" loading="lazy" decoding="async" width="1280" height="720">
+    <figcaption><span>Illustration, not a photo.</span><span class="mono">TVCN diagram</span> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption>
+  </figure><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">A 2D camera is a stage, not a 3D scene</a></li><li><a href="#section-2">Limits</a></li><li><a href="#section-3">A 2D camera is not a zoom; it is layered parallax</a></li><li><a href="#section-4">On set</a></li><li><a href="#section-5">Do this</a></li><li><a href="#section-6">Avoid</a></li><li><a href="#section-7">3 checks</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section class="editorial-depth"><h2 id="section-1">A 2D camera is a stage, not a 3D scene</h2><p>Camera moves in 2D start with layer layout: foreground, middle and background on separate planes, moving at different speeds to create space. Move them together and the audience sees a sliding drawing.</p><p>For a push-in, decide whether to move the camera or scale the layer; scaling softens, camera movement stays sharp.</p><h2 id="section-2">Limits</h2><p>A 2D camera cannot replace perspective. If layer scale is wrong, complex moves still look like paper; draw the space first.</p><h2 id="section-3">A 2D camera is not a zoom; it is layered parallax</h2>
+<p>The point of a 2D camera move is not to push the whole image closer, but to move foreground, midground and background at different speeds. The speed difference creates space. Without layers, even a large move looks like a flat image scaling.</p>
+<div class="table-scroll"><table class="data-table"><thead><tr><th>Layer</th><th>Speed</th><th>Common error</th></tr></thead><tbody>
+<tr><td>Foreground</td><td>Fastest; may leave frame</td><td>Scales with background, loses occlusion</td></tr>
+<tr><td>Midground</td><td>Medium; carries subject</td><td>Motion blur points the wrong way</td></tr>
+<tr><td>Background</td><td>Slowest; needs overscan</td><td>Edges show after scaling</td></tr>
+</tbody></table></div>
+<h3>Project-level checks</h3>
+<ol><li>Build the background at twice final size to give the camera room. Do not push a final-size plate.</li><li>Use two or three camera keyframes with ease in/out. Linear keys feel like a conveyor belt.</li><li>Tune motion blur per layer and speed; foreground and background should not share one setting.</li><li>Toggle each layer before output; check blank edges, seams and repeated texture.</li></ol>
+<p>For acceptance, watch the film at 50%. If space remains, the layers work. If it only “gets bigger,” return to layer speed.</p></section><figure class="diagram" data-image-nature="editorial-illustration">
+    <div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / 2D</div><h3 class="diagram-title">Three-step flow</h3></div><span class="mono">TVCN</span></div>
+    <div class="diagram-body"><img class="diagram-svg" src="../../../assets/notes/2d-camera-steps-en.svg" alt="2D Camera: Pan and Multiplane three-step diagram" loading="lazy" decoding="async" width="1280" height="720"></div>
+    
+    <figcaption> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption>
+  </figure><section><h2 id="section-4">On set</h2><p>Split the background into far, middle, and near layers and pan them at 1:2:4 speed. Keep the character on its own layer, still.</p></section><section><h2 id="section-5">Do this</h2><p>2D camera moves are not one flat pan; layers at different speeds create space.</p><ol><li>Split the background into far mountain, midground, near trees.</li><li>Pan at speeds of 1:2:4.</li><li>Keep the character on a separate layer, still or with a small follow.</li></ol></section><section><h2 id="section-6">Avoid</h2><p>Do not pan the whole image at one speed; equal layers flatten the space.</p></section><p class="media-disclosure"><strong>Image note.</strong> Covers, diagrams and step images on this page are editorial illustrations or structure diagrams, not photographs of a test performed here; they are not evidence of measured gear performance. Where an image is AI-assisted, the caption says so. Read the test conditions in the text before treating an image as proof.</p></article><div class="check-box check-box-after"><h2 id="section-7">3 checks</h2><ul><li>Far, mid, and near layers move at different speeds near 1:2:4.</li><li>The character layer is separate and does not slide with the background.</li><li>One pan shows near-fast, far-slow parallax.</li></ul></div></article>
+    
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">Sources</p><span class="mono">Experience</span></div><p class="source-types">Experience source: TVCN field notes and public-spec checks; no lab measurement or external data citation on this page.</p><p class="source-list" data-expansion-source>Additional sources：<a href="../test-protocols/">Test protocol</a> · <a href="../../about/">Editorial standards</a> · <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">Blender Manual</a> · <a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener">After Effects User Guide</a> · <a href="https://docs.toonboom.com/" target="_blank" rel="noopener">Toon Boom Documentation</a></p></aside>
+    <div class="related"><a href="../../../en/article/2d-compositing/">2D Compositing: Separate Background, Character, Light <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../../en/article/modeling/">Modeling: Silhouette Before Polygons <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../../en/article/loop-cycle/">Loop Cycle: Match the First and Last Frame <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../../en/article/2d-compositing/"><span class="mono">PREVIOUS</span>2D Compositing: Separate Background, Character, Light</a><a href="../../../en/article/blockout/"><span class="mono">NEXT</span>Blockout: Proportions and Camera First</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="Footer site navigation"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+  <div class="static-footer-inner">
+    <span>Text and diagrams CC BY-SA 4.0 · Code MIT</span>
+    <span><a href="../../../en/about/">About and standards</a> · <a href="../../../en/glossary/">Glossary</a> · <a href="../../../en/about/#corrections">Trust and corrections</a> · <a href="../../../app/?lang=en&r=article/2d-camera" rel="nofollow">Interactive</a> · <a href="../../../en/search/">Search</a> · <a href="../../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="Bottom site navigation"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">Main</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">Story</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">Shoot</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">Post</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">Animation</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">Formats</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">Tools</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">History</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

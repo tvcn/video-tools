@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>同一间屋子：AI 场景一致性怎么锁 · TVCN</title>
+<meta name="description" content="AI 最会拍“差不多”的同一间屋子：窗在左，下一镜跑到右。先做场景锚点，再按机位顺序生成，最后用剪辑绕开漂移。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/ai-scene-consistency/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/ai-scene-consistency/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/ai-scene-consistency/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/ai-scene-consistency/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="同一间屋子：AI 场景一致性怎么锁 · TVCN">
+<meta property="og:description" content="AI 最会拍“差不多”的同一间屋子：窗在左，下一镜跑到右。先做场景锚点，再按机位顺序生成，最后用剪辑绕开漂移。">
+<meta property="og:url" content="https://ai.tvcn.org/article/ai-scene-consistency/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="同一间屋子：AI 场景一致性怎么锁">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="同一间屋子：AI 场景一致性怎么锁 · TVCN">
+<meta name="twitter:description" content="AI 最会拍“差不多”的同一间屋子：窗在左，下一镜跑到右。先做场景锚点，再按机位顺序生成，最后用剪辑绕开漂移。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="同一间屋子：AI 场景一致性怎么锁">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"同一间屋子：AI 场景一致性怎么锁","description":"AI 最会拍“差不多”的同一间屋子：窗在左，下一镜跑到右。先做场景锚点，再按机位顺序生成，最后用剪辑绕开漂移。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/ai-scene-consistency/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"同一间屋子：AI 场景一致性怎么锁","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/ai-scene-consistency/","datePublished":"2026-11-20","dateModified":"2026-11-20"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"同一间屋子：AI 场景一致性怎么锁","item":"https://ai.tvcn.org/article/ai-scene-consistency/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/ai-scene-consistency/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+    <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>同一间屋子：AI 场景一致性怎么锁</span></div>
+    <header class="article-hero"><p class="eyebrow">AI / 场景一致性</p><h1>同一间屋子：AI 场景一致性怎么锁</h1><p class="article-deck">AI 最会拍“差不多”的同一间屋子：窗在左，下一镜跑到右。先做场景锚点，再按机位顺序生成，最后用剪辑绕开漂移。</p><div class="article-meta"><span>4 分钟阅读 · 中级</span><span><a href="../../about/#desk-ai">TVCN AI 组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先做场景锚点，不要先堆形容词</a></li><li><a href="#section-2">按机位顺序生成，不要按剧情顺序</a></li><li><a href="#section-3">漂移发生了，剪辑要留后手</a></li><li><a href="#section-4">3 条验收</a></li></ol></nav>
+    
+    
+    <article class="article-body"><section><h2 id="section-1">先做场景锚点，不要先堆形容词</h2><p>写提示词之前，先画一张最简陋的平面图：门在哪、窗在哪、桌子在哪、光从哪边来。再用一句话写死：厨房，窗在左，操作台在右，冰箱在门后，顶灯偏黄。这句话后面每个镜头都原样带上。</p><p>形容词最容易骗人。“温馨的厨房”每次都能长出不同的厨房；“窗在左、桌在右”才会被反复核对。场景锚点不是气氛，是方位。</p><p>再拍一张空镜。没有人物、没有动作，只有空间。它是后面所有镜头的母版，也是发现漂移时唯一能回去对质的东西。</p></section><section><h2 id="section-2">按机位顺序生成，不要按剧情顺序</h2><p>很多人按剧本顺序生成：先近景，再反打，最后才想起全景。结果是每个镜头都在猜房间长什么样。先做全景，再做中景，最后做插入镜头；后面的镜头引用前面的画面，空间才有继承。</p><p>每生成一个新镜头，只改一个变量：人物、道具或机位。一次同时换三样，漂了也不知道是哪一样造成的。把每一版的参考图、种子和那句锚点存进同一个文件夹。</p><p>如果系列里要换时间，先换光，不要先换房子。白天到夜晚可以变，窗和门的位置不能变。</p></section><section><h2 id="section-3">漂移发生了，剪辑要留后手</h2><p>AI 场景不可能百分百不漂。窗反了、桌子的位置差半米、墙上的画换了一张，这些都会发生。不要指望后期修，先在生成时准备“遮丑镜头”：手、杯子、门缝、背影、脚步。观众看不到全景，就不会发现空间变了。</p><p>剪辑时把漂移镜头藏在动作中间：开门、坐下、转身、递东西。动作会吸走注意力，空间错误就过去了。但别用这个办法盖剧情漏洞；它只修背景，不修故事。</p></section></article><div class="check-box check-box-after"><h2 id="section-4">3 条验收</h2><ul><li>四件空间锚点写得出来：门、窗、桌、光向。</li><li>先全景后近景，新镜头引用上一镜和锚点。</li><li>手边至少有 3 个插入镜头，漂移时能接上。</li></ul></div>
+    
+    
+    
+    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p></aside>
+    <div class="related"><a href="../../article/consistency/">角色一致性：一张参考图，一段固定描述 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/text-to-video/">文生视频：先写镜头，不写形容词 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/image-to-video/">图生视频：首帧、尾帧、运动 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="../../article/ai-look/"><span class="mono">上一篇</span>AI 画面为什么像塑料：光、皮肤、镜头</a><a href="../../article/text-to-video/"><span class="mono">下一篇</span>文生视频：先写镜头，不写形容词</a></nav>
+  </div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/ai-scene-consistency" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

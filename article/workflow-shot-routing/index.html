@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>镜头路由：哪个镜头用哪个模型 · TVCN</title>
+<meta name="description" content="一个项目不该只用一个模型。按镜头类型路由：人脸/手/运动/产品/文字/长镜头，各自选主模型和备模型，再按可用秒成本排序。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/workflow-shot-routing/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/workflow-shot-routing/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/workflow-shot-routing/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/workflow-shot-routing/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="镜头路由：哪个镜头用哪个模型 · TVCN">
+<meta property="og:description" content="一个项目不该只用一个模型。按镜头类型路由：人脸/手/运动/产品/文字/长镜头，各自选主模型和备模型，再按可用秒成本排序。">
+<meta property="og:url" content="https://ai.tvcn.org/article/workflow-shot-routing/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="镜头路由：哪个镜头用哪个模型">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="镜头路由：哪个镜头用哪个模型 · TVCN">
+<meta name="twitter:description" content="一个项目不该只用一个模型。按镜头类型路由：人脸/手/运动/产品/文字/长镜头，各自选主模型和备模型，再按可用秒成本排序。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="镜头路由：哪个镜头用哪个模型">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"镜头路由：哪个镜头用哪个模型","description":"一个项目不该只用一个模型。按镜头类型路由：人脸/手/运动/产品/文字/长镜头，各自选主模型和备模型，再按可用秒成本排序。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/workflow-shot-routing/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"镜头路由：哪个镜头用哪个模型","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/workflow-shot-routing/","datePublished":"2026-11-20","dateModified":"2026-11-24"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"镜头路由：哪个镜头用哪个模型","item":"https://ai.tvcn.org/article/workflow-shot-routing/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/workflow-shot-routing/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+<div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>镜头路由：哪个镜头用哪个模型</span></div>
+<header class="article-hero"><p class="eyebrow">AI 影像 / 工作流</p><h1>镜头路由：哪个镜头用哪个模型</h1><p class="article-deck">一个项目不该只用一个模型。按镜头类型路由：人脸/手/运动/产品/文字/长镜头，各自选主模型和备模型，再按可用秒成本排序。</p><div class="article-meta"><span>3 分钟阅读 · 工作流</span><span>TVCN AI Desk</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">适用与不适用 / Fit and no-fit</a></li><li><a href="#section-2">怎么做 / Do this</a></li><li><a href="#section-3">参数与判断 / Parameters</a></li><li><a href="#section-4">别踩 / Avoid</a></li><li><a href="#section-5">继续往下 / Go deeper</a></li><li><a href="#section-6">验收 / Checks</a></li></ol></nav>
+
+<article class="article-body"><section><h2 id="section-1">适用与不适用 <small class='muted'>/ Fit and no-fit</small></h2><ul><li><span>多镜头项目，单一模型总在某类镜头上翻车。</span><br><span class='muted'>Multi-shot projects where one model fails on a shot class.</span></li><li><span>制片需要在预算内分配不同模型。</span><br><span class='muted'>Producers allocating models within budget.</span></li><li><span>不适用：单个 5 秒镜头、没有比较预算。</span><br><span class='muted'>Not for: a single 5s shot with no comparison budget.</span></li></ul></section><section><h2 id="section-2">怎么做 <small class='muted'>/ Do this</small></h2><ol><li><span>列六类镜头：人脸、手、运动、产品、文字、长镜头。</span><br><span class='muted'>List six classes: face, hands, motion, product, text, long take.</span></li><li><span>每类选 2 个候选，跑同题 3 次。</span><br><span class='muted'>Pick two candidates per class; run three takes.</span></li><li><span>记录失败率，不只看最好一条。</span><br><span class='muted'>Log failure rate, not only the best take.</span></li><li><span>按“主/备/禁用”写路由表。</span><br><span class='muted'>Write routing as primary/backup/banned.</span></li><li><span>按项目权重算成本，不按总排名。</span><br><span class='muted'>Cost by project weight, not overall rank.</span></li></ol></section><section><h2 id="section-3">参数与判断 <small class='muted'>/ Parameters</small></h2><table class='spec-table'><thead><tr><th>项目 / Item</th><th>本页口径 / This page</th></tr></thead><tbody><tr><td><b>人脸</b><br><span class='muted'>Face</span></td><td>Kling 4.0 / Veo 3.1；备 Seedance 2.5<br><span class='muted'>Kling 4.0 / Veo 3.1; backup Seedance 2.5</span></td></tr><tr><td><b>手/产品</b><br><span class='muted'>Hands/product</span></td><td>Seedance 2.5 / Omni Flash；备 Kling<br><span class='muted'>Seedance 2.5 / Omni Flash; backup Kling</span></td></tr><tr><td><b>运动</b><br><span class='muted'>Motion</span></td><td>Kling 4.0 / Runway Gen-4.5<br><span class='muted'>Kling 4.0 / Runway Gen-4.5</span></td></tr><tr><td><b>长镜头</b><br><span class='muted'>Long take</span></td><td>Kling 4.0 / Seedance 2.5 / Wan 3.0<br><span class='muted'>Kling 4.0 / Seedance 2.5 / Wan 3.0</span></td></tr><tr><td><b>文字/屏幕</b><br><span class='muted'>Text/screen</span></td><td>后期合成优先；生成只做底<br><span class='muted'>Composite in post; generate plates only</span></td></tr></tbody></table></section><section><h2 id="section-4">别踩 <small class='muted'>/ Avoid</small></h2><ul><li><span>全片一个模型；某类镜头永远过不了。</span><br><span class='muted'>One model for the whole film; one class never passes.</span></li><li><span>只看最好一条；路由表没有失败率。</span><br><span class='muted'>Only the best take; no failure rate in routing.</span></li><li><span>文字/屏幕硬让模型生成；错字无法修。</span><br><span class='muted'>Forcing text/screens from the model; typos cannot be fixed.</span></li></ul></section><section><h2 id="section-5">继续往下 <small class='muted'>/ Go deeper</small></h2><p>镜头路由的核心是“承认模型有短板”。一个模型可能人脸很强、手很弱；另一个产品很稳、运动很假。把镜头拆成六类，分别测试，才能把每个镜头的失败率压到可接受。</p><p>路由表要写“禁用”：哪些镜头绝不能用某个模型。禁用比推荐更重要，因为它防止团队在紧急时又回到那个已知会崩的模型。</p></section><section><h2 id="section-6">验收 <small class='muted'>/ Checks</small></h2><ul><li><span>六类镜头都有主/备/禁用。</span><br><span class='muted'>All six classes have primary/backup/banned.</span></li><li><span>每个候选至少 3 次同题，失败率有数字。</span><br><span class='muted'>At least three runs per candidate with a failure rate.</span></li><li><span>文字/屏幕不交给生成模型硬做。</span><br><span class='muted'>Text/screens are not forced through generation.</span></li><li><span>路由表按项目权重排序，不是排行榜。</span><br><span class='muted'>Routing ranks by project weight, not leaderboard.</span></li></ul></section><div class="related"><a href="../../article/model-radar/">模型雷达 →</a><a href="../../article/workflow-script-to-screen/">12 步 →</a><a href="../../article/test-protocol/">测试协议 →</a><a href="../../article/cost-per-kept-clip/">可用秒成本 →</a></div></article>
+</div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/workflow-shot-routing" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>

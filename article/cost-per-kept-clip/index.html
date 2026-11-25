@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-pref="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+<title>可用秒成本计算器 · TVCN</title>
+<meta name="description" content="不要用“每秒标价”做预算；用“生成次数 × 单次价格 ÷ 可用秒数”，再加上人工筛选和后期，才是可用秒成本。">
+
+<meta name="author" content="TVCN AI 组">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.tvcn.org/article/cost-per-kept-clip/">
+<link rel="alternate" hreflang="zh-CN" href="https://ai.tvcn.org/article/cost-per-kept-clip/">
+<link rel="alternate" hreflang="en" href="https://ai.tvcn.org/en/article/cost-per-kept-clip/">
+<link rel="alternate" hreflang="x-default" href="https://ai.tvcn.org/article/cost-per-kept-clip/">
+<meta property="og:site_name" content="TVCN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="可用秒成本计算器 · TVCN">
+<meta property="og:description" content="不要用“每秒标价”做预算；用“生成次数 × 单次价格 ÷ 可用秒数”，再加上人工筛选和后期，才是可用秒成本。">
+<meta property="og:url" content="https://ai.tvcn.org/article/cost-per-kept-clip/">
+<meta property="og:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta property="og:image:alt" content="可用秒成本计算器">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="可用秒成本计算器 · TVCN">
+<meta name="twitter:description" content="不要用“每秒标价”做预算；用“生成次数 × 单次价格 ÷ 可用秒数”，再加上人工筛选和后期，才是可用秒成本。">
+<meta name="twitter:image" content="https://ai.tvcn.org/assets/og-cover.png">
+<meta name="twitter:image:alt" content="可用秒成本计算器">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","name":"可用秒成本计算器","description":"不要用“每秒标价”做预算；用“生成次数 × 单次价格 ÷ 可用秒数”，再加上人工筛选和后期，才是可用秒成本。","image":["https://ai.tvcn.org/assets/og-cover.png"],"inLanguage":"zh-CN","url":"https://ai.tvcn.org/article/cost-per-kept-clip/","publisher":{"@type":"Organization","name":"TVCN","logo":{"@type":"ImageObject","url":"https://tvcn.org/assets/icon-512.png"}},"headline":"可用秒成本计算器","author":{"@type":"Organization","name":"TVCN AI 组","url":"https://tvcn.org/about/#desk-ai"},"mainEntityOfPage":"https://ai.tvcn.org/article/cost-per-kept-clip/","datePublished":"2026-11-20","dateModified":"2026-11-24"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TVCN","item":"https://tvcn.org/"},{"@type":"ListItem","position":2,"name":"AI","item":"https://ai.tvcn.org/"},{"@type":"ListItem","position":3,"name":"可用秒成本计算器","item":"https://ai.tvcn.org/article/cost-per-kept-clip/"}]}]}</script>
+<link rel="stylesheet" href="../../assets/article.css?v=20261125a">
+<script>try{var t=localStorage.getItem('tvcn.theme')||'auto';var d=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;var r=t==='auto'?(d?'dark':'light'):t;document.documentElement.dataset.theme=r;document.documentElement.dataset.themePref=t;}catch(e){}</script>
+</head>
+<body class="static-page">
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="static-header">
+  <div class="static-header-inner">
+    <a class="static-brand" href="../../">TVCN<span>影像制作知识库</span></a>
+    <nav class="static-nav site-nav" aria-label="站点导航">
+      <a class="site-nav-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="site-nav-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="site-nav-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="site-nav-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="site-nav-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="site-nav-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="site-nav-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="site-nav-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="site-nav-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a>
+      <a class="icon-btn search-btn" href="../../search/" aria-label="搜索全站">搜索</a>
+      <a class="icon-btn lang-btn" href="../../en/article/cost-per-kept-clip/" hreflang="en">EN</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗">明暗</button>
+    </nav>
+  </div>
+</header>
+<main id="main" class="static-main" tabindex="-1">
+<div class="wrap">
+<div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://ai.tvcn.org/">AI 影像</a><span>/</span><span>可用秒成本计算器</span></div>
+<header class="article-hero"><p class="eyebrow">AI 影像 / 模型与成本</p><h1>可用秒成本计算器</h1><p class="article-deck">不要用“每秒标价”做预算；用“生成次数 × 单次价格 ÷ 可用秒数”，再加上人工筛选和后期，才是可用秒成本。</p><div class="article-meta"><span>3 分钟阅读 · 计算器</span><span>TVCN AI Desk</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">适用与不适用 / Fit and no-fit</a></li><li><a href="#section-2">怎么做 / Do this</a></li><li><a href="#section-3">参数与判断 / Parameters</a></li><li><a href="#section-4">别踩 / Avoid</a></li><li><a href="#section-5">继续往下 / Go deeper</a></li><li><a href="#section-6">验收 / Checks</a></li></ol></nav>
+
+<article class="article-body"><section><h2 id="section-1">适用与不适用 <small class='muted'>/ Fit and no-fit</small></h2><ul><li><span>制片：给客户报价前算清重试和筛选。</span><br><span class='muted'>Producers: price retries and review before quoting.</span></li><li><span>创作者：比较订阅/API/本地部署的真实成本。</span><br><span class='muted'>Creators: compare subscription, API and local costs.</span></li><li><span>不适用：只看单条成功生成价格的采购。</span><br><span class='muted'>Not for: procurement comparing only successful-run price.</span></li></ul></section><section><h2 id="section-2">怎么做 <small class='muted'>/ Do this</small></h2><ol><li><span>写下目标成片秒数，不含片头片尾。</span><br><span class='muted'>Write target finished seconds, excluding titles/end cards.</span></li><li><span>记录每条候选的生成价格与平均重试次数。</span><br><span class='muted'>Record price per candidate and average retries.</span></li><li><span>记录可用率：10 条里几条能进剪辑。</span><br><span class='muted'>Record usable rate: how many of ten enter the edit.</span></li><li><span>加上人工筛选分钟与后期分钟。</span><br><span class='muted'>Add review minutes and post minutes.</span></li><li><span>用总成本 ÷ 可用秒，得到可用秒成本。</span><br><span class='muted'>Total cost ÷ usable seconds = cost per usable second.</span></li></ol></section><section><h2 id="section-3">参数与判断 <small class='muted'>/ Parameters</small></h2><table class='spec-table'><thead><tr><th>项目 / Item</th><th>本页口径 / This page</th></tr></thead><tbody><tr><td><b>公式</b><br><span class='muted'>Formula</span></td><td>(生成次数 × 单次价格 + 人工 + 后期) ÷ 可用秒数<br><span class='muted'>(runs × price + labor + post) ÷ usable seconds</span></td></tr><tr><td><b>示例 A</b><br><span class='muted'>Example A</span></td><td>$0.40/秒 × 8 秒 × 4 次 = $12.80；可用 8 秒 → $1.60/秒<br><span class='muted'>$0.40/s × 8s × 4 runs = $12.80; 8 usable seconds → $1.60/s</span></td></tr><tr><td><b>示例 B</b><br><span class='muted'>Example B</span></td><td>$0.07/秒 × 15 秒 × 2 次 = $2.10；可用 10 秒 → $0.21/秒<br><span class='muted'>$0.07/s × 15s × 2 = $2.10; 10 usable seconds → $0.21/s</span></td></tr><tr><td><b>人工</b><br><span class='muted'>Labor</span></td><td>按小时费率 × 筛选/后期分钟<br><span class='muted'>Hourly rate × review/post minutes</span></td></tr><tr><td><b>别漏</b><br><span class='muted'>Do not omit</span></td><td>失败重试、订阅积分、存储/电费<br><span class='muted'>Retries, credits, storage/power</span></td></tr></tbody></table></section><section><h2 id="section-4">别踩 <small class='muted'>/ Avoid</small></h2><ul><li><span>用成功那条的秒价乘成片时长；漏掉失败重试。</span><br><span class='muted'>Multiplying the successful take's per-second price; missing retries.</span></li><li><span>把订阅积分当免费；积分用完还要加购。</span><br><span class='muted'>Treating subscription credits as free; top-ups cost extra.</span></li><li><span>把人工筛选当零；可用率越低，人工越贵。</span><br><span class='muted'>Treating review as zero; lower usable rate means higher labor.</span></li></ul></section><section><h2 id="section-5">继续往下 <small class='muted'>/ Go deeper</small></h2><p>最容易骗自己的算法是“一条 8 秒 4K 只要 $4.40，所以 30 秒成片只要 $16.50”。实际是：每条要跑 3–4 次，10 条里 3 条能用，最后 30 秒可能花 $100 以上。把重试和可用率写进公式，报价才会接近真实。</p><p>本地部署也不是零成本：GPU 折旧、电费、运维、模型下载和失败重跑都要算。把云端 API 与本地 GPU 放在同一张表里，用“每月可用分钟”比较，而不是用“每百万 token”或“每 GPU 小时”比较。</p></section><section><h2 id="section-6">验收 <small class='muted'>/ Checks</small></h2><ul><li><span>公式包含生成、重试、人工、后期四项。</span><br><span class='muted'>Formula includes generation, retries, labor and post.</span></li><li><span>至少用两个模型/套餐做对比。</span><br><span class='muted'>At least two models/plans compared.</span></li><li><span>可用率来自实际 10 条样本，不是猜。</span><br><span class='muted'>Usable rate comes from ten real samples, not a guess.</span></li><li><span>报价单写明“可用秒成本”口径。</span><br><span class='muted'>Quote states the cost-per-usable-second basis.</span></li></ul></section><div class="related"><a href="../../article/model-radar/">模型雷达 →</a><a href="../../article/ai-batch-api/">批量与 API →</a><a href="../../article/ai-self-host/">本地部署 →</a><a href="../../article/scenario-ecommerce/">电商场景 →</a></div><aside class="article-sources"><p class="source-types">参考来源，价格与可用性以官方页为准。</p><ul><li><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener">Google Gemini API 价格</a></li><li><a href="https://runway.com/pricing" target="_blank" rel="noopener">Runway 价格</a></li></ul></aside></article>
+</div>
+</main>
+<footer class="static-footer">
+  <nav class="footer-sites" aria-label="页脚站点导航"><a class="footer-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="footer-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="footer-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="footer-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="footer-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="footer-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="footer-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="footer-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="footer-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+  <div class="static-footer-inner">
+    <span>文字与图解 CC BY-SA 4.0 · 代码 MIT</span>
+    <span><a href="../../about/">关于与编辑标准</a> · <a href="../../glossary/">术语表</a> · <a href="../../about/#corrections">信任与更正</a> · <a href="../../app/?r=article/cost-per-kept-clip" rel="nofollow">交互版</a> · <a href="../../search/">搜索</a> · <a href="../../">TVCN</a> · 2026-11-25</span>
+  </div>
+</footer>
+<nav class="static-tabbar" aria-label="底部站点导航"><a class="tab-site-link" href="https://tvcn.org/" data-site-nav="main">主站</a><a class="tab-site-link" href="https://story.tvcn.org/" data-site-nav="story">故事</a><a class="tab-site-link" href="https://shoot.tvcn.org/" data-site-nav="shoot">拍摄</a><a class="tab-site-link" href="https://post.tvcn.org/" data-site-nav="post">后期</a><a class="tab-site-link" href="https://ai.tvcn.org/" data-site-nav="ai">AI</a><a class="tab-site-link" href="https://animation.tvcn.org/" data-site-nav="animation">动画</a><a class="tab-site-link" href="https://formats.tvcn.org/" data-site-nav="formats">片型</a><a class="tab-site-link" href="https://tools.tvcn.org/" data-site-nav="tools" aria-current="page">工具</a><a class="tab-site-link" href="https://context.tvcn.org/" data-site-nav="context">影像史</a></nav>
+<script>(function(){var h=location.hostname.replace(/^www./i,'');var m={'tvcn.org':'main','story.tvcn.org':'story','shoot.tvcn.org':'shoot','post.tvcn.org':'post','ai.tvcn.org':'ai','animation.tvcn.org':'animation','formats.tvcn.org':'formats','tools.tvcn.org':'tools','context.tvcn.org':'context'};var c=m[h];if(!c)return;document.querySelectorAll('[data-site-nav]').forEach(function(a){if(a.getAttribute('data-site-nav')===c)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})})();</script>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;document.documentElement.dataset.themePref=cur;try{localStorage.setItem('tvcn.theme',cur)}catch(e){}})});</script>
+</body>
+</html>
