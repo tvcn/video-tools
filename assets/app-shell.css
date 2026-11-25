@@ -6,7 +6,7 @@ body.static-page{background:var(--bg);color:var(--ink);font-family:-apple-system
 .skip-link{position:fixed;left:16px;top:-60px;z-index:200;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:8px;transition:top .2s var(--ease)}
 .skip-link:focus{top:16px}
 .static-page .static-header{position:sticky;top:0;z-index:90;background:var(--bg);border-bottom:1px solid var(--line)}
-.static-page .static-header-inner{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.static-page .static-header-inner{width:min(var(--max),calc(100% - 40px));margin:0 auto;padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .static-page .static-brand{text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:.14em;font-size:15px;display:inline-flex;align-items:baseline;gap:10px}
 .static-page .static-brand span{font-weight:400;letter-spacing:0;color:var(--muted);font-size:13px}
 .static-page .static-nav{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px}
@@ -17,9 +17,9 @@ body.static-page{background:var(--bg);color:var(--ink);font-family:-apple-system
 .static-page .static-nav .icon-btn{height:30px;min-width:30px;padding:0 8px;font-size:10px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--muted);display:inline-flex;align-items:center;justify-content:center;text-decoration:none;cursor:pointer}
 .static-page .static-nav .icon-btn:hover{color:var(--ink);border-color:var(--line-strong)}
 .static-page .static-main{padding-bottom:72px}
-.static-page .static-footer{border-top:1px solid var(--line);padding:28px 24px 40px;color:var(--muted);font-size:13px}
-.static-page .static-footer-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.static-page .footer-sites{display:flex;flex-wrap:wrap;gap:8px 18px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid var(--line)}
+.static-page .static-footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:13px}
+.static-page .static-footer-inner{width:min(var(--max),calc(100% - 40px));margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.static-page .footer-sites{width:min(var(--max),calc(100% - 40px));margin:0 auto 12px;display:flex;flex-wrap:wrap;gap:8px 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .static-page .footer-site-link{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-strong);padding-bottom:1px}
 .static-page .footer-site-link[aria-current="page"]{color:var(--accent)}
 .static-page .static-tabbar{display:none}
@@ -33,10 +33,10 @@ body.static-page{background:var(--bg);color:var(--ink);font-family:-apple-system
   .static-page .static-tabbar .tab-site-link[aria-current="page"]{color:var(--accent);font-weight:700}
   .static-page .static-tabbar a:active{background:var(--surface-2);color:var(--ink)}
 }
-@media(max-width:640px){.static-page .static-header-inner{padding:12px 18px}.static-page .static-footer{padding:24px 18px 32px}}
+@media(max-width:640px){.static-page .static-header-inner{width:calc(100% - 28px);padding:12px 0}.static-page .static-footer{padding:24px 0 32px}.static-page .static-footer-inner,.static-page .footer-sites{width:calc(100% - 28px)}}
 /* App content headings inherit the static scale: 48/40, 30 on phones. */
 .static-page .hero-copy h1{font-size:clamp(30px,4.2vw,48px);line-height:1.08;letter-spacing:-.03em;margin:10px 0 14px}
 .static-page .page-head{padding:16px 0 12px}
-.static-page .page-head h1,.static-page .path-hero h1,.static-page .article-hero h1,.static-page .case-detail-hero h1{font-size:clamp(27px,3.5vw,40px);line-height:1.08;letter-spacing:-.03em;margin:4px 0 8px}
-@media(max-width:560px){.static-page .hero-copy h1{font-size:30px}.static-page .page-head h1,.static-page .path-hero h1,.static-page .article-hero h1,.static-page .case-detail-hero h1{font-size:27px}}
+.static-page .page-head h1,.static-page .path-hero h1,.static-page .article-hero h1,.static-page .case-detail-hero h1{font-size:clamp(28px,3.5vw,40px);line-height:1.08;letter-spacing:-.03em;margin:4px 0 8px}
+@media(max-width:560px){.static-page .hero-copy h1{font-size:30px}.static-page .page-head h1,.static-page .path-hero h1,.static-page .article-hero h1,.static-page .case-detail-hero h1{font-size:28px}}
 
