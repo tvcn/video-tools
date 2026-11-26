@@ -51,10 +51,29 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://post.tvcn.org/">后期</a><span>/</span><span>色彩管理：把 LUT 放在正确的位置</span></div>
-    <header class="article-hero"><p class="eyebrow">后期 / 色彩管理</p><h1>色彩管理：把 LUT 放在正确的位置</h1><p class="article-deck">色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。</p><div class="article-meta"><span>4 分钟阅读 · 进阶</span><span>TVCN 后期组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先分清四种空间</a></li><li><a href="#section-2">LUT 放在哪：三个节点，不要乱穿</a></li><li><a href="#section-3">监视器与校准：先相信屏幕，再相信眼睛</a></li><li><a href="#section-4">交接：把 LUT、节点和参考帧一起交</a></li><li><a href="#section-5">失败案例：一套 LUT 套所有机位</a></li><li><a href="#section-6">成本与验收</a></li><li><a href="#section-7">3 条验收</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">后期 / 色彩管理</p><h1>色彩管理：把 LUT 放在正确的位置</h1><p class="article-deck">色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。</p><div class="article-meta"><span>4 分钟阅读 · 进阶</span><span>TVCN 后期组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先分清四种空间</a></li><li><a href="#section-2">LUT 放在哪：三个节点，不要乱穿</a></li><li><a href="#section-3">监视器与校准：先相信屏幕，再相信眼睛</a></li><li><a href="#section-4">交接：把 LUT、节点和参考帧一起交</a></li><li><a href="#section-5">失败案例：一套 LUT 套所有机位</a></li><li><a href="#section-6">成本与验收</a></li><li><a href="#section-7">验收</a></li><li><a href="#section-8">参考与延伸阅读</a></li></ol></nav>
     
     
-    <article class="article-body"><section><h2 id="section-1">先分清四种空间</h2><p>一条片子至少有四种空间：拍摄空间（S-Log3、LogC、RAW）、工作空间（ACES 或 DaVinci Wide Gamut）、显示空间（Rec.709、P3、HDR PQ）、交付空间（平台要求的 Rec.709、HLG、PQ）。四者混在一起，LUT 就会变成猜。</p><p>先把每个素材的输入变换找对：机型、色域、伽马、色彩矩阵。找不到，就拍灰卡/色卡做手动；不要用“看起来差不多”的 LUT 蒙混。</p></section><section><h2 id="section-2">LUT 放在哪：三个节点，不要乱穿</h2><p>输入变换之后才是工作空间；创意 LUT 放在工作空间里，显示变换放在监视器前，交付变换放在输出前。常见错误是把一个 Rec.709 风格 LUT 直接套在 Log 素材上，再套一个显示 LUT，结果高光被压两次。</p><p>每个 LUT 只回答一个问题：转换、风格、还是校准。答不出来，就不要叠。节点命名写清“输入/风格/显示/交付”，交接时别人能看懂。</p></section><section><h2 id="section-3">监视器与校准：先相信屏幕，再相信眼睛</h2><p>调色前先校准监视器：白点、伽马、色域、亮度。没有校准，所有决定都是在这块屏上成立，在别处不成立。至少用一张灰阶和一张色卡确认黑位、白位、肤色。</p><p>不要用办公显示器做最终判断；它的对比和色域会把暗部拉平。客户看片也要用同一套显示变换，不然“客户觉得偏”往往是屏幕不同，不是调色错。</p></section><section><h2 id="section-4">交接：把 LUT、节点和参考帧一起交</h2><p>交接包至少包含：项目文件、LUT、输入变换说明、显示变换说明、参考帧、限制清单。只交一个 LUT，别人不知道它该放在哪，等于没交。</p><p>参考帧要标“学光”还是“学色”：学光看方向、软硬、比例；学色看白点、肤色、饱和度。混在一起，调色师只能猜。</p></section><section><h2 id="section-5">失败案例：一套 LUT 套所有机位</h2><p>一条多机位访谈用了三台不同机型，后期把同一个“胶片 LUT”套在所有素材上。结果 A 机肤色偏绿，B 机高光发灰，C 机暗部发红。调色师以为是灯光问题，回头才发现输入变换根本没有分开。</p><p>补救是逐机位做输入变换，再统一工作空间。风格 LUT 只留一个，放在统一空间里。多机位的第一原则不是“看起来一样”，而是“转换先对”。</p></section><section><h2 id="section-6">成本与验收</h2><p>低成本：一次输入变换整理 + 一次显示校准，¥2,000–6,000。中成本：完整色彩管理、节点树、交接包，¥6,000–20,000。高成本：ACES 管线、HDR 双版本、现场 DIT 配合，¥20,000–60,000+。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <article class="article-body"><h2 id="section-1">先分清四种空间</h2>
+<p>一条片子至少有四种空间：拍摄空间（S-Log3、LogC、RAW）、工作空间（ACES 或 DaVinci Wide Gamut）、显示空间（Rec.709、P3、HDR PQ）、交付空间（平台要求的 Rec.709、HLG、PQ）。四者混在一起，LUT 就会变成猜。</p>
+<p>先把每个素材的输入变换找对：机型、色域、伽马、色彩矩阵。找不到，就拍灰卡/色卡做手动；不要用“看起来差不多”的 LUT 蒙混。</p>
+<h2 id="section-2">LUT 放在哪：三个节点，不要乱穿</h2>
+<p>输入变换之后才是工作空间；创意 LUT 放在工作空间里，显示变换放在监视器前，交付变换放在输出前。常见错误是把一个 Rec.709 风格 LUT 直接套在 Log 素材上，再套一个显示 LUT，结果高光被压两次。</p>
+<p>每个 LUT 只回答一个问题：转换、风格、还是校准。答不出来，就不要叠。节点命名写清“输入/风格/显示/交付”，交接时别人能看懂。</p>
+<h2 id="section-3">监视器与校准：先相信屏幕，再相信眼睛</h2>
+<p>调色前先校准监视器：白点、伽马、色域、亮度。没有校准，所有决定都是在这块屏上成立，在别处不成立。至少用一张灰阶和一张色卡确认黑位、白位、肤色。</p>
+<p>不要用办公显示器做最终判断；它的对比和色域会把暗部拉平。客户看片也要用同一套显示变换，不然“客户觉得偏”往往是屏幕不同，不是调色错。</p>
+<h2 id="section-4">交接：把 LUT、节点和参考帧一起交</h2>
+<p>交接包至少包含：项目文件、LUT、输入变换说明、显示变换说明、参考帧、限制清单。只交一个 LUT，别人不知道它该放在哪，等于没交。</p>
+<p>参考帧要标“学光”还是“学色”：学光看方向、软硬、比例；学色看白点、肤色、饱和度。混在一起，调色师只能猜。</p>
+<h2 id="section-5">失败案例：一套 LUT 套所有机位</h2>
+<p>一条多机位访谈用了三台不同机型，后期把同一个“胶片 LUT”套在所有素材上。结果 A 机肤色偏绿，B 机高光发灰，C 机暗部发红。调色师以为是灯光问题，回头才发现输入变换根本没有分开。</p>
+<p>补救是逐机位做输入变换，再统一工作空间。风格 LUT 只留一个，放在统一空间里。多机位的第一原则不是“看起来一样”，而是“转换先对”。</p>
+<h2 id="section-6">成本与验收</h2>
+<p>低成本：一次输入变换整理 + 一次显示校准，¥2,000–6,000。中成本：完整色彩管理、节点树、交接包，¥6,000–20,000。高成本：ACES 管线、HDR 双版本、现场 DIT 配合，¥20,000–60,000+。</p>
+<h2 id="section-7">验收</h2>
+<ul><li>每个素材都有明确的输入变换。</li><li>工作空间、显示空间、交付空间分开写。</li><li>创意 LUT 只放一个，且在正确节点。</li><li>监视器已校准，灰阶/色卡通过。</li><li>参考帧标明学光还是学色。</li><li>交接包含 LUT、节点、限制清单。</li></ul>
+<p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
     <img src="../../assets/notes/color-management.svg" alt="色彩管理节点专题图解" loading="lazy" decoding="async" width="1280" height="720">
     <figcaption><span>示意：每个箭头都是一次转换；把风格 LUT 放在输入前，会把所有素材一起压坏。</span><span class="mono">TVCN 专题图解 / 非现场照片</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
   </figure><figure class="diagram" data-image-nature="editorial-illustration">
@@ -62,7 +81,7 @@
     <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/color-management-steps.svg" alt="色彩管理节点专题图解" loading="lazy" decoding="async" width="1280" height="720"></div>
     
     <figcaption>示意：每个箭头都是一次转换；把风格 LUT 放在输入前，会把所有素材一起压坏。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><div class="check-box check-box-after"><h2 id="section-7">3 条验收</h2><ul><li>时间线输入与素材格式一一对应，没有把 Log 当 Rec.709。</li><li>输出空间和交付平台一致，示波器读数正常。</li><li>关掉监看 LUT 后，黑位和高光没有突然跳变。</li></ul></div>
+  </figure>
     
     
     <aside class="article-credit">
@@ -74,11 +93,17 @@
       <div><b>限制</b><p>经验型内容，不替代具体项目测试；设备与平台版本会变。</p></div>
     </div>
   </aside>
+    
     <aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">公开来源与现场复核</span></div>
-<p class="source-types">本页把现场判断和公开资料分开；每条链接写明它用来核对哪一段。</p>
-<ul><li><a href="https://acescentral.com/" target="_blank" rel="noopener noreferrer">[S24] ACESCentral：ACES：Academy Color Encoding System — 2026-11-27 访问。用于核对首段“色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。”中的术语与公开背景（ACES 色彩编码、ACEScg 与交付/归档工作流）；不替代现场测试。</a></li><li><a href="https://www.itu.int/rec/R-REC-BT.709/en" target="_blank" rel="noopener noreferrer">[S25] ITU-R BT.709 — 2026-11-26 访问。用于核对首段“色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。”中的术语与公开背景（HD SDR 的色域、传递函数与观看条件）；不替代现场测试。</a></li><li><a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener noreferrer">[S30] DaVinci Resolve 产品与文档 — 2026-11-26 访问。用于核对首段“色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。”中的术语与公开背景（剪辑、调色、Fusion 与交付的官方产品入口）；不替代现场测试。</a></li><li><a href="https://helpx.adobe.com/premiere-pro/user-guide.html" target="_blank" rel="noopener noreferrer">[S34] Adobe Premiere Pro 用户指南 — 2026-11-26 访问。用于核对首段“色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。”中的术语与公开背景（剪辑、代理、色彩与导出的官方文档）；不替代现场测试。</a></li><li><a href="https://www.itu.int/rec/R-REC-BS.1770/en" target="_blank" rel="noopener noreferrer">[S27] ITU-R：BS.1770 音频响度与真峰值测量 — 2026-11-27 访问。用于核对首段“色彩管理不是套一个“电影感 LUT”。它先回答：素材是什么色彩空间、监视器是什么、交付是什么；再把转换放在正确的节点上。”中的术语与公开背景（响度测量、真峰值与 EBU R128 所依据的 ITU 算法标准）；不替代现场测试。</a></li></ul></aside>
-    <div class="related"><a href="/article/conform-online/">Conform / Online：套底、回批与母版 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/cutting-points/">剪辑点：让注意力过去 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">构图：先让观众知道看哪里 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+<p class="source-types">本页把现场判断和公开资料分开；没有外部来源时只写经验边界。</p>
+<h2 id="section-8">参考与延伸阅读</h2>
+<ul>
+<li>[S24] <a href="https://acescentral.com/">ACESCentral：ACES 色彩规范</a> — 2026-11-26 访问。用于核对「先分清四种空间」一节的术语/方法/规则（ACES 色彩规范，不是调色教程）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+<li>[S25] <a href="https://www.itu.int/rec/R-REC-BT.709/en">ITU-R BT.709</a> — 2026-11-26 访问。用于核对「LUT 放在哪：三个节点，不要乱穿」一节的术语/方法/规则（BT.709 高清电视参数，不是现场曝光建议）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+<li>[S30] <a href="https://www.blackmagicdesign.com/products/davinciresolve">DaVinci Resolve：官方文档</a> — 2026-11-26 访问。用于核对「交接：把 LUT、节点和参考帧一起交」一节的术语/方法/规则（Resolve 官方产品/文档入口，不是第三方教程）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+</ul></aside>
+<div class="related"><a href="/article/conform-online/">Conform / Online：套底、回批与母版 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/cutting-points/">剪辑点：让注意力过去 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">构图：先让观众知道看哪里 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
     <nav class="article-nav"><a href="/article/versioning"><span class="mono">上一篇</span>版本管理：别用“final 真的 final”</a><a href="/article/secondary-correction"><span class="mono">下一篇</span>二级校正：只改一块颜色</a></nav>
   </div>
 </main>

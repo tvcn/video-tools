@@ -51,38 +51,53 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
       <div class="breadcrumbs"><a href="../../../">TVCN</a><span>/</span><a href="../../../articles/">All articles</a></div>
-      <header class="article-hero"><p class="eyebrow">CALC / FOV</p><h1>Lens Field-of-View Calculator: Focal Length, Sensor, and Horizontal Angle</h1><p class="article-deck">Enter sensor width and focal length to estimate horizontal field of view, and decide whether a lens is wide enough for a room, a landscape, or a close-up.</p><div class="article-meta"><span><a href="../../../en/about/#desk-tools">TVCN Tools Desk</a></span><span>2026-11-20</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">What this calculator solves</a></li><li><a href="#section-2">Formula</a></li><li><a href="#section-3">Common sensor widths</a></li><li><a href="#section-4">How to use it</a></li><li><a href="#section-5">Three checks</a></li><li><a href="#section-6">Boundary</a></li><li><a href="#section-7">Formula</a></li><li><a href="#section-8">Conversion example</a></li><li><a href="#section-9">Limits</a></li><li><a href="#section-7">Field check: measure the frame with a door</a></li><li><a href="#section-11">Practice</a></li></ol></nav>
-      <section class="article-body"><h2 id="section-1">What this calculator solves</h2>
+      <header class="article-hero"><p class="eyebrow">CALC / FOV</p><h1>Lens Field-of-View Calculator: Focal Length, Sensor, and Horizontal Angle</h1><p class="article-deck">Enter sensor width and focal length to estimate horizontal field of view, and decide whether a lens is wide enough for a room, a landscape, or a close-up.</p><div class="article-meta"><span><a href="../../../en/about/#desk-tools">TVCN Tools Desk</a></span><span>2026-11-20</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Diagram</a></li><li><a href="#section-2">What this calculator solves</a></li><li><a href="#section-3">Formula</a></li><li><a href="#section-4">Common sensor widths</a></li><li><a href="#section-5">How to use it</a></li><li><a href="#section-6">Three checks</a></li><li><a href="#section-7">Boundary</a></li><li><a href="#section-8">Practice</a></li><li><a href="#section-9">Formula</a></li><li><a href="#section-10">Conversion example</a></li><li><a href="#section-11">Limits</a></li><li><a href="#section-7">Field check: measure the frame with a door</a></li><li><a href="#section-13">Practice</a></li><li><a href="#section-14">Experience note</a></li></ol></nav>
+      <section class="article-body"><!-- DIAGRAM_START -->
+<h2 id="section-1">Diagram</h2>
+<figure data-image-nature="editorial-illustration">
+  <img src="/images/diagrams/en/fov.svg" alt="Field of view: frame and focal length together">
+  <figcaption>Same focal length: a smaller frame is a narrower view. Narrower is not a zoom. <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption>
+</figure>
+<!-- DIAGRAM_END -->
+
+<h2 id="section-2">What this calculator solves</h2>
 <p>“Is a 24mm wide enough indoors?” “Will an 85mm feel too tight for a person?” Do not guess. Estimate the horizontal angle first.</p>
-<h2 id="section-2">Formula</h2>
-<p>θ = 2 × arctan((w) / (2f))</p>
-<p>Where w is sensor width, f is focal length, and θ is the horizontal field of view.</p>
-<h2 id="section-3">Common sensor widths</h2>
+<h2 id="section-3">Formula</h2>
+<p>[
+\theta = 2 \times \arctan\left(\frac{w}{2f}\right)
+]</p>
+<p>Where (w) is sensor width, (f) is focal length, and (\theta) is the horizontal field of view.</p>
+<h2 id="section-4">Common sensor widths</h2>
 <ul>
 <li>Full frame: 36mm</li>
 <li>APS-C: 23.5mm</li>
 <li>M4/3: 17.3mm</li>
 </ul>
-<h2 id="section-4">How to use it</h2>
+<h2 id="section-5">How to use it</h2>
 <ol>
 <li>Choose the sensor width.</li>
 <li>Enter the focal length.</li>
 <li>Read the horizontal angle.</li>
 <li>If the angle is too narrow for the space, go wider; if faces distort, go longer.</li>
 </ol>
-<h2 id="section-5">Three checks</h2>
+<h2 id="section-6">Three checks</h2>
 <ul>
 <li>You can explain what wide and long lenses change, beyond “zoom.”</li>
 <li>You know the same focal length gives a different angle on different sensor sizes.</li>
 <li>You can use the angle to estimate camera distance.</li>
 </ul>
-<h2 id="section-6">Boundary</h2>
-<p>This is horizontal field of view. It does not include distortion, focus breathing, or real-world lens marking error. Cinema lenses should be measured on set.</p><section class="editorial-depth"><h2 id="section-7">Formula</h2><p>Horizontal angle = <strong>2 × atan(sensor width ÷ (2 × focal length))</strong>, in degrees. Full frame is 36mm wide: 24mm ≈ 73.7°, 35mm ≈ 54.4°, 50mm ≈ 39.6°, 85mm ≈ 23.9°.</p><h2 id="section-8">Conversion example</h2><p>APS-C (23.5mm wide) with a 35mm lens: 2 × atan(23.5 ÷ 70) ≈ 37.1°, close to a 52mm full-frame view. That is where “equivalent focal length” comes from, but perspective still belongs to the real focal length.</p><h2 id="section-9">Limits</h2><p>Angle is not composition; distortion, crop modes and stabilizer crop change what is visible. Check the monitor after the math.</p><section><h2 id="section-7">Field check: measure the frame with a door</h2><p>Stand against the back wall and shoot the same composition at 24mm, 35mm and 50mm, using the door width in frame as the reference. If 24mm still does not fit, do not back through the wall; go vertical or use a wider lens. If 50mm gives natural facial perspective, do not force 24mm just to include the room. Record sensor width, focal length and door-to-frame ratio on one sheet, then reuse it on the next setup.</p></section></section></section>
-      <h2 id="section-11">Practice</h2><p>Take a 24mm and a 50mm lens into the same room, from the same tripod position. Calculate each horizontal angle first, then compare the frames: how much wall does the 24mm hold, and how much larger is the person at 50mm? If you can explain why a wider angle is not the same as a bigger subject, you have used this page.</p>
+<h2 id="section-7">Boundary</h2>
+<p>This is horizontal field of view. It does not include distortion, focus breathing, or real-world lens marking error. Cinema lenses should be measured on set.</p>
+<h2 id="section-8">Practice</h2>
+<p>Take a 24mm and a 50mm lens into the same room, from the same tripod position. Calculate each horizontal angle first, then compare the frames: how much wall does the 24mm hold, and how much larger is the person at 50mm? If you can explain why a wider angle is not the same as a bigger subject, you have used this page.</p><section class="editorial-depth"><h2 id="section-9">Formula</h2><p>Horizontal angle = <strong>2 × atan(sensor width ÷ (2 × focal length))</strong>, in degrees. Full frame is 36mm wide: 24mm ≈ 73.7°, 35mm ≈ 54.4°, 50mm ≈ 39.6°, 85mm ≈ 23.9°.</p><h2 id="section-10">Conversion example</h2><p>APS-C (23.5mm wide) with a 35mm lens: 2 × atan(23.5 ÷ 70) ≈ 37.1°, close to a 52mm full-frame view. That is where “equivalent focal length” comes from, but perspective still belongs to the real focal length.</p><h2 id="section-11">Limits</h2><p>Angle is not composition; distortion, crop modes and stabilizer crop change what is visible. Check the monitor after the math.</p><section><h2 id="section-7">Field check: measure the frame with a door</h2><p>Stand against the back wall and shoot the same composition at 24mm, 35mm and 50mm, using the door width in frame as the reference. If 24mm still does not fit, do not back through the wall; go vertical or use a wider lens. If 50mm gives natural facial perspective, do not force 24mm just to include the room. Record sensor width, focal length and door-to-frame ratio on one sheet, then reuse it on the next setup.</p></section></section></section>
+      <h2 id="section-13">Practice</h2><p>Take a 24mm and a 50mm lens into the same room, from the same tripod position. Calculate each horizontal angle first, then compare the frames: how much wall does the 24mm hold, and how much larger is the person at 50mm? If you can explain why a wider angle is not the same as a bigger subject, you have used this page.</p>
+      
       <aside class="article-sources" data-source-kind="experience">
-<div class="article-credit-head"><p class="eyebrow">Experience note / 经验说明</p><span class="mono">No external citation</span></div>
-<p class="source-types">Experience note: this page draws on 3 gear trial and playback reviews under the listed model and firmware, once indoors and once outdoors; it discusses “Lens Field-of-View Calculator: Focal Length, Sensor, and Horizontal Angle”; no external laboratory test was run, and the conclusion may not transfer when conditions change.</p><p class="source-list" data-expansion-source>Additional sources：<a href="../test-protocols/">Test protocol</a> · <a href="../../about/">Editorial standards</a></p></aside>
-      <div class="related"><a href="/article/gimbal/">Gimbal: Balance Before Power <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/gimbal-balance/">Gimbal Balance: Five Minutes Before Power <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">Composition: Tell the Eye Where to Look <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+<div class="article-credit-head"><p class="eyebrow">经验说明 / Experience note</p><span class="mono">No external citation</span></div>
+<p class="source-types">This page separates field judgement from public references; where there is no external source, it states the field limits.</p>
+<h2 id="section-14">Experience note</h2>
+<p>Experience note:This page documents the parameter limits of “Lens Field-of-View Calculator: Focal Length, Sensor, and Horizontal Angle”, drawing on 3 production calculations and on-set playbacks under the listed camera/firmware and distances; it is for estimates only, not unlisted gear, extreme temperatures, legal/platform compliance or cinema masters.</p><p class="source-list" data-expansion-source>Additional sources：<a href="../test-protocols/">Test protocol</a> · <a href="../../about/">Editorial standards</a></p></aside>
+<div class="related"><a href="/article/gimbal/">Gimbal: Balance Before Power <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/gimbal-balance/">Gimbal Balance: Five Minutes Before Power <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">Composition: Tell the Eye Where to Look <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
     </div>
 </main>
 <footer class="static-footer">

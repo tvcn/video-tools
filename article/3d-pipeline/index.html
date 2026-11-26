@@ -51,13 +51,52 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>3D 动画管线：从 blockout 到渲染</span></div>
-    <header class="article-hero"><p class="eyebrow">动画 / 3D</p><h1>3D 动画管线：从 blockout 到渲染</h1><p class="article-deck">3D 不是建模完就动画。先 blockout 定时间，再 layout、animation、lighting、render，每一步都能回退。</p><div class="article-meta"><span>2 分钟速读 + 6 分钟深读 · 中级</span><span>TVCN 动画组</span><span>编辑 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">Blockout 先定时间</a></li><li><a href="#section-2">五段管线，每段都有交接物</a></li><li><a href="#section-3">Layout 锁机位，动画再进来</a></li><li><a href="#section-4">灯光与渲染分开验收</a></li><li><a href="#section-5">继续往下：给已经在拍的人</a></li><li><a href="#section-6">先 blockout，再建模</a></li><li><a href="#section-7">绑定和动画的交接</a></li><li><a href="#section-8">灯光渲染和回退</a></li><li><a href="#section-9">五分钟练习：一个镜头全流程</a></li><li><a href="#section-10">什么时候算一个镜头完成</a></li><li><a href="#section-11">三维流程，十项检查</a></li><li><a href="#section-12">3 条验收</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">动画 / 3D</p><h1>3D 动画管线：从 blockout 到渲染</h1><p class="article-deck">3D 不是建模完就动画。先 blockout 定时间，再 layout、animation、lighting、render，每一步都能回退。</p><div class="article-meta"><span>2 分钟速读 + 6 分钟深读 · 中级</span><span>TVCN 动画组</span><span>编辑 2026-11</span><span class="deep-badge">DEEP / 7 MIN</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">Blockout 先定时间</a></li><li><a href="#section-2">Layout 锁机位，动画再进来</a></li><li><a href="#section-3">灯光与渲染分开验收</a></li><li><a href="#section-4">3 条验收</a></li><li><a href="#section-5">深读</a></li><li><a href="#section-6">边界</a></li><li><a href="#section-7">五段管线，每段都有交接物</a></li><li><a href="#section-8">继续往下：给已经在拍的人</a></li><li><a href="#section-9">先 blockout，再建模</a></li><li><a href="#section-10">绑定和动画的交接</a></li><li><a href="#section-11">灯光渲染和回退</a></li><li><a href="#section-12">五分钟练习：一个镜头全流程</a></li><li><a href="#section-13">什么时候算一个镜头完成</a></li><li><a href="#section-14">三维流程，十项检查</a></li><li><a href="#section-15">参考与延伸阅读</a></li></ol></nav>
     
     
-    <article class="article-body"><section><h2 id="section-1">Blockout 先定时间</h2><p>用最简单的方块和球，把动作的时间和机位排出来。这个阶段不建模、不贴图，只回答“什么时候发生、镜头在哪”。</p><p>Blockout 通过再往下走。blockout 里节奏不对，后面越精细越难改。</p></section><section class="editorial-depth"><h2 id="section-2">五段管线，每段都有交接物</h2>
+    <article class="article-body"><h2 id="section-1">Blockout 先定时间</h2>
+<p>用最简单的方块和球，把动作的时间和机位排出来。这个阶段不建模、不贴图，只回答“什么时候发生、镜头在哪”。</p>
+<p>Blockout 通过再往下走。blockout 里节奏不对，后面越精细越难改。</p>
+<h2 id="section-2">Layout 锁机位，动画再进来</h2>
+<p>Layout 定构图、焦距、运动路径。机位没锁，动画师会在错误的画框里做表演，最后全部返工。</p>
+<p>先做一条没有细节的 playblast，确认剪辑点。镜头长度定了，再分配动画时间。</p>
+<h2 id="section-3">灯光与渲染分开验收</h2>
+<p>灯光先看层次：主体、背景、环境是否分开。渲染再看出图：噪点、采样、通道、合成是否够用。</p>
+<p>不要把“渲染出来再说”当流程。灯光阶段用低采样预览，确认气氛；最后才开高采样。</p>
+<h2 id="section-4">3 条验收</h2>
+<ul>
+<li>blockout 的时长与剪辑点已经确认。</li>
+<li>机位在动画开始前锁定。</li>
+<li>灯光预览与最终渲染分两轮验收。</li>
+</ul>
+<!-- DEEP_DIVE_START -->
+<h2 id="section-5">深读</h2>
+<p><strong>约 7 分钟。</strong> 三维流程不是软件顺序，是每一步都能退回上一步；跳过 blockout，后面全在补结构。</p>
+<h3>先 blockout，再建模</h3>
+<p>用方盒和圆柱摆比例、机位、走位；先确认镜头里看得见什么，再建细节。blockout 不过，建模越细越浪费。</p>
+<p>把相机先放进场景，用实际焦距看构图；不要建完再找机位，那时候改不动。</p>
+<h3>绑定和动画的交接</h3>
+<p>绑定前定关节数量和命名；动画师拿到的是能弯、能转、能重量的 rig，不是一堆控制器。交接时录一段测试动作。</p>
+<p>动画先在低模上做，确认时间和重心，再上高模；高模上调动作，视图一卡，判断就慢。</p>
+<h3>灯光渲染和回退</h3>
+<p>灯光先做一版灰模照明，确认主光方向；材质不要一开始就上满，先看明暗关系。渲染先低分辨率、低采样，确认运动和构图。</p>
+<p>每个阶段存一个版本，命名写清日期和内容；回退不是失败，是流程的一部分。没有版本，回退就是重做。</p>
+<h3>五分钟练习：一个镜头全流程</h3>
+<p>用一个简单场景，走一遍 blockout、低模、绑定测试、低模动画、灰模灯光、低分辨率渲染；每步只花十分钟，不追细节。</p>
+<p>每步存版本，最后回退到 blockout，检查机位有没有变。变了，说明你在后面偷偷改结构。</p>
+<h3>什么时候算一个镜头完成</h3>
+<p>从 blockout 到最终渲染，机位没有偷偷移动、比例没有变、绑定没有坏、灯光方向一致、低分辨率试渲染和最终版构图相同；五样都对，才算完成。</p>
+<p>如果最终版和 blockout 构图不一样，回退检查，不要用后期裁切掩盖。三维流程最贵的问题，都是后面改了前面的决定。</p>
+<h3>三维流程，十项检查</h3>
+<ul><li>先 blockout 再建模</li><li>blockout 用方盒圆柱</li><li>相机先放进场景</li><li>用实际焦距看构图</li><li>绑定前定关节和命名</li><li>交接录测试动作</li><li>低模上做动画</li><li>灰模先定主光</li><li>低分辨率低采样试渲染</li><li>每阶段存版本</li></ul>
+<p>三维流程省时间的办法不是少做一步，是每一步都能退回上一步。</p>
+<!-- DEEP_DIVE_END -->
+
+<section><h2 id="section-6">边界</h2><p>本页只解决「3D 动画管线：从 blockout 到渲染」这一个问题；不替代 Animatic：配音、定时、改镜头、短片复盘：从分镜到成片、纪录模板：一个人、一件事、一个变化。如果现场问题属于后者，先读对应页，不要在本页继续加参数。</p></section><section class="editorial-depth"><h2 id="section-7">五段管线，每段都有交接物</h2>
 <p>3D 管线不是“建模完就动画”。每段要有可检查的交接物，否则问题会滚到渲染才爆。</p>
 <ol><li>Blockout：灰模 + 机位 + 镜头时长；确认故事和比例。</li><li>Layout：角色站位、摄影机路径、资产命名表。</li><li>Animation：按镜头交付，带缓存和版本号；不要交“最终版”这种无法回滚的名字。</li><li>Lighting/Render：灯光 rig、渲染层、采样与降噪记录。</li></ol>
-<p>验收：任取一个镜头，能说清它现在在哪一段、上一个交接物是什么、谁签过字。说不清，管线就是断的。</p></section><section><h2 id="section-3">Layout 锁机位，动画再进来</h2><p>Layout 定构图、焦距、运动路径。机位没锁，动画师会在错误的画框里做表演，最后全部返工。</p><p>先做一条没有细节的 playblast，确认剪辑点。镜头长度定了，再分配动画时间。</p></section><section><h2 id="section-4">灯光与渲染分开验收</h2><p>灯光先看层次：主体、背景、环境是否分开。渲染再看出图：噪点、采样、通道、合成是否够用。</p><p>不要把“渲染出来再说”当流程。灯光阶段用低采样预览，确认气氛；最后才开高采样。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+<p>验收：任取一个镜头，能说清它现在在哪一段、上一个交接物是什么、谁签过字。说不清，管线就是断的。</p></section>
+<p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
     <img src="../../assets/3d-desk.jpg" alt="3D 软件里的灰色 blockout" loading="lazy" decoding="async" width="1280" height="720">
     <figcaption><span>先让灰模动起来，再考虑材质和灯光。</span><span class="mono">AI 示意图</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
   </figure><figure class="diagram" data-image-nature="editorial-illustration">
@@ -65,15 +104,15 @@
     <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/3d-pipeline-top40.svg" alt="三维管线：从 block 到 comp" loading="lazy" decoding="async" width="1280" height="720"></div>
     
     <figcaption>示意：blockout 不过关，后面每一步都更贵。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><div class="check-box check-box-after"><h2 id="section-12">3 条验收</h2><ul><li>blockout 的时长与剪辑点已经确认。</li><li>机位在动画开始前锁定。</li><li>灯光预览与最终渲染分两轮验收。</li></ul></div></article>
+  </figure></article>
     <section class="deep-dive">
       <header class="deep-dive-head">
         <p class="eyebrow">DEEP DIVE / 07 MIN</p>
-        <h2 id="section-5">继续往下：给已经在拍的人</h2>
+        <h2 id="section-8">继续往下：给已经在拍的人</h2>
         <p>三维流程不是软件顺序，是每一步都能退回上一步；跳过 blockout，后面全在补结构。</p>
         <span class="deep-dive-note">比现场手册多走一步</span>
       </header>
-      <article class="article-body"><section><h2 id="section-6">先 blockout，再建模</h2><p>用方盒和圆柱摆比例、机位、走位；先确认镜头里看得见什么，再建细节。blockout 不过，建模越细越浪费。</p><p>把相机先放进场景，用实际焦距看构图；不要建完再找机位，那时候改不动。</p></section><section><h2 id="section-7">绑定和动画的交接</h2><p>绑定前定关节数量和命名；动画师拿到的是能弯、能转、能重量的 rig，不是一堆控制器。交接时录一段测试动作。</p><p>动画先在低模上做，确认时间和重心，再上高模；高模上调动作，视图一卡，判断就慢。</p></section><section><h2 id="section-8">灯光渲染和回退</h2><p>灯光先做一版灰模照明，确认主光方向；材质不要一开始就上满，先看明暗关系。渲染先低分辨率、低采样，确认运动和构图。</p><p>每个阶段存一个版本，命名写清日期和内容；回退不是失败，是流程的一部分。没有版本，回退就是重做。</p></section><section><h2 id="section-9">五分钟练习：一个镜头全流程</h2><p>用一个简单场景，走一遍 blockout、低模、绑定测试、低模动画、灰模灯光、低分辨率渲染；每步只花十分钟，不追细节。</p><p>每步存版本，最后回退到 blockout，检查机位有没有变。变了，说明你在后面偷偷改结构。</p></section><section><h2 id="section-10">什么时候算一个镜头完成</h2><p>从 blockout 到最终渲染，机位没有偷偷移动、比例没有变、绑定没有坏、灯光方向一致、低分辨率试渲染和最终版构图相同；五样都对，才算完成。</p><p>如果最终版和 blockout 构图不一样，回退检查，不要用后期裁切掩盖。三维流程最贵的问题，都是后面改了前面的决定。</p></section><section><h2 id="section-11">三维流程，十项检查</h2><ul><li>先 blockout 再建模</li><li>blockout 用方盒圆柱</li><li>相机先放进场景</li><li>用实际焦距看构图</li><li>绑定前定关节和命名</li><li>交接录测试动作</li><li>低模上做动画</li><li>灰模先定主光</li><li>低分辨率低采样试渲染</li><li>每阶段存版本</li></ul><p>三维流程省时间的办法不是少做一步，是每一步都能退回上一步。</p></section></article>
+      <article class="article-body"><section><h2 id="section-9">先 blockout，再建模</h2><p>用方盒和圆柱摆比例、机位、走位；先确认镜头里看得见什么，再建细节。blockout 不过，建模越细越浪费。</p><p>把相机先放进场景，用实际焦距看构图；不要建完再找机位，那时候改不动。</p></section><section><h2 id="section-10">绑定和动画的交接</h2><p>绑定前定关节数量和命名；动画师拿到的是能弯、能转、能重量的 rig，不是一堆控制器。交接时录一段测试动作。</p><p>动画先在低模上做，确认时间和重心，再上高模；高模上调动作，视图一卡，判断就慢。</p></section><section><h2 id="section-11">灯光渲染和回退</h2><p>灯光先做一版灰模照明，确认主光方向；材质不要一开始就上满，先看明暗关系。渲染先低分辨率、低采样，确认运动和构图。</p><p>每个阶段存一个版本，命名写清日期和内容；回退不是失败，是流程的一部分。没有版本，回退就是重做。</p></section><section><h2 id="section-12">五分钟练习：一个镜头全流程</h2><p>用一个简单场景，走一遍 blockout、低模、绑定测试、低模动画、灰模灯光、低分辨率渲染；每步只花十分钟，不追细节。</p><p>每步存版本，最后回退到 blockout，检查机位有没有变。变了，说明你在后面偷偷改结构。</p></section><section><h2 id="section-13">什么时候算一个镜头完成</h2><p>从 blockout 到最终渲染，机位没有偷偷移动、比例没有变、绑定没有坏、灯光方向一致、低分辨率试渲染和最终版构图相同；五样都对，才算完成。</p><p>如果最终版和 blockout 构图不一样，回退检查，不要用后期裁切掩盖。三维流程最贵的问题，都是后面改了前面的决定。</p></section><section><h2 id="section-14">三维流程，十项检查</h2><ul><li>先 blockout 再建模</li><li>blockout 用方盒圆柱</li><li>相机先放进场景</li><li>用实际焦距看构图</li><li>绑定前定关节和命名</li><li>交接录测试动作</li><li>低模上做动画</li><li>灰模先定主光</li><li>低分辨率低采样试渲染</li><li>每阶段存版本</li></ul><p>三维流程省时间的办法不是少做一步，是每一步都能退回上一步。</p></section></article>
     </section>
     
     <aside class="article-credit">
@@ -85,11 +124,16 @@
       <div><b>限制</b><p>经验型内容，不替代具体项目测试；设备与平台版本会变。</p></div>
     </div>
   </aside>
+    
     <aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">公开来源与现场复核</span></div>
-<p class="source-types">本页把现场判断和公开资料分开；每条链接写明它用来核对哪一段。</p>
-<ul><li><a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener noreferrer">[S62] Blender Foundation：Blender 官方手册 — 2026-11-26 访问。用于核对首段“3D 不是建模完就动画。先 blockout 定时间，再 layout、animation、lighting、rende”中的术语与公开背景（建模、绑定、动画、渲染）；不替代现场测试。</a></li><li><a href="https://docs.toonboom.com/" target="_blank" rel="noopener noreferrer">[S63] Toon Boom：官方文档 — 2026-11-26 访问。用于核对首段“3D 不是建模完就动画。先 blockout 定时间，再 layout、animation、lighting、rende”中的术语与公开背景（2D 动画、绑定与制作管线）；不替代现场测试。</a></li><li><a href="https://www.britannica.com/art/animation" target="_blank" rel="noopener noreferrer">[S12] Britannica — 2026-11-26 访问。用于核对首段“3D 不是建模完就动画。先 blockout 定时间，再 layout、animation、lighting、rende”中的术语与公开背景（动画原理、技术与产业史的百科条目）；不替代现场测试。</a></li><li><a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener noreferrer">[S59] Adobe：After Effects 用户指南 — 2026-11-26 访问。用于核对首段“3D 不是建模完就动画。先 blockout 定时间，再 layout、animation、lighting、rende”中的术语与公开背景（合成、关键帧、跟踪与导出）；不替代现场测试。</a></li></ul><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">Blender Manual</a> · <a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener">After Effects User Guide</a> · <a href="https://docs.toonboom.com/" target="_blank" rel="noopener">Toon Boom Documentation</a></p></aside>
-    <div class="related"><a href="/article/animatic-pipeline/">Animatic：配音、定时、改镜头 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/animation-case/">短片复盘：从分镜到成片 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://formats.tvcn.org/article/documentary-template/">纪录模板：一个人、一件事、一个变化 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+<p class="source-types">本页把现场判断和公开资料分开；没有外部来源时只写经验边界。</p>
+<h2 id="section-15">参考与延伸阅读</h2>
+<ul>
+<li>[S62] <a href="https://docs.blender.org/manual/en/latest/">Blender：官方手册</a> — 2026-11-26 访问。用于核对「Layout 锁机位，动画再进来」一节的术语/方法/规则（Blender 官方手册，不是行业流程标准）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+<li>[S59] <a href="https://helpx.adobe.com/after-effects/user-guide.html">Adobe：After Effects 官方指南</a> — 2026-11-26 访问。用于核对「灯光与渲染分开验收」一节的术语/方法/规则（After Effects 官方指南，不是合成美学结论）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+</ul><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a> · <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">Blender Manual</a> · <a href="https://helpx.adobe.com/after-effects/user-guide.html" target="_blank" rel="noopener">After Effects User Guide</a> · <a href="https://docs.toonboom.com/" target="_blank" rel="noopener">Toon Boom Documentation</a></p></aside>
+<div class="related"><a href="/article/animatic-pipeline/">Animatic：配音、定时、改镜头 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/animation-case/">短片复盘：从分镜到成片 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://formats.tvcn.org/article/documentary-template/">纪录模板：一个人、一件事、一个变化 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
     <nav class="article-nav"><a href="/article/stop-motion"><span class="mono">上一篇</span>定格动画：一张一张拍</a><a href="/article/animation-timing"><span class="mono">下一篇</span>动画的时间感：两张原画之间，决定重量</a></nav>
   </div>
 </main>

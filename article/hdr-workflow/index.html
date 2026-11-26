@@ -51,10 +51,29 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://post.tvcn.org/">后期</a><span>/</span><span>HDR 全流程：从监看到交付，不要只在最后加亮</span></div>
-    <header class="article-hero"><p class="eyebrow">后期 / HDR</p><h1>HDR 全流程：从监看到交付，不要只在最后加亮</h1><p class="article-deck">HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会得到“亮但平”的画面。</p><div class="article-meta"><span>4 分钟阅读 · 进阶</span><span>TVCN 后期组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先判断：这条片子真的需要 HDR 吗</a></li><li><a href="#section-2">拍摄与监看：先保住高光，再谈亮度</a></li><li><a href="#section-3">调色：先做 HDR，再做 SDR trim</a></li><li><a href="#section-4">交付：平台、母版、字幕与 QC</a></li><li><a href="#section-5">失败案例：把 SDR 拉亮当成 HDR</a></li><li><a href="#section-6">成本与验收</a></li><li><a href="#section-7">6 条验收</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">后期 / HDR</p><h1>HDR 全流程：从监看到交付，不要只在最后加亮</h1><p class="article-deck">HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会得到“亮但平”的画面。</p><div class="article-meta"><span>4 分钟阅读 · 进阶</span><span>TVCN 后期组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先判断：这条片子真的需要 HDR 吗</a></li><li><a href="#section-2">拍摄与监看：先保住高光，再谈亮度</a></li><li><a href="#section-3">调色：先做 HDR，再做 SDR trim</a></li><li><a href="#section-4">交付：平台、母版、字幕与 QC</a></li><li><a href="#section-5">失败案例：把 SDR 拉亮当成 HDR</a></li><li><a href="#section-6">成本与验收</a></li><li><a href="#section-7">验收</a></li><li><a href="#section-8">参考与延伸阅读</a></li></ol></nav>
     
     
-    <article class="article-body"><section><h2 id="section-1">先判断：这条片子真的需要 HDR 吗</h2><p>需要 HDR 的片子通常有可用的高光层次：窗外、霓虹、火光、金属反光；并且主要交付平台支持 HDR。没有高光信息、主要在手机小屏观看的片子，做 HDR 往往只得到更亮的中间调。</p><p>先问交付：平台要 PQ 还是 HLG，是否同时要 SDR 版本，母版走哪个标准。答不出，就不要在调色里先做 HDR；后面转 SDR 会多一遍活血。</p></section><section><h2 id="section-2">拍摄与监看：先保住高光，再谈亮度</h2><p>拍 Log 或 RAW，按高光保护曝光；不要为了监看好看把白电平压到 SDR。现场监视器要能加载 HDR 转换 LUT，但 LUT 只用于构图和曝光判断，不用于最终调色。</p><p>用一张 18% 灰卡和一张白卡做锚点：灰卡决定中间调，白卡决定高光余量。每换一个场景拍一次，后期才知道每段该从哪里起步。</p></section><section><h2 id="section-3">调色：先做 HDR，再做 SDR trim</h2><p>HDR 调色先定白点：SDR 白在 HDR 里不是 100%，通常要落在较低的位置；然后定高光滚降，让窗外和灯有层次，不直接切到峰值。肤色用示波器看，不要用“亮不亮”判断。</p><p>HDR 母版锁定后再做 SDR trim：不要直接压缩曲线，先看每个场景的中间调关系，再单独提高光。SDR 不是 HDR 的缩小版，它需要另一套对比判断。</p></section><section><h2 id="section-4">交付：平台、母版、字幕与 QC</h2><p>交付前写一张表：HDR 母版用 PQ 还是 HLG、峰值多少、SDR 版本用 Rec.709、字幕亮度、平台转码要求。HDR 字幕不要用纯白 100%，否则在暗场会刺眼；SDR 字幕也要单独检查。</p><p>QC 至少看三遍：HDR 参考监视器、SDR 参考监视器、普通手机。三遍都要检查高光是否死白、肤色是否偏、暗部是否有细节、字幕是否可读。</p></section><section><h2 id="section-5">失败案例：把 SDR 拉亮当成 HDR</h2><p>一条城市夜景，前期按 SDR 拍，窗外全白。后期把整体拉亮、加对比，声称 HDR。结果霓虹没有颜色，天空没有层次，人脸却过亮。平台转码后高光直接裁掉，HDR 版本和 SDR 看起来一样。</p><p>补救只能回到素材：没有高光信息，就没有 HDR。真正该做的是重拍窗外，或在 SDR 里把对比做好，不要用 HDR 标签掩盖拍摄不足。</p></section><section><h2 id="section-6">成本与验收</h2><p>低成本：HDR 监看借用 + 一次 HDR 调色 + 一次 SDR trim，¥5,000–15,000。中成本：HDR 调色棚 2–3 天、SDR 版本、QC，¥15,000–40,000。高成本：多版本平台交付、杜比视界/HLG 双母版，¥40,000–100,000+。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
+    <article class="article-body"><h2 id="section-1">先判断：这条片子真的需要 HDR 吗</h2>
+<p>需要 HDR 的片子通常有可用的高光层次：窗外、霓虹、火光、金属反光；并且主要交付平台支持 HDR。没有高光信息、主要在手机小屏观看的片子，做 HDR 往往只得到更亮的中间调。</p>
+<p>先问交付：平台要 PQ 还是 HLG，是否同时要 SDR 版本，母版走哪个标准。答不出，就不要在调色里先做 HDR；后面转 SDR 会多一遍活血。</p>
+<h2 id="section-2">拍摄与监看：先保住高光，再谈亮度</h2>
+<p>拍 Log 或 RAW，按高光保护曝光；不要为了监看好看把白电平压到 SDR。现场监视器要能加载 HDR 转换 LUT，但 LUT 只用于构图和曝光判断，不用于最终调色。</p>
+<p>用一张 18% 灰卡和一张白卡做锚点：灰卡决定中间调，白卡决定高光余量。每换一个场景拍一次，后期才知道每段该从哪里起步。</p>
+<h2 id="section-3">调色：先做 HDR，再做 SDR trim</h2>
+<p>HDR 调色先定白点：SDR 白在 HDR 里不是 100%，通常要落在较低的位置；然后定高光滚降，让窗外和灯有层次，不直接切到峰值。肤色用示波器看，不要用“亮不亮”判断。</p>
+<p>HDR 母版锁定后再做 SDR trim：不要直接压缩曲线，先看每个场景的中间调关系，再单独提高光。SDR 不是 HDR 的缩小版，它需要另一套对比判断。</p>
+<h2 id="section-4">交付：平台、母版、字幕与 QC</h2>
+<p>交付前写一张表：HDR 母版用 PQ 还是 HLG、峰值多少、SDR 版本用 Rec.709、字幕亮度、平台转码要求。HDR 字幕不要用纯白 100%，否则在暗场会刺眼；SDR 字幕也要单独检查。</p>
+<p>QC 至少看三遍：HDR 参考监视器、SDR 参考监视器、普通手机。三遍都要检查高光是否死白、肤色是否偏、暗部是否有细节、字幕是否可读。</p>
+<h2 id="section-5">失败案例：把 SDR 拉亮当成 HDR</h2>
+<p>一条城市夜景，前期按 SDR 拍，窗外全白。后期把整体拉亮、加对比，声称 HDR。结果霓虹没有颜色，天空没有层次，人脸却过亮。平台转码后高光直接裁掉，HDR 版本和 SDR 看起来一样。</p>
+<p>补救只能回到素材：没有高光信息，就没有 HDR。真正该做的是重拍窗外，或在 SDR 里把对比做好，不要用 HDR 标签掩盖拍摄不足。</p>
+<h2 id="section-6">成本与验收</h2>
+<p>低成本：HDR 监看借用 + 一次 HDR 调色 + 一次 SDR trim，¥5,000–15,000。中成本：HDR 调色棚 2–3 天、SDR 版本、QC，¥15,000–40,000。高成本：多版本平台交付、杜比视界/HLG 双母版，¥40,000–100,000+。</p>
+<h2 id="section-7">验收</h2>
+<ul><li>交付平台和 HDR 标准已写清。</li><li>拍摄保留高光，灰卡/白卡每场景都有。</li><li>HDR 调色先定白点，再做高光滚降。</li><li>HDR 母版锁定后才做 SDR trim。</li><li>HDR 与 SDR 字幕分别检查。</li><li>三种监视器各看一遍 QC。</li></ul>
+<p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
     <img src="../../assets/notes/hdr-workflow.svg" alt="HDR 全流程专题图解" loading="lazy" decoding="async" width="1280" height="720">
     <figcaption><span>示意：HDR 的每一段都要有亮度锚点；只在最后把母版拉亮，会把高光和肤色一起毁掉。</span><span class="mono">TVCN 专题图解 / 非现场照片</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
   </figure><figure class="diagram" data-image-nature="editorial-illustration">
@@ -62,7 +81,7 @@
     <div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/hdr-workflow-steps.svg" alt="HDR 全流程专题图解" loading="lazy" decoding="async" width="1280" height="720"></div>
     
     <figcaption>示意：HDR 的每一段都要有亮度锚点；只在最后把母版拉亮，会把高光和肤色一起毁掉。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption>
-  </figure><div class="check-box check-box-after"><h2 id="section-7">6 条验收</h2><ul><li>交付平台和 HDR 标准已写清。</li><li>拍摄保留高光，灰卡/白卡每场景都有。</li><li>HDR 调色先定白点，再做高光滚降。</li><li>HDR 母版锁定后才做 SDR trim。</li><li>HDR 与 SDR 字幕分别检查。</li><li>三种监视器各看一遍 QC。</li></ul></div>
+  </figure>
     
     
     <aside class="article-credit">
@@ -74,11 +93,17 @@
       <div><b>限制</b><p>经验型内容，不替代具体项目测试；设备与平台版本会变。</p></div>
     </div>
   </aside>
+    
     <aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">公开来源与现场复核</span></div>
-<p class="source-types">本页把现场判断和公开资料分开；每条链接写明它用来核对哪一段。</p>
-<ul><li><a href="https://acescentral.com/" target="_blank" rel="noopener noreferrer">[S24] ACESCentral：ACES：Academy Color Encoding System — 2026-11-27 访问。用于核对首段“HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会”中的术语与公开背景（ACES 色彩编码、ACEScg 与交付/归档工作流）；不替代现场测试。</a></li><li><a href="https://www.itu.int/rec/R-REC-BT.2020/en" target="_blank" rel="noopener noreferrer">[S26] ITU-R BT.2020 — 2026-11-26 访问。用于核对首段“HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会”中的术语与公开背景（UHD/HDR 的宽色域与参数定义）；不替代现场测试。</a></li><li><a href="https://partnerhelp.netflixstudios.com/" target="_blank" rel="noopener noreferrer">[S28] Netflix 制作与交付帮助 — 2026-11-26 访问。用于核对首段“HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会”中的术语与公开背景（平台交付规格、HDR/SDR 与 QC 要求的公开入口）；不替代现场测试。</a></li><li><a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener noreferrer">[S30] DaVinci Resolve 产品与文档 — 2026-11-26 访问。用于核对首段“HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会”中的术语与公开背景（剪辑、调色、Fusion 与交付的官方产品入口）；不替代现场测试。</a></li><li><a href="https://helpx.adobe.com/premiere-pro/user-guide.html" target="_blank" rel="noopener noreferrer">[S34] Adobe Premiere Pro 用户指南 — 2026-11-26 访问。用于核对首段“HDR 不是把 SDR 拉亮，而是从拍摄、监看、调色到平台交付都保留同一套亮度关系。任何一个环节按 SDR 猜，最后都会”中的术语与公开背景（剪辑、代理、色彩与导出的官方文档）；不替代现场测试。</a></li></ul></aside>
-    <div class="related"><a href="/article/keying/">抠像：先抠边缘，再调色 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/loudness/">响度：平台目标与真峰值 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">构图：先让观众知道看哪里 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+<p class="source-types">本页把现场判断和公开资料分开；没有外部来源时只写经验边界。</p>
+<h2 id="section-8">参考与延伸阅读</h2>
+<ul>
+<li>[S24] <a href="https://acescentral.com/">ACESCentral：ACES 色彩规范</a> — 2026-11-26 访问。用于核对「调色：先做 HDR，再做 SDR trim」一节的术语/方法/规则（ACES 色彩规范，不是调色教程）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+<li>[S25] <a href="https://www.itu.int/rec/R-REC-BT.709/en">ITU-R BT.709</a> — 2026-11-26 访问。用于核对「先判断：这条片子真的需要 HDR 吗」一节的术语/方法/规则（BT.709 高清电视参数，不是现场曝光建议）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+<li>[S30] <a href="https://www.blackmagicdesign.com/products/davinciresolve">DaVinci Resolve：官方文档</a> — 2026-11-26 访问。用于核对「交付：平台、母版、字幕与 QC」一节的术语/方法/规则（Resolve 官方产品/文档入口，不是第三方教程）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
+</ul></aside>
+<div class="related"><a href="/article/keying/">抠像：先抠边缘，再调色 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/loudness/">响度：平台目标与真峰值 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">构图：先让观众知道看哪里 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
     <nav class="article-nav"><a href="/article/backup-recovery"><span class="mono">上一篇</span>备份恢复：演一次恢复</a><a href="/article/conform-online"><span class="mono">下一篇</span>Conform / Online：套底、回批与母版</a></nav>
   </div>
 </main>
