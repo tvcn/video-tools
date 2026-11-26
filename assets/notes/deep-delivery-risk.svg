@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img">
+  <rect width="1000" height="500" fill="#111615"/>
+  <text x="40" y="78" fill="#eef2ef" font-size="34" font-weight="700">交付链的四段</text>
+  <text x="40" y="112" fill="#9fb0aa" font-size="18">结构图：看各步之间的顺序与判断点</text>
+<rect x="40" y="150" width="430" height="150" rx="14" fill="#18201f" stroke="#7fb3a6" stroke-width="2"/><circle cx="64" cy="176" r="8" fill="#7fb3a6"/><text x="255.0" y="215.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="255.0" y="215.0">母版：唯一、锁死</tspan></text>
+<rect x="510" y="150" width="430" height="150" rx="14" fill="#18201f" stroke="#d6b36a" stroke-width="2"/><circle cx="534" cy="176" r="8" fill="#d6b36a"/><text x="725.0" y="215.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="725.0" y="215.0">规格：平台与客户各一版</tspan></text>
+<rect x="40" y="320" width="430" height="150" rx="14" fill="#18201f" stroke="#9a8fc2" stroke-width="2"/><circle cx="64" cy="346" r="8" fill="#9a8fc2"/><text x="255.0" y="385.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="255.0" y="385.0">派生：文件名带版本</tspan></text>
+<rect x="510" y="320" width="430" height="150" rx="14" fill="#18201f" stroke="#d98d7a" stroke-width="2"/><circle cx="534" cy="346" r="8" fill="#d98d7a"/><text x="725.0" y="385.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="725.0" y="385.0">回执：谁确认、确认了什么</tspan></text>
+<line x1="470" y1="225" x2="510" y2="225" stroke="#d6b36a" stroke-width="3"/><path d="M502 218 L510 225 L502 232" fill="none" stroke="#d6b36a" stroke-width="3"/><line x1="470" y1="395" x2="510" y2="395" stroke="#d6b36a" stroke-width="3"/><path d="M502 388 L510 395 L502 402" fill="none" stroke="#d6b36a" stroke-width="3"/>
+</svg>

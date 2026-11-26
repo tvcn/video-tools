@@ -51,7 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap" data-content-v2="1">
 <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://context.tvcn.org/">影像史与素养</a><span>/</span><span>AI 影像前史：从滤镜到生成</span></div>
-<header class="article-hero"><p class="eyebrow">影像史与素养 / 影像史</p><h1>AI 影像前史：从滤镜到生成</h1><p class="article-deck">AI 影像不是从生成视频开始；滤镜、修复、抠像、换脸，每一步都在训练“自动修改画面”。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span>TVCN 研究组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-2">今天怎么用</a></li><li><a href="#section-3">不要误用</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-6">来源边界</a></li><li><a href="#section-7">验收</a></li><li><a href="#section-8">参考与延伸阅读</a></li></ol></nav>
+<header class="article-hero"><p class="eyebrow">影像史与素养 / 影像史</p><h1>AI 影像前史：从滤镜到生成</h1><p class="article-deck">AI 影像不是从生成视频开始；滤镜、修复、抠像、换脸，每一步都在训练“自动修改画面”。</p><div class="article-meta"><span>4 分钟阅读 · 现场手册</span><span>TVCN 研究组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-2">今天怎么用</a></li><li><a href="#section-3">不要误用</a></li><li><a href="#section-4">现场</a></li><li><a href="#section-5">怎么做</a></li><li><a href="#section-6">别踩</a></li><li><a href="#section-6">来源边界</a></li><li><a href="#section-7">验收</a></li><li><a href="#section-8">深读</a></li><li><a href="#section-9">参考与延伸阅读</a></li></ol></nav>
 
 <article class="article-body"><p>AI 影像不是从生成开始的。它先经过滤镜、风格迁移、超分、抠像和补帧，最后才进入文生视频。每一步都在把“后期修复”变成“前期生成”，也把作者、授权和证据问题推到台前。</p>
 
@@ -61,7 +61,24 @@
 <section><h2 id="section-6">别踩</h2><p>别把 prompt 当导演；它给的是概率，不是调度。</p></section>
 <section><h2 id="section-6">来源边界</h2><p>这是解释，不是原始档案；关键年份、人物和法律条文回到 <a href="../../about/">SOURCES.md</a> 的原始链接复核。二手叙述只能当线索，不能当证据。</p></section>
 <h2 id="section-7">验收</h2>
-<ul><li>时间线从滤镜、修复、抠像、换脸排到生成。</li><li>每一步都标出人类剩余的控制点。</li><li>能说出 prompt 控制不了的一项，比如精确走位或连续性。</li></ul><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../assets/notes/ai-video-history.svg" alt="AI 影像前史：从滤镜到生成 编辑封面" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>这是为这一页画的编辑封面，不是实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / CONTEXT</div><h3 class="diagram-title">结构图</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/ai-video-history-steps.svg" alt="AI 影像前史：从滤镜到生成的结构示意图。" loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>看“按滤镜、修复、抠像、换脸、生成排时间…”和“每一步标出“人还能控制什么””两处，判断它替代了什么旧办法，又新增了什么限制。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure>
+<ul><li>时间线从滤镜、修复、抠像、换脸排到生成。</li><li>每一步都标出人类剩余的控制点。</li><li>能说出 prompt 控制不了的一项，比如精确走位或连续性。</li></ul>
+
+<!-- DEEP_DIVE_START -->
+<h2 id="section-8">深读</h2>
+<p><strong>约 8 分钟。</strong> 这一节不重复前面的做法，只补三个东西：两种条件、一个反例、一个可复用模型；读完能判断什么时候换做法。</p>
+<h3>条件 A：滤镜/自动剪辑</h3>
+<p>AI 影像前史不是从生成开始，是从“自动处理”开始：滤镜、稳定、降噪、自动剪辑、风格迁移。这些工具先改变了“后期做什么”，再改变“拍摄做什么”。滤镜让颜色不再是现场事实，自动剪辑让节奏不再是人工选择。</p>
+<p>自动处理的核心是“可预测”：给一个输入，工具按规则输出。它不创作，它执行。理解这一点，才能分清今天的“生成”与昨天的“处理”：生成改变素材，处理改变素材的样子。</p>
+<h3>条件 B：生成/合成</h3>
+<p>生成模型把“素材”变成“采样”：不是拍到一个东西，是从概率分布里取出一个像它的东西。这带来两个新问题：一致性（同一个角色能不能跨镜头保持）和控制（导演能不能指定动作/镜头/光）。历史上前期是控制问题，今天还是控制问题。</p>
+<p>AI 影像的历史不是一条“越来越真”的线，是一条“控制越来越细”的线：从滤镜的全局参数，到局部遮罩，到关键帧，到镜头/动作/光分别控制。真实感只是副产品，控制才是主线。</p>
+<h3>反例：把 AI 当成全新</h3>
+<p>“AI 让视频从零到一”是常见的说法。但自动调色、自动剪辑、风格迁移已经存在几十年；生成只是把“选择”换成了“采样”，把“参数”换成了“提示”。说全新，会漏掉前面的控制和伦理问题。</p>
+<p>修法不是否定生成，而是把它放进谱系：处理 → 合成 → 生成。每一阶段都带来新的控制问题，也继承旧的版权/真实性/劳动问题。新工具不等于新问题。</p>
+<h3>可复用模型</h3>
+<p><strong>自动化 → 表征 → 控制。</strong> 自动化解决“重复劳动”，表征解决“像不像”，控制解决“听不听话”。三段历史，今天仍在同时发生。</p>
+<p>评价一个 AI 影像工具，问三个问题：它自动化了什么、它表征了什么、它能控制到什么粒度。三个答案清楚，工具才有位置；只有一个“很真”，通常还不够。</p>
+<!-- DEEP_DIVE_END --><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../assets/notes/ai-video-history.svg" alt="AI 影像前史：从滤镜到生成 编辑封面" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>这是为这一页画的编辑封面，不是实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / CONTEXT</div><h3 class="diagram-title">结构图</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/ai-video-history-steps.svg" alt="AI 影像前史：从滤镜到生成的结构示意图。" loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>看“按滤镜、修复、抠像、换脸、生成排时间…”和“每一步标出“人还能控制什么””两处，判断它替代了什么旧办法，又新增了什么限制。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure>
 
 
 <aside class="article-credit">
@@ -73,10 +90,11 @@
 <div><b>限制</b><p>经验型内容，不替代具体项目测试；设备与平台版本会变。</p></div>
 </div></aside>
 
+
 <aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">公开来源与现场复核</span></div>
 <p class="source-types">本页把现场判断和公开资料分开；没有外部来源时只写经验边界。</p>
-<h2 id="section-8">参考与延伸阅读</h2>
+<h2 id="section-9">参考与延伸阅读</h2>
 <ul>
 <li>[S19] <a href="https://arxiv.org/abs/1406.2661">GAN 原始论文（2014）</a> — 2026-11-26 访问。用于核对「今天怎么用」一节的术语/方法/规则（GAN 原始论文，不是产品评测）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
 <li>[S20] <a href="https://arxiv.org/abs/2006.11239">DDPM 原始论文（2020）</a> — 2026-11-26 访问。用于核对「不要误用」一节的术语/方法/规则（DDPM 原始论文，不是产品评测）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>

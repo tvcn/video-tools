@@ -51,7 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap" data-content-v2="1">
 <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://animation.tvcn.org/">动画</a><span>/</span><span>绑定：让关节能转</span></div>
-<header class="article-hero"><p class="eyebrow">动画 / 三维</p><h1>绑定：让关节能转</h1><p class="article-deck">绑定先让关节转得对，再让皮肤变形好看；转不动，权重再细也没用。</p><div class="article-meta"><span>3 分钟阅读 · 现场手册</span><span>TVCN 动画组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">关节能转，权重不撕</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">现场</a></li><li><a href="#section-4">怎么做</a></li><li><a href="#section-5">别踩</a></li><li><a href="#section-6">判断</a></li><li><a href="#section-7">失败</a></li><li><a href="#section-8">延伸</a></li><li><a href="#section-9">验收</a></li><li><a href="#section-10">参考与延伸阅读</a></li></ol></nav>
+<header class="article-hero"><p class="eyebrow">动画 / 三维</p><h1>绑定：让关节能转</h1><p class="article-deck">绑定先让关节转得对，再让皮肤变形好看；转不动，权重再细也没用。</p><div class="article-meta"><span>5 分钟阅读 · 现场手册</span><span>TVCN 动画组</span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">关节能转，权重不撕</a></li><li><a href="#section-2">边界</a></li><li><a href="#section-3">现场</a></li><li><a href="#section-4">怎么做</a></li><li><a href="#section-5">别踩</a></li><li><a href="#section-6">判断</a></li><li><a href="#section-7">失败</a></li><li><a href="#section-8">延伸</a></li><li><a href="#section-9">验收</a></li><li><a href="#section-10">深读</a></li><li><a href="#section-11">参考与延伸阅读</a></li></ol></nav>
 
 <article class="article-body"><p>绑定先保证三个基本动作：肘和膝能单向弯、肩能抬起、头能转。每个关节设限位，再做权重测试；不要先加几十根控制棒。</p>
 
@@ -63,7 +63,24 @@
 <section><h2 id="section-7">失败</h2><p>下面任一条出现，先停，不要靠后期补：</p><ul><li><strong>1.</strong> 只做到“肩、肘、膝三个关节都能转到极限，网格没有塌陷”的形式，换一个机位或场景就重现不了。</li><li><strong>2.</strong> 把“塌陷处先调权重，不是靠加骨骼盖住”留到后期或口头解释，现场没有留下能复查的记录。</li><li><strong>3.</strong> 别用加骨骼解决塌陷；权重没调对，骨头越多越乱。</li></ul></section>
 <section><h2 id="section-8">延伸</h2><p><strong>10 分钟练习：</strong>用 24 fps 画 3 个关键帧，只改“如果网格塌陷，先调权重，不要加更多骨…”，导出 2 秒；如果重量仍读不出来，先加预备帧，不要加模糊。</p></section>
 <h2 id="section-9">验收</h2>
-<ul><li>肩、肘、膝三个关节都能转到极限，网格没有塌陷。</li><li>塌陷处先调权重，不是靠加骨骼盖住。</li><li>十帧旋转回放，皮肤没有突然的撕裂或夹面。</li></ul><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../assets/notes/rigging.svg" alt="绑定：让关节能转 编辑封面" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>这是为这一页画的编辑封面，不是实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / ANIMATION</div><h3 class="diagram-title">结构图</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/rigging-steps.svg" alt="绑定：让关节能转的结构示意图。" loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>看“先转肩、肘、膝三个关节，各拍 10 …”和“如果网格塌陷，先调权重，不要加更多骨…”两处，判断前景、中景、背景的速度差能不能在一次移动里看出来。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure>
+<ul><li>肩、肘、膝三个关节都能转到极限，网格没有塌陷。</li><li>塌陷处先调权重，不是靠加骨骼盖住。</li><li>十帧旋转回放，皮肤没有突然的撕裂或夹面。</li></ul>
+
+<!-- DEEP_DIVE_START -->
+<h2 id="section-10">深读</h2>
+<p><strong>约 8 分钟。</strong> 这一节不重复前面的做法，只补三个东西：两种条件、一个反例、一个可复用模型；读完能判断什么时候换做法。</p>
+<h3>条件 A：简单角色/少控制器</h3>
+<p>简单角色不需要全套面部控制器；先把身体四个点做好：重心、脚、手、头。重心控制器决定角色往哪倒，脚决定接触，手决定抓取，头决定看。四个点能动，角色就能演大部分镜头。</p>
+<p>控制器越少，动画师越敢用。给每个控制器一个清楚的名字和颜色，不要用默认名；默认名在交接时没人知道。简单绑定也要做一次极限测试：每个关节转到最大，看有没有穿模。</p>
+<h3>条件 B：复杂角色/面部</h3>
+<p>复杂角色要分层：身体、手指、面部、服装、道具各一层控制器；不要让所有控制器挤在一个面板。动画师需要的是“快速找到”，不是“全部看见”。每层只暴露常用的 5–8 个控制器，其余收进次级面板。</p>
+<p>面部绑定要先做“表情范围表”：这个角色能做什么、不能做什么；不能做的用动画/贴图/镜头解决，不要硬绑。绑定不是越全越好，是越可预测越好。</p>
+<h3>反例：所有控制器在一层</h3>
+<p>一个角色的控制器全部摊在一个面板，手指 30 个、面部 60 个、身体 20 个。动画师每次要抓一个手指，都要在面板里找半天；做了三天，开始用表情代替手指，角色变得不会拿东西。</p>
+<p>修法不是删控制器，是分组：常用一组、次级一组、调试一组；常用组只留 8 个。分组不是省事，是让动画师把注意力放在表演，不放在找按钮。</p>
+<h3>可复用模型</h3>
+<p><strong>控制地图 → 极限测试 → 命名 → 交接。</strong> 先画控制地图，再做极限测试，再统一命名，最后写交接说明。四步都在，绑定才是资产，不是某个人的记忆。</p>
+<p>交接时让另一个动画师不看说明先做三个动作：抓、走、看；做不出来，说明绑定或命名有问题。绑定不是给自己用的，是给下一个人用的。</p>
+<!-- DEEP_DIVE_END --><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../assets/notes/rigging.svg" alt="绑定：让关节能转 编辑封面" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>这是为这一页画的编辑封面，不是实拍。</span><span class="mono">TVCN 图解</span> <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / ANIMATION</div><h3 class="diagram-title">结构图</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../assets/notes/rigging-steps.svg" alt="绑定：让关节能转的结构示意图。" loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>看“先转肩、肘、膝三个关节，各拍 10 …”和“如果网格塌陷，先调权重，不要加更多骨…”两处，判断前景、中景、背景的速度差能不能在一次移动里看出来。 <span class="fig-nature">编辑示意图，不是本页实测照片。</span></figcaption></figure>
 
 
 <aside class="article-credit">
@@ -75,10 +92,11 @@
 <div><b>限制</b><p>经验型内容，不替代具体项目测试；设备与平台版本会变。</p></div>
 </div></aside>
 
+
 <aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">公开来源与现场复核</span></div>
 <p class="source-types">本页把现场判断和公开资料分开；没有外部来源时只写经验边界。</p>
-<h2 id="section-10">参考与延伸阅读</h2>
+<h2 id="section-11">参考与延伸阅读</h2>
 <ul>
 <li>[S62] <a href="https://docs.blender.org/manual/en/latest/">Blender：官方手册</a> — 2026-11-26 访问。用于核对「关节能转，权重不撕」一节的术语/方法/规则（Blender 官方手册，不是行业流程标准）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>
 <li>[S59] <a href="https://helpx.adobe.com/after-effects/user-guide.html">Adobe：After Effects 官方指南</a> — 2026-11-26 访问。用于核对「现场」一节的术语/方法/规则（After Effects 官方指南，不是合成美学结论）；不核对其中由本页经验得出的数字、型号与现场结论，也不替代测试。</li>

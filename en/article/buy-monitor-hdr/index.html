@@ -51,7 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://tools.tvcn.org/">Tools</a><span>/</span><span>Buying an HDR Monitor: Peak Nits Is Not Everything</span></div>
-    <header class="article-hero"><p class="eyebrow">Tools / Buying guide</p><h1>Buying an HDR Monitor: Peak Nits Is Not Everything</h1><p class="article-deck">HDR monitoring depends on peak, black level, gamut, tone mapping, and calibration. Buying on “1000 nits” alone gets a bright screen with clipped highlights.</p><div class="article-meta"><span>3 min read · Advanced</span><span>TVCN Tools Desk</span><span>Edited 2026-11</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">First decision: which link is missing</a></li><li><a href="#section-2">Test protocol: reproducible, no invented scores</a></li><li><a href="#section-3">Price bands: total cost of ownership first</a></li><li><a href="#section-4">Alternatives and upgrades: do not add money on the wrong axis</a></li><li><a href="#section-5">Buying steps: bring footage, not spec sheets</a></li><li><a href="#section-6">Check</a></li><li><a href="#section-7">References and further reading</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">Tools / Buying guide</p><h1>Buying an HDR Monitor: Peak Nits Is Not Everything</h1><p class="article-deck">HDR monitoring depends on peak, black level, gamut, tone mapping, and calibration. Buying on “1000 nits” alone gets a bright screen with clipped highlights.</p><div class="article-meta"><span>5 min read · Advanced</span><span>TVCN Tools Desk</span><span>Edited 2026-11</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">First decision: which link is missing</a></li><li><a href="#section-2">Test protocol: reproducible, no invented scores</a></li><li><a href="#section-3">Price bands: total cost of ownership first</a></li><li><a href="#section-4">Alternatives and upgrades: do not add money on the wrong axis</a></li><li><a href="#section-5">Buying steps: bring footage, not spec sheets</a></li><li><a href="#section-6">Check</a></li><li><a href="#section-7">Deep dive</a></li><li><a href="#section-8">References and further reading</a></li></ol></nav>
     
     
     <article class="article-body"><h2 id="section-1">First decision: which link is missing</h2>
@@ -74,6 +74,23 @@
 <ol><li>Bring HDR test clip</li><li>Signal generator PQ/HLG</li><li>Check black level</li><li>Color chart P3</li><li>Check calibration report/LUT</li></ol>
 <h2 id="section-6">Check</h2>
 <ul><li>Highlights have layers, not clipped white.</li><li>Dark scenes are not grey.</li><li>P3 gamut is acceptable.</li><li>PQ/HLG switch correct.</li><li>3D LUT/calibration report exists.</li><li>Room light is controllable.</li></ul>
+
+<!-- DEEP_DIVE_START -->
+<h2 id="section-7">Deep dive</h2>
+<p><strong>About 7 minutes.</strong> This section does not repeat the method above. It adds three things: two conditions, a counterexample and a reusable model, so you can decide when to change the method.</p>
+<h3>Condition A: mostly SDR</h3>
+<p>If ninety percent of the work is SDR, an HDR monitor is not the first priority. SDR needs accurate black, stable white and a reliable waveform; a 1000-nit HDR monitor with a bad SDR preset is worse. Check whether the SDR preset can be calibrated.</p>
+<p>SDR monitoring also depends on ambient light: a bright room forces brightness up and black drifts. Decide shading and room level before buying; without environment control, an expensive monitor is still guesswork.</p>
+<h3>Condition B: HDR delivery</h3>
+<p>HDR delivery starts with who watches: PQ or HLG, what peak, whether Dolby Vision is required. The monitor must display the target peak and tone-map reliably; “1000 nits” is not enough, check mapping at 100, 400 and 1000 nits.</p>
+<p>HDR also depends on shadows: it is not only brightness; black and near-black separation matter more. Take your own dark footage to test, not the showroom demo; demos are all highlights. If shadows collapse, HDR is only bright.</p>
+<h3>Counterexample: buying on peak nits alone</h3>
+<p>A monitor claims 1600 nits. At home everything below 100 nits is black, shadows have no layers; HDR highlights are bright but faces in shadow are a patch. The spec wins, the image loses.</p>
+<p>The fix is not a brighter monitor; test three bands with your footage: shadow, mid, highlight. If each band shows layers, it is HDR monitoring. Peak is a ceiling, not a capability.</p>
+<h3>Reusable model</h3>
+<p><strong>Delivery target → peak → tone mapping → shadows → environment.</strong> Set delivery, then peak, then mapping, then shadows, then room. With all five, an HDR monitor is not a spec ornament.</p>
+<p>Before buying, run a three-band test: same footage at 100, 400 and 1000 nits, check shadow, skin and highlight. Only pay when all three are acceptable.</p>
+<!-- DEEP_DIVE_END -->
 <aside class="regional-note"><p><strong>Regional note for US / UK / EU readers</strong></p><p>This English page keeps mainland-China examples where they are part of the method. Read platform names as examples, not as the only market: Douyin ↔ TikTok/Reels, Bilibili ↔ YouTube, Xiaohongshu ↔ Instagram/Pinterest; RMB figures are not converted here. Voltage, plug, warranty, import duty and radio certification differ by market; check the local spec sheet before ordering gear or batteries.</p></aside><p class="media-disclosure"><strong>Image note.</strong> Covers, diagrams and step images on this page are editorial illustrations or structure diagrams, not photographs of a test performed here; they are not evidence of measured gear performance. Where an image is AI-assisted, the caption says so. Read the test conditions in the text before treating an image as proof.</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
     <img src="../../../assets/notes/buy-monitor-hdr-en.svg" alt="HDR monitor buying diagram" loading="lazy" decoding="async" width="1280" height="720">
     <figcaption><span>Diagram: peak, black, gamut, tone mapping, and calibration decide whether HDR grading is trustworthy.</span><span class="mono">TVCN technical diagram / not a photograph</span> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption>
@@ -95,10 +112,11 @@
     </div>
   </aside>
     
-    <aside class="article-sources" data-source-kind="sourced">
+    
+<aside class="article-sources" data-source-kind="sourced">
 <div class="article-credit-head"><p class="eyebrow">Sources / 来源</p><span class="mono">Public references and field review</span></div>
 <p class="source-types">This page separates field judgement from public references; where there is no external source, it states the field limits.</p>
-<h2 id="section-7">References and further reading</h2>
+<h2 id="section-8">References and further reading</h2>
 <ul>
 <li>[S24] <a href="https://acescentral.com/">ACESCentral: ACES</a> — Accessed 2026-11-26. Used to check the terminology/method/rule in the “First decision: which link is missing” section against ACES color specification, not a grading tutorial; it does not verify numbers, model choices or on-set conclusions derived from this page, and is not a substitute for a test.</li>
 <li>[S26] <a href="https://www.itu.int/rec/R-REC-BT.2020/en">ITU-R BT.2020</a> — Accessed 2026-11-26. Used to check the terminology/method/rule in the “Test protocol: reproducible, no invented scores” section against BT.2020 UHD parameters, not on-set exposure advice; it does not verify numbers, model choices or on-set conclusions derived from this page, and is not a substitute for a test.</li>
