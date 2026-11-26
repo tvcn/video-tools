@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="视角不是放大：画幅和焦距一起决定">
+<rect width="1280" height="720" fill="#f4f1eb"/>
+<rect x="0" y="0" width="1280" height="8" fill="#3d6d8a"/>
+<text x="54" y="58" fill="#3d6d8a" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="2">TVCN / TOOLS / FOV</text>
+<text x="54" y="112" fill="#171513" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="34" font-weight="700">视角不是放大：画幅和焦距一起决定</text>
+<text x="1226" y="112" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TOOLS / CALCULATOR</text>
+<rect x="54" y="174" width="566" height="412" rx="12" fill="#fffdf8" stroke="#171513" stroke-opacity=".16"/>
+<text x="82" y="212" fill="#3d6d8a" font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700">θ = 2 × arctan(w / 2f)</text>
+<line x1="254" y1="310" x2="254" y2="486" stroke="#171513" stroke-width="4"/>
+<text x="214" y="530" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="13">w = 36mm</text>
+<circle cx="560" cy="398" r="7" fill="#3d6d8a"/>
+<line x1="560" y1="398" x2="254" y2="310" stroke="#3d6d8a" stroke-width="2"/>
+<line x1="560" y1="398" x2="254" y2="486" stroke="#3d6d8a" stroke-width="2"/>
+<line x1="560" y1="398" x2="254" y2="398" stroke="#171513" stroke-opacity=".38" stroke-dasharray="6 8"/>
+<text x="390" y="386" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="13">f</text>
+<text x="386" y="440" fill="#3d6d8a" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700">水平视角 θ</text>
+<text x="570" y="322" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">镜头</text>
+<text x="232" y="298" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">传感器</text>
+<text x="82" y="566" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="13">同一焦距，画幅越小，视角越窄。</text>
+<rect x="642" y="174" width="584" height="412" rx="12" fill="#fffdf8" stroke="#171513" stroke-opacity=".16"/>
+<text x="666" y="242" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="14">画幅与水平视角</text>
+<text x="666" y="206" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">24mm / 50mm / 85mm</text>
+<line x1="666" y1="236" x2="1226" y2="236" stroke="#171513" stroke-opacity=".12"/>
+<text x="666" y="270" fill="#171513" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="700">全画幅 36mm</text>
+<text x="930" y="270" text-anchor="end" fill="#3d6d8a" font-family="ui-monospace,Consolas,monospace" font-size="24" font-weight="700">73.7°</text>
+<text x="1060" y="270" text-anchor="end" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="22">39.6°</text>
+<text x="1190" y="270" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="22">23.9°</text>
+<line x1="666" y1="324" x2="1226" y2="324" stroke="#171513" stroke-opacity=".12"/>
+<text x="666" y="358" fill="#171513" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="700">APS-C 23.5mm</text>
+<text x="930" y="358" text-anchor="end" fill="#3d6d8a" font-family="ui-monospace,Consolas,monospace" font-size="24" font-weight="700">52.2°</text>
+<text x="1060" y="358" text-anchor="end" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="22">26.4°</text>
+<text x="1190" y="358" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="22">15.7°</text>
+<line x1="666" y1="412" x2="1226" y2="412" stroke="#171513" stroke-opacity=".12"/>
+<text x="666" y="446" fill="#171513" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="700">M4/3 17.3mm</text>
+<text x="930" y="446" text-anchor="end" fill="#3d6d8a" font-family="ui-monospace,Consolas,monospace" font-size="24" font-weight="700">39.6°</text>
+<text x="1060" y="446" text-anchor="end" fill="#171513" font-family="ui-monospace,Consolas,monospace" font-size="22">19.6°</text>
+<text x="1190" y="446" text-anchor="end" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="22">11.6°</text>
+<text x="82" y="616" fill="#171513" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="15">视角变窄不等于把主体放大：透视、畸变、背景压缩也一起变。</text>
+<line x1="54" y1="654" x2="1226" y2="654" stroke="#171513" stroke-opacity=".14"/>
+<text x="54" y="686" fill="#6f675d" font-family="ui-monospace,Consolas,monospace" font-size="12">TVCN / LOCAL CALCULATOR DIAGRAM</text>
+<text x="1226" y="686" text-anchor="end" fill="#6f675d" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-size="12">焦距与画幅一起看</text>
+</svg>
