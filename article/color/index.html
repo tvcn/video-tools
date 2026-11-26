@@ -51,7 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap">
     <div class="breadcrumbs"><a href="../../">首页</a><span>/</span><a href="https://post.tvcn.org/">后期</a><span>/</span><span>调色：先统一，再风格</span></div>
-    <header class="article-hero"><p class="eyebrow">后期 / 调色</p><h1>调色：先统一，再风格</h1><p class="article-deck">调色先解决白平衡、曝光和镜头匹配，再谈 LUT 和风格。镜头之间不连，风格越多越乱。</p><div class="article-meta"><span>2 分钟阅读 · 中级</span><span><a href="../../about/#desk-post">TVCN 后期组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先做镜头匹配</a></li><li><a href="#section-2">肤色是锚点</a></li><li><a href="#section-3">风格只用一个方向</a></li><li><a href="#section-4">3 条验收</a></li></ol></nav>
+    <header class="article-hero"><p class="eyebrow">后期 / 调色</p><h1>调色：先统一，再风格</h1><p class="article-deck">调色先解决白平衡、曝光和镜头匹配，再谈 LUT 和风格。镜头之间不连，风格越多越乱。</p><div class="article-meta"><span>3 分钟阅读 · 中级</span><span><a href="../../about/#desk-post">TVCN 后期组</a></span><span>编辑 2026-11</span></div></header><nav class="article-toc" aria-label="本文目录"><span class="toc-label">本文目录</span><ol><li><a href="#section-1">先做镜头匹配</a></li><li><a href="#section-2">肤色是锚点</a></li><li><a href="#section-3">风格只用一个方向</a></li><li><a href="#section-4">3 条验收</a></li><li><a href="#v11-extra-1">匹配失败先回白平衡</a></li><li><a href="#v11-extra-2">肤色不是记忆色</a></li><li><a href="#v11-extra-3">一场戏只留一个 LUT</a></li></ol></nav>
     
     
     <article class="article-body"><section><h2 id="section-1">先做镜头匹配</h2><p>同一场戏，不同镜头可能来自不同时间、不同镜头、不同白平衡。先并排看，把曝光、色温、对比拉到接近，再往下做。</p><p>匹配不是让每个镜头一模一样，是让观众看不出切换。人脸亮度差半档，观众就会觉得“跳”。</p></section><section><h2 id="section-2">肤色是锚点</h2><p>观众对肤色最敏感。先保证人脸不绿、不灰、不过红，再决定整体冷暖。示波器看肤色线，比凭感觉可靠。</p><p>风格可以偏，但同一场戏里的肤色要一致。广告可以冷，纪录片可以暖，但不能一条片里两种脸色。</p></section><section><h2 id="section-3">风格只用一个方向</h2><p>风格不是把每个工具都拉满。选一个方向：低饱和、高对比、冷阴影、暖高光，或者反过来。其他参数为它服务。</p><p>LUT 是起点，不是终点。套完之后还要回到一级校正，检查暗部有没有死、高光有没有爆。</p></section><p class="media-disclosure"><strong>图片说明</strong>：本页封面、图解与步骤图是编辑示意或结构图，不是本页实测照片，也不能当作器材测试证据；AI 辅助生成的图会在图注标出。判断器材或画面，以正文的测试条件与现场记录为准。</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration">
@@ -69,9 +69,25 @@
     
     
     
-    <aside class="article-sources experience-source"><div class="article-credit-head"><p class="eyebrow">来源 / Sources</p><span class="mono">经验来源</span></div><p class="source-types">经验来源：TVCN 现场手册与公开规格核对；本文未做实验室实测，也没有外部数据引用。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a></p></aside>
-    <div class="related"><a href="../../article/lut/">LUT：起点不是终点 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/secondary-correction/">二级校正：只改一块颜色 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="../../article/sound-post/">声音后期先修噪声，再谈氛围 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
-    <nav class="article-nav"><a href="../../article/sound/"><span class="mono">上一篇</span>声音：先对白，再音乐</a><a href="../../article/edit-pacing/"><span class="mono">下一篇</span>节奏不是快，是观众什么时候想听下一句</a></nav>
+    <section><h2 id="v11-extra-1">匹配失败先回白平衡</h2>
+<p>两个镜头怎么拉都不像，先别动风格。回到白平衡和曝光，把白纸或灰卡并排看；这一步不对，后面所有节点都在补救。</p>
+<p>示波器比眼睛可靠：看肤色的矢量位置、看黑位的起点、看高光有没有贴顶。眼睛会适应，示波器不会。</p>
+</section>
+<section><h2 id="v11-extra-2">肤色不是记忆色</h2>
+<p>观众记得的肤色通常比真实暖一点。广告可以再暖半档，纪录片最好留在中性附近；同一场戏里，至少保证人脸之间一致。</p>
+<p>不要用“电影感”给所有人脸加青。青脸在夜景里像病人，在回忆里像鬼片，除非这是你要的叙事。</p>
+</section>
+<section><h2 id="v11-extra-3">一场戏只留一个 LUT</h2>
+<p>LUT 是起点，不是风格本身。套完先回到一级校正，检查黑位、高光和肤色，再决定要不要二级。</p>
+<p>同一场戏用两个 LUT，镜头之间就会跳。要变，就在叙事转折点变，并让观众看出这是有意的。</p>
+</section>
+
+<p class="intent-scope">意图分工：本页负责「调色：先统一，再风格」的可执行细节；同集群先读 <a href="https://post.tvcn.org/article/lut/">LUT：起点不是终点</a> 建立总判断，再回到本页。</p>
+<aside class="article-sources" data-source-kind="experience">
+<div class="article-credit-head"><p class="eyebrow">经验说明 / Experience note</p><span class="mono">无外部引用</span></div>
+<p class="source-types">经验说明：本页来自 5 次后期项目复盘，条件为4K 以内素材、常规平台交付；页面讨论的具体对象是「调色：先统一，再风格」；不含外部实验室测试，条件变化时结论可能失效。</p><p class="source-list" data-expansion-source>本条补充参考来源：<a href="../test-protocols/">测试协议</a> · <a href="../../about/">编辑标准</a></p></aside>
+    <div class="related"><a href="/article/color-management/">色彩管理：把 LUT 放在正确的位置 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/conform-online/">Conform / Online：套底、回批与母版 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">构图：先让观众知道看哪里 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
+    <nav class="article-nav"><a href="/article/sound"><span class="mono">上一篇</span>声音：先对白，再音乐</a><a href="/article/edit-pacing"><span class="mono">下一篇</span>节奏不是快，是观众什么时候想听下一句</a></nav>
   </div>
 </main>
 <footer class="static-footer">
