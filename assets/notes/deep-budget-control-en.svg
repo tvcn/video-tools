@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img">
-  <rect width="1000" height="420" fill="#111615"/>
-  <text x="40" y="78" fill="#eef2ef" font-size="34" font-weight="700">Three gates of budget control</text>
-  <text x="40" y="112" fill="#9fb0aa" font-size="18">Structure diagram: follow the order and the decision point</text>
-<rect x="40" y="150" width="250" height="190" rx="14" fill="#18201f" stroke="#7fb3a6" stroke-width="2"/><circle cx="64" cy="176" r="8" fill="#7fb3a6"/><text x="165.0" y="235.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="165.0" y="235.0">Quote: price each variable</tspan></text>
-<rect x="355" y="150" width="250" height="190" rx="14" fill="#18201f" stroke="#d6b36a" stroke-width="2"/><circle cx="379" cy="176" r="8" fill="#d6b36a"/><text x="480.0" y="220.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="480.0" y="220.0">Reserve: hold 15% before</tspan><tspan x="480.0" y="250.0">scheduling</tspan></text>
-<rect x="670" y="150" width="250" height="190" rx="14" fill="#18201f" stroke="#9a8fc2" stroke-width="2"/><circle cx="694" cy="176" r="8" fill="#9a8fc2"/><text x="795.0" y="235.0" text-anchor="middle" fill="#eef2ef" font-size="23" font-weight="600"><tspan x="795.0" y="235.0">Collect: bill by milestone</tspan></text>
-<line x1="300" y1="245" x2="345" y2="245" stroke="#d6b36a" stroke-width="3"/><path d="M337 238 L345 245 L337 252" fill="none" stroke="#d6b36a" stroke-width="3"/><line x1="615" y1="245" x2="660" y2="245" stroke="#d6b36a" stroke-width="3"/><path d="M652 238 L660 245 L652 252" fill="none" stroke="#d6b36a" stroke-width="3"/>
-</svg>
