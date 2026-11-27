@@ -51,7 +51,7 @@
 <main id="main" class="static-main" tabindex="-1">
 <div class="wrap" data-content-v2="1">
 <div class="breadcrumbs"><a href="../../../en/">Home</a><span>/</span><a href="https://tools.tvcn.org/">Tools</a><span>/</span><span>Aspect Ratio Calculator: Crop and Safe Area</span></div>
-<header class="article-hero"><p class="eyebrow">Tools / Calculator</p><h1>Aspect Ratio Calculator: Crop and Safe Area</h1><p class="article-deck">Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.</p><div class="article-meta"><span>4 min read · Field note</span><span>TVCN Tools Desk</span><span>Edited 2026-11</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Formula and safe area</a></li><li><a href="#section-2">Three common conversions</a></li><li><a href="#section-3">Limits</a></li><li><a href="#section-4">On set</a></li><li><a href="#section-5">Do this</a></li><li><a href="#section-6">Avoid</a></li><li><a href="#section-7">Aspect-ratio crop calculator</a></li><li><a href="#section-8">Alternative</a></li><li><a href="#section-9">60-second test</a></li><li><a href="#section-10">Check</a></li><li><a href="#section-11">Aspect-ratio crop calculator</a></li><li><a href="#section-12">Experience note</a></li></ol></nav>
+<header class="article-hero"><p class="eyebrow">Tools / Calculator</p><h1>Aspect Ratio Calculator: Crop and Safe Area</h1><p class="article-deck">Calculate effective pixels after crop, then safe area; vertical is not a horizontal crop.</p><div class="article-meta"><span>4 min read · Field note</span><span>TVCN Tools Desk</span><span>Edited 2026-11</span></div></header><nav class="article-toc" aria-label="On this page"><span class="toc-label">On this page</span><ol><li><a href="#section-1">Formula and safe area</a></li><li><a href="#section-2">Three common conversions</a></li><li><a href="#section-3">Limits</a></li><li><a href="#section-4">On set</a></li><li><a href="#section-5">Do this</a></li><li><a href="#section-6">Avoid</a></li><li><a href="#section-7">Aspect-ratio crop calculator</a></li><li><a href="#section-8">Alternative</a></li><li><a href="#section-9">60-second test</a></li><li><a href="#section-10">Check</a></li><li><a href="#section-11">Experience note</a></li></ol></nav>
 
 <article class="article-body"><p>Aspect ratio = width ÷ height . Cropping 16:9 to 9:16 keeps width = original height × 9 ÷ 16; a 3840×2160 frame becomes 1215×2160, losing about 1312 pixels on each side.</p>
 
@@ -73,15 +73,7 @@
 <section><h2 id="section-8">Alternative</h2><p>If “4K 16:9 cropped to 9:16 leaves about 1215×2160.” is not the main problem, start with the basic move behind “Confirm the pixel count is enough.”. Upgrade only after both hold.</p></section>
 <section><h2 id="section-9">60-second test</h2><p>Run a 60-second test with the gear you own, focused on “4K 16:9 cropped to 9:16 leaves about 1215×2160.”, and record one number. If the number does not change, do not add budget.</p></section>
 <h2 id="section-10">Check</h2>
-<ul><li>Cropped effective pixels are numeric, about 1215×2160.</li><li>Pixels meet delivery needs without upscaling.</li><li>The safe area is redrawn for vertical platforms, not reused from landscape.</li></ul><section class="calc-widget" data-calculator="aspect-calculator">
-<h2 id="section-11">Aspect-ratio crop calculator</h2>
-<p class="calc-lede">Finds the largest crop at the target ratio and reports kept pixels and crop percentage.</p>
-<div class="calc-grid"><label class="calc-field"><span>Source width (px)</span><input type="number" inputmode="decimal" data-calc="width" data-default="3840" value="3840" step="1" min="1"></label><label class="calc-field"><span>Source height (px)</span><input type="number" inputmode="decimal" data-calc="height" data-default="2160" value="2160" step="1" min="1"></label><label class="calc-field"><span>Target ratio</span><select data-calc="ratio" data-default="9:16"><option value="1:1">1:1 square</option><option value="4:5">4:5 vertical</option><option value="9:16" selected>9:16 full screen</option><option value="16:9">16:9 horizontal</option><option value="2.35:1">2.35:1 widescreen</option></select></label></div>
-<div class="calc-output" aria-live="polite"><strong data-out="result">Crop —</strong><span data-out="detail">Protect the subject first, then trim edges; do not center-crop blindly.</span></div>
-<div class="calc-actions"><button type="button" data-reset>Reset defaults</button></div>
-<p class="calc-formula">Compare source and target ratios: if wider, crop width; if taller, crop height. Keep the other axis.</p>
-<noscript><p class="calc-noscript">With JavaScript off: 3840×2160 to 9:16 keeps 1215×2160.</p></noscript>
-</section><script src="/assets/calculators.js" defer></script><p class="media-disclosure"><strong>Image note.</strong> Covers, diagrams and step images on this page are editorial illustrations or structure diagrams, not photographs of a test performed here; they are not evidence of measured gear performance. Where an image is AI-assisted, the caption says so. Read the test conditions in the text before treating an image as proof.</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../../assets/notes/aspect-calculator.svg" alt="Editorial cover for Aspect Ratio Calculator: Crop and Safe Area" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>Editorial cover illustration for this page, not a set photo.</span><span class="mono">TVCN 图解</span> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / TOOLS</div><h3 class="diagram-title">Structure</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../../assets/notes/aspect-calculator-steps.svg" alt="Structure diagram for Aspect Ratio Calculator: Crop and Safe Area." loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>Watch “4K 16:9 cropped to 9:16 leaves about 1215×2160.” and “Confirm the pixel count is enough.”; judge whether the spec maps to one concrete shooting problem. <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption></figure>
+<ul><li>Cropped effective pixels are numeric, about 1215×2160.</li><li>Pixels meet delivery needs without upscaling.</li><li>The safe area is redrawn for vertical platforms, not reused from landscape.</li></ul><p class="media-disclosure"><strong>Image note.</strong> Covers, diagrams and step images on this page are editorial illustrations or structure diagrams, not photographs of a test performed here; they are not evidence of measured gear performance. Where an image is AI-assisted, the caption says so. Read the test conditions in the text before treating an image as proof.</p></article><figure class="article-media inline-media" data-image-nature="editorial-illustration"><img src="../../../assets/notes/aspect-calculator.svg" alt="Editorial cover for Aspect Ratio Calculator: Crop and Safe Area" loading="lazy" decoding="async" width="1280" height="720"><figcaption><span>Editorial cover illustration for this page, not a set photo.</span><span class="mono">TVCN 图解</span> <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption></figure><figure class="diagram" data-image-nature="editorial-illustration"><div class="diagram-head"><div><div class="diagram-kicker">DIAGRAM / TOOLS</div><h3 class="diagram-title">Structure</h3></div><span class="mono">TVCN</span></div><div class="diagram-body"><img class="diagram-svg" src="../../../assets/notes/aspect-calculator-steps.svg" alt="Structure diagram for Aspect Ratio Calculator: Crop and Safe Area." loading="lazy" decoding="async" width="1280" height="720"></div><figcaption>Watch “4K 16:9 cropped to 9:16 leaves about 1215×2160.” and “Confirm the pixel count is enough.”; judge whether the spec maps to one concrete shooting problem. <span class="fig-nature">Editorial illustration, not a test photograph from this page.</span></figcaption></figure>
 
 
 <aside class="article-credit">
@@ -96,10 +88,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <aside class="article-sources" data-source-kind="experience">
 <div class="article-credit-head"><p class="eyebrow">经验说明 / Experience note</p><span class="mono">No external citation</span></div>
 <p class="source-types">This page separates field judgement from public references; where there is no external source, it states the field limits.</p>
-<h2 id="section-12">Experience note</h2>
+<h2 id="section-11">Experience note</h2>
 <p>Experience note:This page documents the parameter limits of “Aspect Ratio Calculator: Crop and Safe Area”, drawing on 3 production calculations and on-set playbacks under the listed camera/firmware and distances; it is for estimates only, not unlisted gear, extreme temperatures, legal/platform compliance or cinema masters.</p></aside>
 <div class="related"><a href="/article/audio-interface/">Audio Interface: Inputs and Gain <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="/article/audio-noise-fix/">Audio Noise Fix: Start With the Room <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a><a href="https://shoot.tvcn.org/article/composition/">Composition: Tell the Eye Where to Look <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div>
 </div>
